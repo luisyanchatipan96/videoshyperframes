@@ -42,6 +42,13 @@
         "presupuesto-emergencia-el-nino"
       ],
       "updated_at": "2026-10-21T15:43:37.866Z"
+    },
+    "voice": {
+      "value": "ef_dora",
+      "confirmed_in": [
+        "presupuesto-emergencia-el-nino"
+      ],
+      "updated_at": "2026-10-21T22:45:50.527Z"
     }
   },
   "sightings": {}

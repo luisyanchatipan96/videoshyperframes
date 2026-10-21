@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "name": "explicativo-institucional-vertical",
+  "workflow": "faceless-explainer",
+  "approved_at": "2026-10-21T22:45:50.614Z",
+  "source_project": "presupuesto-emergencia-el-nino",
+  "destination": "shorts",
+  "aspect": "1080x1920",
+  "language": "es",
+  "voice": "ef_dora",
+  "style_preset": "blue-professional"
+}
