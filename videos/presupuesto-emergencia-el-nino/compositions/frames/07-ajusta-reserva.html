@@ -1,0 +1,446 @@
+<template id="07-ajusta-reserva-template">
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+  @font-face { font-family: 'Space Grotesk'; src: url('assets/fonts/Space_Grotesk_700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: block; }
+  @font-face { font-family: 'Inter'; src: url('assets/fonts/Inter_500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: block; }
+
+  #root {
+    position: relative;
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    color: #0B2545;
+  }
+
+  /* ---------- ground (full-bleed clip) ---------- */
+  [id="07-ajusta-reserva-bg"] {
+    position: absolute;
+    left: 0; top: 0;
+    width: 1080px;
+    height: 1920px;
+    background-color: #FFFFFF;
+    background-image:
+      radial-gradient(ellipse 760px 620px at 540px 520px, rgba(43, 168, 74, 0.08), rgba(43, 168, 74, 0) 70%),
+      radial-gradient(circle, rgba(11, 37, 69, 0.06) 2.5px, rgba(11, 37, 69, 0) 3px);
+    background-size: 1080px 1920px, 36px 36px;
+    background-repeat: no-repeat, repeat;
+  }
+  [id="07-ajusta-reserva-progress"] {
+    position: absolute;
+    left: 0; top: 92px;
+    width: 1080px;
+    height: 8px;
+    background: #23963F;
+    transform-origin: left center;
+  }
+
+  /* ---------- stage ---------- */
+  [id="07-ajusta-reserva-stage"] {
+    position: absolute;
+    left: 0; top: 0;
+    width: 1080px;
+    height: 1920px;
+  }
+
+  [id="07-ajusta-reserva-title"] {
+    position: absolute;
+    left: 90px; top: 148px;
+    width: 900px;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #0B2545;
+  }
+
+  /* connectors */
+  [id="07-ajusta-reserva-links"] {
+    position: absolute;
+    left: 0; top: 0;
+    width: 1080px;
+    height: 1920px;
+  }
+  [class~="07-ajusta-reserva-link"] {
+    stroke: #23963F;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-dasharray: 1 14;
+    fill: none;
+  }
+
+  /* rubro cards — all four identical */
+  [class~="07-ajusta-reserva-card"] {
+    position: absolute;
+    width: 370px;
+    height: 230px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(43, 168, 74, 0.04), rgba(43, 168, 74, 0.04)), #FFFFFF;
+    border: 1.5px solid rgba(43, 168, 74, 0.2);
+    border-radius: 14px;
+  }
+  [id="07-ajusta-reserva-card-a"] { left: 90px;  top: 380px; }
+  [id="07-ajusta-reserva-card-b"] { left: 620px; top: 380px; }
+  [id="07-ajusta-reserva-card-c"] { left: 90px;  top: 930px; }
+  [id="07-ajusta-reserva-card-d"] { left: 620px; top: 930px; }
+
+  [class~="07-ajusta-reserva-icon"] {
+    position: absolute;
+    left: 137px; top: 22px;
+    width: 92px; height: 92px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: rgba(43, 168, 74, 0.08);
+    border: 1.5px solid rgba(43, 168, 74, 0.2);
+  }
+  [class~="07-ajusta-reserva-icon"] svg {
+    position: absolute;
+    left: 16px; top: 16px;
+    width: 57px; height: 57px;
+  }
+  [class~="07-ajusta-reserva-name"] {
+    position: absolute;
+    left: 0; top: 128px;
+    width: 367px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #0B2545;
+  }
+  [class~="07-ajusta-reserva-track"] {
+    position: absolute;
+    left: 58px; top: 190px;
+    width: 250px; height: 8px;
+    border-radius: 6px;
+    background: rgba(43, 168, 74, 0.15);
+  }
+  [class~="07-ajusta-reserva-knob"] {
+    position: absolute;
+    left: 165px; top: 179px;
+    width: 30px; height: 30px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 5px solid #23963F;
+  }
+
+  /* notebook (focal) */
+  [id="07-ajusta-reserva-book"] {
+    position: absolute;
+    left: 400px; top: 655px;
+    width: 280px; height: 230px;
+  }
+  [id="07-ajusta-reserva-book-cover"] {
+    position: absolute;
+    left: 0; top: 0;
+    width: 280px; height: 230px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 6px solid #0B2545;
+    border-radius: 18px;
+  }
+  [class~="07-ajusta-reserva-ring"] {
+    position: absolute;
+    top: -17px;
+    width: 16px; height: 30px;
+    box-sizing: border-box;
+    border: 5px solid #0B2545;
+    border-radius: 10px;
+    background: #FFFFFF;
+  }
+  [id="07-ajusta-reserva-book-label"] {
+    position: absolute;
+    left: 0; top: 34px;
+    width: 280px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #0B2545;
+  }
+  [class~="07-ajusta-reserva-row"] {
+    position: absolute;
+    left: 50px;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(11, 37, 69, 0.14);
+    transform-origin: left center;
+  }
+  [class~="07-ajusta-reserva-dot"] {
+    position: absolute;
+    left: 28px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: #23963F;
+  }
+
+  /* reserva jar + subtitle */
+  [id="07-ajusta-reserva-jar"] {
+    position: absolute;
+    left: 170px; top: 1220px;
+    width: 240px; height: 300px;
+  }
+  [id="07-ajusta-reserva-jar-body"] {
+    position: absolute;
+    left: 0; top: 40px;
+    width: 240px; height: 260px;
+    box-sizing: border-box;
+    border: 6px solid #0B2545;
+    border-radius: 40px 40px 50px 50px;
+    background: rgba(43, 168, 74, 0.04);
+    overflow: hidden;
+    z-index: 1;
+  }
+  [id="07-ajusta-reserva-jar-fill"] {
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%; height: 100%;
+    background: #23963F;
+    transform-origin: center bottom;
+  }
+  [id="07-ajusta-reserva-jar-lid"] {
+    position: absolute;
+    left: 50px; top: 0;
+    width: 140px; height: 38px;
+    box-sizing: border-box;
+    border: 6px solid #0B2545;
+    border-radius: 12px;
+    background: #FFFFFF;
+    z-index: 3;
+  }
+  [id="07-ajusta-reserva-jar-slot"] {
+    position: absolute;
+    left: 40px; top: 10px;
+    width: 48px; height: 6px;
+    border-radius: 3px;
+    background: #0B2545;
+  }
+  [id="07-ajusta-reserva-jar-tag"] {
+    position: absolute;
+    left: 50%; top: 52px;
+    margin-left: -88px;
+    width: 176px;
+    box-sizing: border-box;
+    padding: 8px 0 10px;
+    border-radius: 100px;
+    background: #FFFFFF;
+    border: 1.5px solid rgba(43, 168, 74, 0.2);
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+    color: #0B2545;
+    z-index: 2;
+  }
+  [class~="07-ajusta-reserva-coin"] {
+    position: absolute;
+    top: 6px;
+    width: 52px; height: 52px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #23963F;
+    border: 5px solid #0B2545;
+    z-index: 2;
+  }
+  [class~="07-ajusta-reserva-coin"]::after {
+    content: "";
+    position: absolute;
+    left: 8px; top: 8px;
+    width: 26px; height: 26px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+  }
+  [id="07-ajusta-reserva-sub"] {
+    position: absolute;
+    left: 460px; top: 1314px;
+    width: 530px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 1.2;
+    color: #4A5D78;
+  }
+</style>
+
+<div data-hf-id="hf-iok0" id="root" data-composition-id="07-ajusta-reserva" data-start="0" data-duration="6.64" data-width="1080" data-height="1920">
+
+  <div data-hf-id="hf-p3wb" id="07-ajusta-reserva-bg" class="clip" data-start="0" data-duration="6.64" data-track-index="0">
+    <div data-hf-id="hf-x8cc" id="07-ajusta-reserva-progress"></div>
+  </div>
+
+  <div data-hf-id="hf-73hj" id="07-ajusta-reserva-stage" class="clip" data-start="0" data-duration="6.64" data-track-index="1">
+
+    <h1 data-hf-id="hf-08fo" id="07-ajusta-reserva-title">Ajusta según<br data-hf-id="hf-x5px">tus necesidades</h1>
+
+    <svg data-hf-id="hf-a2d8" id="07-ajusta-reserva-links" viewBox="0 0 1080 1920" width="1080" height="1920" aria-hidden="true">
+      <line data-hf-id="hf-dkxo" class="07-ajusta-reserva-link" id="07-ajusta-reserva-link-a" x1="406" y1="661" x2="454" y2="616"></line>
+      <line data-hf-id="hf-qmip" class="07-ajusta-reserva-link" id="07-ajusta-reserva-link-b" x1="674" y1="661" x2="626" y2="616"></line>
+      <line data-hf-id="hf-zldl" class="07-ajusta-reserva-link" id="07-ajusta-reserva-link-c" x1="406" y1="879" x2="454" y2="924"></line>
+      <line data-hf-id="hf-igr4" class="07-ajusta-reserva-link" id="07-ajusta-reserva-link-d" x1="674" y1="879" x2="626" y2="924"></line>
+    </svg>
+
+    <!-- four identical rubro cards: same size, same style, same distance from center -->
+    <div data-hf-id="hf-pfps" class="07-ajusta-reserva-card" id="07-ajusta-reserva-card-a">
+      <div data-hf-id="hf-allz" class="07-ajusta-reserva-icon">
+        <svg data-hf-id="hf-aotg" viewBox="0 0 48 48" fill="none" stroke="#0B2545" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+          <g transform="translate(-6 -6) scale(0.5)" stroke-width="6.8"><path d="M60 44 C50 36 33 38 32 58 C31 78 46 92 60 87 C74 92 89 78 88 58 C87 38 70 36 60 44 Z" fill="#FFFFFF"></path><path d="M60 44 L63 30"></path><path d="M64 34 C70 28 78 28 82 30 C78 36 70 38 64 34 Z"></path></g>
+        </svg>
+      </div>
+      <div data-hf-id="hf-kzjv" class="07-ajusta-reserva-name">Alimentación</div>
+      <div data-hf-id="hf-8jkx" class="07-ajusta-reserva-track"></div>
+      <div data-hf-id="hf-wmjk" class="07-ajusta-reserva-knob" id="07-ajusta-reserva-knob-a"></div>
+    </div>
+
+    <div data-hf-id="hf-y3ln" class="07-ajusta-reserva-card" id="07-ajusta-reserva-card-b">
+      <div data-hf-id="hf-zbt3" class="07-ajusta-reserva-icon">
+        <svg data-hf-id="hf-21uk" viewBox="0 0 48 48" fill="none" stroke="#0B2545" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+          <rect data-hf-id="hf-yqei" x="7" y="14" width="34" height="26" rx="5" fill="#FFFFFF"></rect>
+          <path data-hf-id="hf-zph7" d="M18 14v-4h12v4"></path>
+          <path data-hf-id="hf-3rqq" d="M24 21v12M18 27h12" stroke="#23963F"></path>
+        </svg>
+      </div>
+      <div data-hf-id="hf-md3a" class="07-ajusta-reserva-name">Salud</div>
+      <div data-hf-id="hf-l6ph" class="07-ajusta-reserva-track"></div>
+      <div data-hf-id="hf-5aff" class="07-ajusta-reserva-knob" id="07-ajusta-reserva-knob-b"></div>
+    </div>
+
+    <div data-hf-id="hf-u5hm" class="07-ajusta-reserva-card" id="07-ajusta-reserva-card-c">
+      <div data-hf-id="hf-yxi2" class="07-ajusta-reserva-icon">
+        <svg data-hf-id="hf-0uxh" viewBox="0 0 48 48" fill="none" stroke="#0B2545" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+          <path data-hf-id="hf-9ek5" d="M8 23L24 9l16 14" ></path>
+          <path data-hf-id="hf-0ipb" d="M12 20v19h24V20" fill="#FFFFFF"></path>
+          <path data-hf-id="hf-po6x" d="M21 39v-9h6v9"></path>
+        </svg>
+      </div>
+      <div data-hf-id="hf-su31" class="07-ajusta-reserva-name">Vivienda</div>
+      <div data-hf-id="hf-mdmk" class="07-ajusta-reserva-track"></div>
+      <div data-hf-id="hf-1cbe" class="07-ajusta-reserva-knob" id="07-ajusta-reserva-knob-c"></div>
+    </div>
+
+    <div data-hf-id="hf-bdrx" class="07-ajusta-reserva-card" id="07-ajusta-reserva-card-d">
+      <div data-hf-id="hf-yj71" class="07-ajusta-reserva-icon">
+        <svg data-hf-id="hf-198i" viewBox="0 0 48 48" fill="none" stroke="#0B2545" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+          <rect data-hf-id="hf-w8sj" x="9" y="8" width="30" height="28" rx="5" fill="#FFFFFF"></rect>
+          <path data-hf-id="hf-a76s" d="M9 22h30M14 30h3M31 30h3"></path>
+          <path data-hf-id="hf-0x1g" d="M14 36v4M34 36v4"></path>
+        </svg>
+      </div>
+      <div data-hf-id="hf-cz25" class="07-ajusta-reserva-name">Transporte</div>
+      <div data-hf-id="hf-lzbj" class="07-ajusta-reserva-track"></div>
+      <div data-hf-id="hf-iklp" class="07-ajusta-reserva-knob" id="07-ajusta-reserva-knob-d"></div>
+    </div>
+
+    <!-- focal: family budget notebook -->
+    <div data-hf-id="hf-gmt6" id="07-ajusta-reserva-book">
+      <div data-hf-id="hf-snws" id="07-ajusta-reserva-book-cover">
+        <div data-hf-id="hf-p59x" id="07-ajusta-reserva-book-label">Presupuesto<br data-hf-id="hf-rsrt">familiar</div>
+        <div data-hf-id="hf-1id8" class="07-ajusta-reserva-dot" style="top: 133px;"></div>
+        <div data-hf-id="hf-76uk" class="07-ajusta-reserva-row" style="top: 136px; width: 180px;"></div>
+        <div data-hf-id="hf-bdvo" class="07-ajusta-reserva-dot" style="top: 160px;"></div>
+        <div data-hf-id="hf-gotr" class="07-ajusta-reserva-row" style="top: 163px; width: 150px;"></div>
+        <div data-hf-id="hf-ep2n" class="07-ajusta-reserva-dot" style="top: 187px;"></div>
+        <div data-hf-id="hf-nd2t" class="07-ajusta-reserva-row" style="top: 190px; width: 165px;"></div>
+      </div>
+      <div data-hf-id="hf-lgiz" class="07-ajusta-reserva-ring" style="left: 50px;"></div>
+      <div data-hf-id="hf-yz87" class="07-ajusta-reserva-ring" style="left: 90px;"></div>
+      <div data-hf-id="hf-5g0k" class="07-ajusta-reserva-ring" style="left: 130px;"></div>
+      <div data-hf-id="hf-we00" class="07-ajusta-reserva-ring" style="left: 170px;"></div>
+      <div data-hf-id="hf-y3vb" class="07-ajusta-reserva-ring" style="left: 210px;"></div>
+    </div>
+
+    <!-- secondary focal: reserve jar -->
+    <div data-hf-id="hf-untg" id="07-ajusta-reserva-jar">
+      <div data-hf-id="hf-pmqz" class="07-ajusta-reserva-coin" id="07-ajusta-reserva-coin-1" style="left: 92px;"></div>
+      <div data-hf-id="hf-e6vw" class="07-ajusta-reserva-coin" id="07-ajusta-reserva-coin-2" style="left: 100px;"></div>
+      <div data-hf-id="hf-x7la" class="07-ajusta-reserva-coin" id="07-ajusta-reserva-coin-3" style="left: 88px;"></div>
+      <div data-hf-id="hf-cf61" class="07-ajusta-reserva-coin" id="07-ajusta-reserva-coin-4" style="left: 97px;"></div>
+      <div data-hf-id="hf-jfwl" class="07-ajusta-reserva-coin" id="07-ajusta-reserva-coin-5" style="left: 94px;"></div>
+      <div data-hf-id="hf-0qig" id="07-ajusta-reserva-jar-lid"><div data-hf-id="hf-j4d1" id="07-ajusta-reserva-jar-slot"></div></div>
+      <div data-hf-id="hf-7xih" id="07-ajusta-reserva-jar-body">
+        <div data-hf-id="hf-uuc6" id="07-ajusta-reserva-jar-fill"></div>
+        <div data-hf-id="hf-jsex" id="07-ajusta-reserva-jar-tag">Reserva</div>
+      </div>
+    </div>
+
+    <p data-hf-id="hf-dm9k" id="07-ajusta-reserva-sub">Separa una reserva,<br data-hf-id="hf-szow">si puedes</p>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var P = "07-ajusta-reserva-";
+    var byId = function (n) { return document.getElementById(P + n); };
+    var byClass = function (n) {
+      return Array.prototype.slice.call(document.querySelectorAll('[class~="' + P + n + '"]'));
+    };
+
+    var tl = gsap.timeline({ paused: true });
+
+    /* ambient progress strip — advances steadily through the frame */
+    tl.fromTo(byId("progress"), { scaleX: 0.8198 }, { scaleX: 0.9222, duration: 6.14, ease: "none" }, 0);
+
+    /* Scene 1 (0.0–1.9s): notebook at center, title, four identical cards gather from the corners */
+    tl.fromTo(byId("book"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 0.05);
+    tl.fromTo(byId("title"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 0.15);
+    tl.fromTo(byClass("row"), { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.out", stagger: 0.12 }, 0.35);
+    tl.fromTo(byClass("dot"), { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power3.out", stagger: 0.12 }, 0.35);
+
+    // "los montos" — all four arrive simultaneously, mirror-symmetric offsets, no overshoot, no rotation
+    var CARD_T = 0.49, OFF = 300;
+    tl.fromTo(byId("card-a"), { opacity: 0, x: -OFF, y: -OFF }, { opacity: 1, x: 0, y: 0, duration: 0.95, ease: "power3.out" }, CARD_T);
+    tl.fromTo(byId("card-b"), { opacity: 0, x:  OFF, y: -OFF }, { opacity: 1, x: 0, y: 0, duration: 0.95, ease: "power3.out" }, CARD_T);
+    tl.fromTo(byId("card-c"), { opacity: 0, x: -OFF, y:  OFF }, { opacity: 1, x: 0, y: 0, duration: 0.95, ease: "power3.out" }, CARD_T);
+    tl.fromTo(byId("card-d"), { opacity: 0, x:  OFF, y:  OFF }, { opacity: 1, x: 0, y: 0, duration: 0.95, ease: "power3.out" }, CARD_T);
+
+    // dotted green connectors draw from the notebook out to each card (identical, simultaneous)
+    [["a", 406, 661], ["b", 674, 661], ["c", 406, 879], ["d", 674, 879]].forEach(function (l) {
+      var el = byId("link-" + l[0]);
+      var x2 = el.getAttribute("x2"), y2 = el.getAttribute("y2");
+      tl.fromTo(el,
+        { opacity: 0, attr: { x2: l[1], y2: l[2] } },
+        { opacity: 1, attr: { x2: x2, y2: y2 }, duration: 0.55, ease: "power3.out" }, 1.15);
+    });
+
+    /* Scene 2 (1.9–2.7s): "realidad" — each slider nudges to its own spot (no numbers) */
+    var SL_T = 1.43;
+    tl.fromTo(byId("knob-a"), { x: 0 }, { x: -52, duration: 0.85, ease: "power2.inOut" }, SL_T);
+    tl.fromTo(byId("knob-b"), { x: 0 }, { x: 58,  duration: 0.85, ease: "power2.inOut" }, SL_T);
+    tl.fromTo(byId("knob-c"), { x: 0 }, { x: 24,  duration: 0.85, ease: "power2.inOut" }, SL_T);
+    tl.fromTo(byId("knob-d"), { x: 0 }, { x: -30, duration: 0.85, ease: "power2.inOut" }, SL_T);
+
+    /* Scene 3 (2.7–6.1s): "separa" — reserve jar + subtitle; "pequeña reserva" — coins drop, level rises */
+    tl.fromTo(byId("jar"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 2.66);
+    tl.fromTo(byId("sub"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 2.8);
+    tl.fromTo(byId("jar-fill"), { scaleY: 0 }, { scaleY: 0, duration: 0.01 }, 2.66);
+
+    var COIN_T = [3.4, 3.85, 4.3, 4.75, 5.2];
+    var LEVEL = [0.16, 0.3, 0.43, 0.55, 0.66];
+    COIN_T.forEach(function (t, i) {
+      var coin = byId("coin-" + (i + 1));
+      tl.fromTo(coin, { opacity: 0, y: -66 }, { opacity: 1, y: -40, duration: 0.14, ease: "none" }, t);
+      tl.fromTo(coin, { y: -40 }, { y: 6, duration: 0.3, ease: "power2.in", immediateRender: false }, t + 0.14);
+      tl.fromTo(coin, { opacity: 1 }, { opacity: 0, duration: 0.1, ease: "none", immediateRender: false }, t + 0.36);
+      tl.fromTo(byId("jar-fill"),
+        { scaleY: i === 0 ? 0 : LEVEL[i - 1] },
+        { scaleY: LEVEL[i], duration: 0.4, ease: "power2.out", immediateRender: false }, t + 0.4);
+    });
+
+    /* hold to the end of the fixed duration */
+    tl.set({}, {}, 6.14);
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines["07-ajusta-reserva"] = tl;
+  })();
+</script>
+</template>

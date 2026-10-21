@@ -1,0 +1,409 @@
+<template>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: "Space Grotesk";
+      src: url("assets/fonts/Space_Grotesk_600.woff2") format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "Space Grotesk";
+      src: url("assets/fonts/Space_Grotesk_700.woff2") format("woff2");
+      font-weight: 700;
+      font-style: normal;
+      font-display: block;
+    }
+    @font-face {
+      font-family: "Inter";
+      src: url("assets/fonts/Inter_500.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: block;
+    }
+
+    #root {
+      position: relative;
+      width: 1080px;
+      height: 1920px;
+      overflow: hidden;
+      font-family: "Inter", sans-serif;
+      color: #0B2545;
+    }
+
+    /* ---------- background (full-bleed clip) ---------- */
+    [id="02-tres-pasos-bg"] {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F6F8FB 100%);
+    }
+    [id="02-tres-pasos-dots"] {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(11, 37, 69, 0.06) 2.5px, transparent 3px);
+      background-size: 40px 40px;
+      background-position: 20px 20px;
+    }
+    [id="02-tres-pasos-halo"] {
+      position: absolute;
+      left: -140px;
+      top: -260px;
+      width: 1360px;
+      height: 1300px;
+      background: radial-gradient(closest-side, rgba(43, 168, 74, 0.08), rgba(43, 168, 74, 0) 100%);
+    }
+
+    /* ---------- progress bar ---------- */
+    [id="02-tres-pasos-progress"] {
+      position: absolute;
+      left: 90px;
+      top: 92px;
+      width: 900px;
+      height: 8px;
+      border-radius: 6px;
+      background: rgba(43, 168, 74, 0.15);
+      overflow: hidden;
+    }
+    [id="02-tres-pasos-progress-fill"] {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 900px;
+      height: 8px;
+      background: #23963F;
+      transform-origin: left center;
+    }
+
+    /* ---------- header pill ---------- */
+    [id="02-tres-pasos-header"] {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 222px;
+      height: 64px;
+      display: flex;
+      justify-content: center;
+    }
+    .\30 2-tres-pasos-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      height: 64px;
+      padding: 0 34px;
+      border-radius: 100px;
+      background: rgba(43, 168, 74, 0.08);
+      color: #23963F;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      letter-spacing: 0.02em;
+    }
+    .\30 2-tres-pasos-pill-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #23963F;
+    }
+
+    /* ---------- notebook ---------- */
+    [id="02-tres-pasos-notebook"] {
+      position: absolute;
+      left: 100px;
+      top: 330px;
+      width: 880px;
+      height: 1000px;
+    }
+    .\30 2-tres-pasos-page {
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      background-color: #FFFFFF;
+      border: 1.5px solid rgba(11, 37, 69, 0.16);
+      background-image:
+        linear-gradient(90deg, transparent 0, transparent 118px, rgba(43, 168, 74, 0.35) 118px, rgba(43, 168, 74, 0.35) 121px, transparent 121px),
+        repeating-linear-gradient(180deg, transparent 0, transparent 68px, rgba(30, 95, 190, 0.16) 68px, rgba(30, 95, 190, 0.16) 70px);
+      background-position: 0 0, 0 92px;
+      background-repeat: no-repeat, repeat;
+    }
+    .\30 2-tres-pasos-spiral {
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      top: -30px;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .\30 2-tres-pasos-ring {
+      position: relative;
+      width: 26px;
+      height: 80px;
+    }
+    .\30 2-tres-pasos-ring::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 0;
+      width: 16px;
+      height: 62px;
+      border: 6px solid #0B2545;
+      border-radius: 14px;
+      box-sizing: border-box;
+      background: transparent;
+    }
+    .\30 2-tres-pasos-ring::after {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 50px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: rgba(11, 37, 69, 0.18);
+    }
+
+    /* ---------- rows ---------- */
+    .\30 2-tres-pasos-row {
+      position: absolute;
+      left: 34px;
+      width: 812px;
+      height: 240px;
+      border-radius: 14px;
+    }
+    .\30 2-tres-pasos-row-tint {
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      background: rgba(43, 168, 74, 0.10);
+      border: 1.5px solid rgba(43, 168, 74, 0.35);
+      opacity: 0;
+    }
+    .\30 2-tres-pasos-icon {
+      position: absolute;
+      left: 22px;
+      top: 45px;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: rgba(43, 168, 74, 0.08);
+      border: 1.5px solid rgba(43, 168, 74, 0.2);
+    }
+    .\30 2-tres-pasos-icon svg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 150px;
+      height: 150px;
+      overflow: visible;
+    }
+    .\30 2-tres-pasos-text {
+      position: absolute;
+      left: 210px;
+      top: 0;
+      height: 240px;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      color: #0B2545;
+    }
+    .\30 2-tres-pasos-line {
+      position: relative;
+      display: block;
+      align-self: flex-start;
+    }
+    .\30 2-tres-pasos-line-text {
+      position: relative;
+      z-index: 1;
+      display: block;
+    }
+    .\30 2-tres-pasos-hl {
+      position: absolute;
+      left: -8px;
+      right: -8px;
+      top: 16%;
+      bottom: 4%;
+      background: #23963F;
+      opacity: 0.35;
+      border-radius: 6px;
+      transform-origin: left center;
+      z-index: 0;
+    }
+    .\30 2-tres-pasos-check {
+      position: absolute;
+      right: 26px;
+      top: 80px;
+      width: 80px;
+      height: 80px;
+      overflow: visible;
+    }
+  </style>
+
+  <div data-hf-id="hf-7jfp" id="root" data-composition-id="02-tres-pasos" data-width="1080" data-height="1920" data-duration="8.37">
+    <!-- Full-bleed ground -->
+    <div data-hf-id="hf-cva4" id="02-tres-pasos-bg" class="clip" data-start="0" data-duration="8.37" data-track-index="0">
+      <div data-hf-id="hf-f5ik" id="02-tres-pasos-dots"></div>
+      <div data-hf-id="hf-qpx6" id="02-tres-pasos-halo"></div>
+    </div>
+
+    <!-- Content layer -->
+    <div data-hf-id="hf-iwm1" id="02-tres-pasos-stage" class="clip" data-start="0" data-duration="8.37" data-track-index="1" style="position:absolute; inset:0;">
+      <div data-hf-id="hf-3jp5" id="02-tres-pasos-progress"><div data-hf-id="hf-w23p" id="02-tres-pasos-progress-fill"></div></div>
+
+      <div data-hf-id="hf-ctav" id="02-tres-pasos-header">
+        <div data-hf-id="hf-3jkv" class="02-tres-pasos-pill" id="02-tres-pasos-pill"><span data-hf-id="hf-h0mj" class="02-tres-pasos-pill-dot"></span>Mi presupuesto</div>
+      </div>
+
+      <div data-hf-id="hf-fh17" id="02-tres-pasos-notebook">
+        <div data-hf-id="hf-nv70" class="02-tres-pasos-page"></div>
+        <div data-hf-id="hf-gcby" class="02-tres-pasos-spiral">
+          <span data-hf-id="hf-36m6" class="02-tres-pasos-ring"></span><span data-hf-id="hf-dlwi" class="02-tres-pasos-ring"></span><span data-hf-id="hf-e07j" class="02-tres-pasos-ring"></span>
+          <span data-hf-id="hf-eeik" class="02-tres-pasos-ring"></span><span data-hf-id="hf-estl" class="02-tres-pasos-ring"></span><span data-hf-id="hf-f74m" class="02-tres-pasos-ring"></span>
+          <span data-hf-id="hf-flfn" class="02-tres-pasos-ring"></span><span data-hf-id="hf-fzqo" class="02-tres-pasos-ring"></span><span data-hf-id="hf-a159" class="02-tres-pasos-ring"></span>
+          <span data-hf-id="hf-afga" class="02-tres-pasos-ring"></span><span data-hf-id="hf-udee" class="02-tres-pasos-ring"></span>
+        </div>
+
+        <!-- Row 1: dinero disponible -->
+        <div data-hf-id="hf-hfx0" class="02-tres-pasos-row" id="02-tres-pasos-row1" style="top:120px;">
+          <div data-hf-id="hf-okjb" class="02-tres-pasos-icon" id="02-tres-pasos-icon1">
+            <svg data-hf-id="hf-d8dp" viewBox="0 0 150 150">
+              <!-- bill -->
+              <rect data-hf-id="hf-u8sg" x="22" y="44" width="88" height="54" rx="10" fill="rgba(43,168,74,0.30)" stroke="#0B2545" stroke-width="6" stroke-linejoin="round" />
+              <circle data-hf-id="hf-78wj" cx="66" cy="71" r="12" fill="#FFFFFF" stroke="#0B2545" stroke-width="5" />
+              <!-- coins -->
+              <g data-hf-id="hf-9t5g" id="02-tres-pasos-coins">
+                <ellipse data-hf-id="hf-squx" cx="104" cy="118" rx="24" ry="9" fill="#23963F" stroke="#0B2545" stroke-width="5" />
+                <ellipse data-hf-id="hf-5b8k" cx="104" cy="106" rx="24" ry="9" fill="#23963F" stroke="#0B2545" stroke-width="5" />
+                <ellipse data-hf-id="hf-ilec" cx="104" cy="94" rx="24" ry="9" fill="#23963F" stroke="#0B2545" stroke-width="5" />
+              </g>
+            </svg>
+          </div>
+          <div data-hf-id="hf-1lbc" class="02-tres-pasos-text">
+            <span data-hf-id="hf-w812" class="02-tres-pasos-line"><span data-hf-id="hf-do91" class="02-tres-pasos-line-text" id="02-tres-pasos-t1a">Revisa cuánto</span></span>
+            <span data-hf-id="hf-bk8a" class="02-tres-pasos-line"><span data-hf-id="hf-332m" class="02-tres-pasos-line-text" id="02-tres-pasos-t1b">tienes</span></span>
+          </div>
+          <svg data-hf-id="hf-sbop" class="02-tres-pasos-check" viewBox="0 0 80 80">
+            <circle data-hf-id="hf-j571" id="02-tres-pasos-check-ring" cx="40" cy="40" r="36" fill="#23963F" />
+            <path data-hf-id="hf-c03e" id="02-tres-pasos-check-path" d="M22 41 L35 54 L59 28" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+
+        <!-- Row 2: lo indispensable -->
+        <div data-hf-id="hf-gokw" class="02-tres-pasos-row" id="02-tres-pasos-row2" style="top:400px;">
+          <div data-hf-id="hf-hgp7" class="02-tres-pasos-row-tint" id="02-tres-pasos-tint2"></div>
+          <div data-hf-id="hf-jymk" class="02-tres-pasos-icon" id="02-tres-pasos-icon2">
+            <svg data-hf-id="hf-8m01" viewBox="0 0 150 150">
+              <!-- basket (top-left) -->
+              <g data-hf-id="hf-dure" id="02-tres-pasos-mini-basket">
+                <path data-hf-id="hf-c6u7" d="M30 40 Q44 22 58 40" fill="none" stroke="#0B2545" stroke-width="4.5" stroke-linecap="round" />
+                <path data-hf-id="hf-y3ls" d="M24 42 H64 L58 66 H30 Z" fill="#23963F" stroke="#0B2545" stroke-width="4.5" stroke-linejoin="round" />
+              </g>
+              <!-- cross (top-right) -->
+              <g data-hf-id="hf-hplg" id="02-tres-pasos-mini-cross">
+                <path data-hf-id="hf-scis" d="M100 26 H112 V38 H124 V50 H112 V62 H100 V50 H88 V38 H100 Z" fill="rgba(43,168,74,0.35)" stroke="#0B2545" stroke-width="4.5" stroke-linejoin="round" />
+              </g>
+              <!-- house (bottom-left) -->
+              <g data-hf-id="hf-c74g" id="02-tres-pasos-mini-house">
+                <path data-hf-id="hf-gut5" d="M26 100 L44 84 L62 100 V122 H26 Z" fill="rgba(43,168,74,0.35)" stroke="#0B2545" stroke-width="4.5" stroke-linejoin="round" />
+                <rect data-hf-id="hf-j8ph" x="39" y="106" width="10" height="16" rx="2" fill="#0B2545" />
+              </g>
+              <!-- bus (bottom-right) -->
+              <g data-hf-id="hf-iw4e" id="02-tres-pasos-mini-bus">
+                <rect data-hf-id="hf-n9hk" x="86" y="84" width="40" height="32" rx="7" fill="#23963F" stroke="#0B2545" stroke-width="4.5" />
+                <rect data-hf-id="hf-7otl" x="92" y="90" width="28" height="10" rx="2" fill="#FFFFFF" />
+                <circle data-hf-id="hf-sqey" cx="96" cy="120" r="5" fill="#0B2545" />
+                <circle data-hf-id="hf-f5t3" cx="116" cy="120" r="5" fill="#0B2545" />
+              </g>
+            </svg>
+          </div>
+          <div data-hf-id="hf-g3ds" class="02-tres-pasos-text">
+            <span data-hf-id="hf-byjb" class="02-tres-pasos-line"><span data-hf-id="hf-f3yg" class="02-tres-pasos-hl" id="02-tres-pasos-hl1"></span><span data-hf-id="hf-sbad" class="02-tres-pasos-line-text" id="02-tres-pasos-t2a">Identifica lo</span></span>
+            <span data-hf-id="hf-ccuc" class="02-tres-pasos-line"><span data-hf-id="hf-pzg3" class="02-tres-pasos-hl" id="02-tres-pasos-hl2"></span><span data-hf-id="hf-h0hg" class="02-tres-pasos-line-text" id="02-tres-pasos-t2b">indispensable</span></span>
+          </div>
+        </div>
+
+        <!-- Row 3: puede esperar -->
+        <div data-hf-id="hf-qn3p" class="02-tres-pasos-row" id="02-tres-pasos-row3" style="top:680px;">
+          <div data-hf-id="hf-gob9" class="02-tres-pasos-icon" id="02-tres-pasos-icon3">
+            <svg data-hf-id="hf-9sx4" viewBox="0 0 150 150">
+              <g data-hf-id="hf-cxy0" id="02-tres-pasos-hourglass">
+                <rect data-hf-id="hf-e5li" x="44" y="26" width="62" height="10" rx="5" fill="#0B2545" />
+                <rect data-hf-id="hf-fxbg" x="44" y="114" width="62" height="10" rx="5" fill="#0B2545" />
+                <path data-hf-id="hf-qsfg" d="M52 36 C52 62 98 62 98 36" fill="none" stroke="#0B2545" stroke-width="6" stroke-linecap="round" />
+                <path data-hf-id="hf-vml2" d="M52 114 C52 88 98 88 98 114" fill="none" stroke="#0B2545" stroke-width="6" stroke-linecap="round" />
+                <path data-hf-id="hf-plc7" d="M52 36 C52 58 72 70 75 75 C78 70 98 58 98 36" fill="none" stroke="#0B2545" stroke-width="6" stroke-linejoin="round" />
+                <path data-hf-id="hf-jqj7" d="M52 114 C52 92 72 80 75 75 C78 80 98 92 98 114" fill="none" stroke="#0B2545" stroke-width="6" stroke-linejoin="round" />
+                <path data-hf-id="hf-307n" id="02-tres-pasos-sand-top" d="M60 44 H90 C88 56 78 64 75 68 C72 64 62 56 60 44 Z" fill="#23963F" />
+                <path data-hf-id="hf-5uaq" id="02-tres-pasos-sand-bot" d="M58 110 C62 98 70 94 75 92 C80 94 88 98 92 110 Z" fill="#23963F" />
+              </g>
+            </svg>
+          </div>
+          <div data-hf-id="hf-ewgp" class="02-tres-pasos-text">
+            <span data-hf-id="hf-cr5d" class="02-tres-pasos-line"><span data-hf-id="hf-027t" class="02-tres-pasos-line-text" id="02-tres-pasos-t3a">Pospón gastos</span></span>
+            <span data-hf-id="hf-d5ge" class="02-tres-pasos-line"><span data-hf-id="hf-9gwr" class="02-tres-pasos-line-text" id="02-tres-pasos-t3b">no esenciales</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      window.__timelines = window.__timelines || {};
+      var root = document.querySelector('[data-composition-id="02-tres-pasos"]');
+      function q(id) { return root.querySelector('[id="02-tres-pasos-' + id + '"]'); }
+
+      var tl = gsap.timeline({ paused: true });
+      var OUT = "power3.out";
+      var WIPE_FROM = { clipPath: "inset(-10% 100% -10% 0%)" };
+      var WIPE_TO = { clipPath: "inset(-10% -2% -10% 0%)", ease: "power2.inOut" };
+
+      // Ambient: progress bar advances across this frame's share of the video
+      tl.fromTo(q("progress-fill"), { scaleX: 0.1134 }, { scaleX: 0.2446, duration: 7.87, ease: "none" }, 0);
+
+      // Scene 1 (0.0–0.5): notebook rises in, header pill above
+      tl.fromTo(q("notebook"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: OUT }, 0);
+      tl.fromTo(q("pill"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: OUT }, 0.12);
+
+      // Rows start hidden (fromTo handles it at their cue)
+      // Scene 2 (0.5–2.7): "cuánto dinero tienes disponible" — row 1 written, check draws
+      tl.fromTo(q("icon1"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: OUT }, 0.48);
+      tl.fromTo(q("coins"), { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: OUT }, 0.75);
+      tl.fromTo(q("t1a"), WIPE_FROM, Object.assign({ duration: 0.55 }, WIPE_TO), 0.55);
+      tl.fromTo(q("t1b"), WIPE_FROM, Object.assign({ duration: 0.35 }, WIPE_TO), 1.08);
+      tl.fromTo(q("check-ring"), { opacity: 0, scale: 0.6, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.4, ease: OUT }, 1.66);
+      var cp = q("check-path");
+      var clen = (cp.getTotalLength && cp.getTotalLength()) || 60;
+      tl.fromTo(cp, { strokeDasharray: clen, strokeDashoffset: clen }, { strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, 1.82);
+
+      // Scene 3 (2.7–5.1): "identifica tus gastos indispensables" — row 2 + marker highlight
+      tl.fromTo(q("icon2"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: OUT }, 2.69);
+      ["mini-basket", "mini-cross", "mini-house", "mini-bus"].forEach(function (id, i) {
+        tl.fromTo(q(id), { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.45, ease: OUT }, 2.8 + i * 0.12);
+      });
+      tl.fromTo(q("t2a"), WIPE_FROM, Object.assign({ duration: 0.5 }, WIPE_TO), 2.78);
+      tl.fromTo(q("t2b"), WIPE_FROM, Object.assign({ duration: 0.55 }, WIPE_TO), 3.25);
+      // highlight sweep (css-marker-patterns · highlight mode)
+      tl.fromTo([q("hl1"), q("hl2")], { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.out", stagger: 0.3 }, 3.72);
+      tl.fromTo(q("tint2"), { opacity: 0 }, { opacity: 1, duration: 0.6, ease: OUT }, 4.35);
+
+      // Scene 4 (5.1–7.9): "pospón … pueden esperar" — row 3 enters, then dims and steps aside
+      tl.fromTo(q("icon3"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: OUT }, 5.12);
+      tl.fromTo(q("t3a"), WIPE_FROM, Object.assign({ duration: 0.5 }, WIPE_TO), 5.2);
+      tl.fromTo(q("t3b"), WIPE_FROM, Object.assign({ duration: 0.5 }, WIPE_TO), 5.62);
+      // live SVG detail: sand slowly runs down
+      tl.fromTo(q("sand-top"), { scaleY: 1, transformOrigin: "50% 100%" }, { scaleY: 0.35, duration: 2.6, ease: "none" }, 5.27);
+      tl.fromTo(q("sand-bot"), { scaleY: 0.4, transformOrigin: "50% 100%" }, { scaleY: 1, duration: 2.6, ease: "none" }, 5.27);
+      // "pueden esperar": de-emphasise
+      tl.fromTo(q("row3"), { opacity: 1, x: 0 }, { opacity: 0.45, x: 40, duration: 0.8, ease: OUT }, 6.28);
+
+      window.__timelines["02-tres-pasos"] = tl;
+    })();
+  </script>
+</template>

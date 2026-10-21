@@ -1,0 +1,3797 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 129,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "caption_track_kind_missing",
+        "severity": "warning",
+        "message": "<div id=\"el-captions\"> looks like captions but is not marked as such, so the timeline cannot group it on the caption track.",
+        "selector": "#el-captions",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add data-track-kind=\"captions\" to <div id=\"el-captions\">."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-bg\" starts with a digit, so the common selector `#02-tres-pasos-bg` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-bg",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-dots\" starts with a digit, so the common selector `#02-tres-pasos-dots` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-dots",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-halo\" starts with a digit, so the common selector `#02-tres-pasos-halo` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-halo",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-stage\" starts with a digit, so the common selector `#02-tres-pasos-stage` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-stage",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-progress\" starts with a digit, so the common selector `#02-tres-pasos-progress` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-progress",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-progress-fill\" starts with a digit, so the common selector `#02-tres-pasos-progress-fill` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-progress-fill",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-header\" starts with a digit, so the common selector `#02-tres-pasos-header` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-header",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-pill\" starts with a digit, so the common selector `#02-tres-pasos-pill` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-pill",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-notebook\" starts with a digit, so the common selector `#02-tres-pasos-notebook` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-notebook",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-row1\" starts with a digit, so the common selector `#02-tres-pasos-row1` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-row1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-icon1\" starts with a digit, so the common selector `#02-tres-pasos-icon1` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-icon1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-coins\" starts with a digit, so the common selector `#02-tres-pasos-coins` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-coins",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-t1a\" starts with a digit, so the common selector `#02-tres-pasos-t1a` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-t1a",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-t1b\" starts with a digit, so the common selector `#02-tres-pasos-t1b` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-t1b",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-check-ring\" starts with a digit, so the common selector `#02-tres-pasos-check-ring` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-check-ring",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-check-path\" starts with a digit, so the common selector `#02-tres-pasos-check-path` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-check-path",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-row2\" starts with a digit, so the common selector `#02-tres-pasos-row2` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-row2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-tint2\" starts with a digit, so the common selector `#02-tres-pasos-tint2` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-tint2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-icon2\" starts with a digit, so the common selector `#02-tres-pasos-icon2` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-icon2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-mini-basket\" starts with a digit, so the common selector `#02-tres-pasos-mini-basket` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-mini-basket",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-mini-cross\" starts with a digit, so the common selector `#02-tres-pasos-mini-cross` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-mini-cross",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-mini-house\" starts with a digit, so the common selector `#02-tres-pasos-mini-house` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-mini-house",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-mini-bus\" starts with a digit, so the common selector `#02-tres-pasos-mini-bus` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-mini-bus",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-hl1\" starts with a digit, so the common selector `#02-tres-pasos-hl1` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-hl1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-t2a\" starts with a digit, so the common selector `#02-tres-pasos-t2a` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-t2a",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-hl2\" starts with a digit, so the common selector `#02-tres-pasos-hl2` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-hl2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-t2b\" starts with a digit, so the common selector `#02-tres-pasos-t2b` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-t2b",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-row3\" starts with a digit, so the common selector `#02-tres-pasos-row3` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-row3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-icon3\" starts with a digit, so the common selector `#02-tres-pasos-icon3` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-icon3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-hourglass\" starts with a digit, so the common selector `#02-tres-pasos-hourglass` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-hourglass",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-sand-top\" starts with a digit, so the common selector `#02-tres-pasos-sand-top` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-sand-top",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-sand-bot\" starts with a digit, so the common selector `#02-tres-pasos-sand-bot` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-sand-bot",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-t3a\" starts with a digit, so the common selector `#02-tres-pasos-t3a` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-t3a",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-tres-pasos-t3b\" starts with a digit, so the common selector `#02-tres-pasos-t3b` throws a SyntaxError in querySelector().",
+        "selector": "#02-tres-pasos-t3b",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-tres-pasos-bg\"]\" sets inset through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-tres-pasos-bg\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-tres-pasos-bg` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-tres-pasos-dots\"]\" sets inset through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-tres-pasos-dots\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-tres-pasos-dots` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-tres-pasos-halo\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-tres-pasos-halo\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-tres-pasos-halo` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-tres-pasos-progress\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-tres-pasos-progress\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-tres-pasos-progress` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-tres-pasos-progress-fill\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-tres-pasos-progress-fill\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-tres-pasos-progress-fill` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-tres-pasos-header\"]\" sets left/right/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-tres-pasos-header\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-tres-pasos-header` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-tres-pasos-notebook\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-tres-pasos-notebook\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/02-tres-pasos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-tres-pasos-notebook` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-bg\" starts with a digit, so the common selector `#06-transporte-bg` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-bg",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-progress-track\" starts with a digit, so the common selector `#06-transporte-progress-track` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-progress-track",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-progress-fill\" starts with a digit, so the common selector `#06-transporte-progress-fill` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-progress-fill",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-layer\" starts with a digit, so the common selector `#06-transporte-layer` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-layer",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-pill\" starts with a digit, so the common selector `#06-transporte-pill` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-pill",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-title\" starts with a digit, so the common selector `#06-transporte-title` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-title",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-card\" starts with a digit, so the common selector `#06-transporte-card` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-card",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-scene\" starts with a digit, so the common selector `#06-transporte-scene` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-scene",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-route-mask\" starts with a digit, so the common selector `#06-transporte-route-mask` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-route-mask",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-route-reveal\" starts with a digit, so the common selector `#06-transporte-route-reveal` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-route-reveal",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-road-g\" starts with a digit, so the common selector `#06-transporte-road-g` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-road-g",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-road\" starts with a digit, so the common selector `#06-transporte-road` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-road",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-route\" starts with a digit, so the common selector `#06-transporte-route` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-route",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-health\" starts with a digit, so the common selector `#06-transporte-health` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-health",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-meet\" starts with a digit, so the common selector `#06-transporte-meet` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-meet",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-meet-ring\" starts with a digit, so the common selector `#06-transporte-meet-ring` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-meet-ring",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-sign\" starts with a digit, so the common selector `#06-transporte-sign` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-sign",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-ticket\" starts with a digit, so the common selector `#06-transporte-ticket` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-ticket",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-drop\" starts with a digit, so the common selector `#06-transporte-drop` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-drop",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-car\" starts with a digit, so the common selector `#06-transporte-car` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-car",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-car-w1\" starts with a digit, so the common selector `#06-transporte-car-w1` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-car-w1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-car-w2\" starts with a digit, so the common selector `#06-transporte-car-w2` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-car-w2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-bus\" starts with a digit, so the common selector `#06-transporte-bus` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-bus",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-bus-w1\" starts with a digit, so the common selector `#06-transporte-bus-w1` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-bus-w1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-bus-w2\" starts with a digit, so the common selector `#06-transporte-bus-w2` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-bus-w2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-subtitle\" starts with a digit, so the common selector `#06-transporte-subtitle` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-subtitle",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transporte-chips\" starts with a digit, so the common selector `#06-transporte-chips` throws a SyntaxError in querySelector().",
+        "selector": "#06-transporte-chips",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"06-transporte-bg\"]\" sets inset through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"06-transporte-bg\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 6-transporte-bg` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"06-transporte-progress-track\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"06-transporte-progress-track\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 6-transporte-progress-track` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"06-transporte-progress-fill\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"06-transporte-progress-fill\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 6-transporte-progress-fill` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"06-transporte-pill\"]\" sets left/right/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"06-transporte-pill\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 6-transporte-pill` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"06-transporte-title\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"06-transporte-title\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 6-transporte-title` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"06-transporte-card\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"06-transporte-card\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 6-transporte-card` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"06-transporte-scene\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"06-transporte-scene\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 6-transporte-scene` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"06-transporte-subtitle\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"06-transporte-subtitle\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 6-transporte-subtitle` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"06-transporte-chips\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"06-transporte-chips\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 6-transporte-chips` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-bg\" starts with a digit, so the common selector `#07-ajusta-reserva-bg` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-bg",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-progress\" starts with a digit, so the common selector `#07-ajusta-reserva-progress` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-progress",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-stage\" starts with a digit, so the common selector `#07-ajusta-reserva-stage` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-stage",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-title\" starts with a digit, so the common selector `#07-ajusta-reserva-title` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-title",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-links\" starts with a digit, so the common selector `#07-ajusta-reserva-links` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-links",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-link-a\" starts with a digit, so the common selector `#07-ajusta-reserva-link-a` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-link-a",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-link-b\" starts with a digit, so the common selector `#07-ajusta-reserva-link-b` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-link-b",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-link-c\" starts with a digit, so the common selector `#07-ajusta-reserva-link-c` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-link-c",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-link-d\" starts with a digit, so the common selector `#07-ajusta-reserva-link-d` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-link-d",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-card-a\" starts with a digit, so the common selector `#07-ajusta-reserva-card-a` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-card-a",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-knob-a\" starts with a digit, so the common selector `#07-ajusta-reserva-knob-a` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-knob-a",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-card-b\" starts with a digit, so the common selector `#07-ajusta-reserva-card-b` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-card-b",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-knob-b\" starts with a digit, so the common selector `#07-ajusta-reserva-knob-b` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-knob-b",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-card-c\" starts with a digit, so the common selector `#07-ajusta-reserva-card-c` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-card-c",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-knob-c\" starts with a digit, so the common selector `#07-ajusta-reserva-knob-c` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-knob-c",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-card-d\" starts with a digit, so the common selector `#07-ajusta-reserva-card-d` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-card-d",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-knob-d\" starts with a digit, so the common selector `#07-ajusta-reserva-knob-d` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-knob-d",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-book\" starts with a digit, so the common selector `#07-ajusta-reserva-book` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-book",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-book-cover\" starts with a digit, so the common selector `#07-ajusta-reserva-book-cover` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-book-cover",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-book-label\" starts with a digit, so the common selector `#07-ajusta-reserva-book-label` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-book-label",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-jar\" starts with a digit, so the common selector `#07-ajusta-reserva-jar` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-jar",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-coin-1\" starts with a digit, so the common selector `#07-ajusta-reserva-coin-1` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-coin-1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-coin-2\" starts with a digit, so the common selector `#07-ajusta-reserva-coin-2` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-coin-2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-coin-3\" starts with a digit, so the common selector `#07-ajusta-reserva-coin-3` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-coin-3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-coin-4\" starts with a digit, so the common selector `#07-ajusta-reserva-coin-4` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-coin-4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-coin-5\" starts with a digit, so the common selector `#07-ajusta-reserva-coin-5` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-coin-5",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-jar-lid\" starts with a digit, so the common selector `#07-ajusta-reserva-jar-lid` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-jar-lid",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-jar-slot\" starts with a digit, so the common selector `#07-ajusta-reserva-jar-slot` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-jar-slot",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-jar-body\" starts with a digit, so the common selector `#07-ajusta-reserva-jar-body` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-jar-body",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-jar-fill\" starts with a digit, so the common selector `#07-ajusta-reserva-jar-fill` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-jar-fill",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-jar-tag\" starts with a digit, so the common selector `#07-ajusta-reserva-jar-tag` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-jar-tag",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-ajusta-reserva-sub\" starts with a digit, so the common selector `#07-ajusta-reserva-sub` throws a SyntaxError in querySelector().",
+        "selector": "#07-ajusta-reserva-sub",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-bg\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-bg\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-bg` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-progress\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-progress\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-progress` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-stage\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-stage\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-stage` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-title\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-title\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-title` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-links\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-links\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-links` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-card-a\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-card-a\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-card-a` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-card-b\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-card-b\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-card-b` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-card-c\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-card-c\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-card-c` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-card-d\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-card-d\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-card-d` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-book\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-book\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-book` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-book-cover\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-book-cover\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-book-cover` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-book-label\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-book-label\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-book-label` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-jar\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-jar\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-jar` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-jar-body\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-jar-body\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-jar-body` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-jar-fill\"]\" sets left/bottom through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-jar-fill\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-jar-fill` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-jar-lid\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-jar-lid\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-jar-lid` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-jar-slot\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-jar-slot\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-jar-slot` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-jar-tag\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-jar-tag\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-jar-tag` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"07-ajusta-reserva-sub\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"07-ajusta-reserva-sub\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videos/presupuesto-emergencia-el-nino/compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 7-ajusta-reserva-sub` instead; id specificity beats any selector built only from classes."
+      }
+    ],
+    "filesScanned": 10
+  },
+  "runtime": {
+    "ok": false,
+    "errorCount": 2,
+    "warningCount": 8,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "request_failed",
+        "severity": "error",
+        "message": "Failed to load npm/gsap@3.14.2/dist/gsap.min.js: net::ERR_TUNNEL_CONNECTION_FAILED",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"
+      },
+      {
+        "code": "page_error",
+        "severity": "error",
+        "message": "Cannot read properties of undefined (reading 'timeline')",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-01-apertura-voice\" is 6.10s but its slot (data-duration) is 6.80s — the slot is shortened to the media length when rendered. Set data-duration to ~6.10s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-02-tres-pasos-voice\" is 7.17s but its slot (data-duration) is 7.87s — the slot is shortened to the media length when rendered. Set data-duration to ~7.17s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-03-alimentacion-voice\" is 7.98s but its slot (data-duration) is 8.68s — the slot is shortened to the media length when rendered. Set data-duration to ~7.98s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-04-salud-voice\" is 8.47s but its slot (data-duration) is 9.17s — the slot is shortened to the media length when rendered. Set data-duration to ~8.47s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-05-vivienda-voice\" is 6.63s but its slot (data-duration) is 7.33s — the slot is shortened to the media length when rendered. Set data-duration to ~6.63s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-06-transporte-voice\" is 8.62s but its slot (data-duration) is 9.32s — the slot is shortened to the media length when rendered. Set data-duration to ~8.62s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-07-ajusta-reserva-voice\" is 5.44s but its slot (data-duration) is 6.14s — the slot is shortened to the media length when rendered. Set data-duration to ~5.44s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-08-cierre-voice\" is 3.67s but its slot (data-duration) is 4.67s — the slot is shortened to the media length when rendered. Set data-duration to ~3.67s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "59.98",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 13,
+    "infoCount": 25,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 6.855,
+        "selector": "#a01-apertura-pill",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 350.72,
+          "top": 234,
+          "right": 729.28,
+          "bottom": 282,
+          "width": 378.56,
+          "height": 48
+        },
+        "containerSelector": "#\\30 2-tres-pasos-pill",
+        "text": "Fenómeno de El Niño",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 350.72,
+          "y": 234,
+          "width": 378.56,
+          "height": 48
+        },
+        "firstSeen": 6.855,
+        "lastSeen": 7.198,
+        "occurrences": 2,
+        "heldMs": 343,
+        "times": [
+          6.855,
+          7.198
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 6.855,
+        "selector": "#a01-apertura-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 188.78,
+          "top": 314,
+          "right": 891.22,
+          "bottom": 535.83,
+          "width": 702.44,
+          "height": 221.83
+        },
+        "containerSelector": "#\\30 2-tres-pasos-t1a",
+        "text": "Prepara tu presupuesto de emergencia",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 188.78,
+          "y": 314,
+          "width": 702.44,
+          "height": 221.83
+        },
+        "firstSeen": 6.855,
+        "lastSeen": 7.198,
+        "occurrences": 2,
+        "heldMs": 343,
+        "times": [
+          6.855,
+          7.198
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 6.855,
+        "selector": "span.a01-apertura-accent",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 278.53,
+          "top": 513.66,
+          "right": 801.45,
+          "bottom": 635.66,
+          "width": 522.92,
+          "height": 122
+        },
+        "containerSelector": "#\\30 2-tres-pasos-t1a",
+        "text": "emergencia",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 278.53,
+          "y": 513.66,
+          "width": 522.92,
+          "height": 122
+        },
+        "firstSeen": 6.855,
+        "lastSeen": 7.198,
+        "occurrences": 2,
+        "heldMs": 343,
+        "times": [
+          6.855,
+          7.198
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 32.561,
+        "selector": "#s04-pill",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 345.23,
+          "top": 182,
+          "right": 734.75,
+          "bottom": 216,
+          "width": 389.52,
+          "height": 34
+        },
+        "containerSelector": "#vivienda-05-pill",
+        "text": "Presupuesto de emergencia",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-salud.html",
+        "bbox": {
+          "x": 345.23,
+          "y": 182,
+          "width": 389.52,
+          "height": 34
+        },
+        "firstSeen": 32.561,
+        "lastSeen": 32.903,
+        "occurrences": 2,
+        "heldMs": 341.99999999999875,
+        "times": [
+          32.561,
+          32.903
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 32.561,
+        "selector": "#s04-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 360,
+          "top": 253,
+          "right": 720,
+          "bottom": 406,
+          "width": 360,
+          "height": 153
+        },
+        "containerSelector": "#vivienda-05-title",
+        "text": "SALUD",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-salud.html",
+        "bbox": {
+          "x": 360,
+          "y": 253,
+          "width": 360,
+          "height": 153
+        },
+        "firstSeen": 32.561,
+        "lastSeen": 32.903,
+        "occurrences": 2,
+        "heldMs": 341.99999999999875,
+        "times": [
+          32.561,
+          32.903
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 32.561,
+        "selector": "#s04-sub",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 221,
+          "top": 1251,
+          "right": 859,
+          "bottom": 1379,
+          "width": 638,
+          "height": 128
+        },
+        "containerSelector": "#vivienda-05-subtitle",
+        "text": "Medicamentos habituales y atención necesaria",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-salud.html",
+        "bbox": {
+          "x": 221,
+          "y": 1251,
+          "width": 638,
+          "height": 128
+        },
+        "firstSeen": 32.561,
+        "lastSeen": 32.903,
+        "occurrences": 2,
+        "heldMs": 341.99999999999875,
+        "times": [
+          32.561,
+          32.903
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 32.561,
+        "selector": "#s04-chips > div:nth-of-type(1) > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 108.11,
+          "top": 1542,
+          "right": 296.88,
+          "bottom": 1581,
+          "width": 188.77,
+          "height": 39
+        },
+        "containerSelector": "#vivienda-05-chips > div:nth-of-type(1) > div:nth-of-type(2)",
+        "text": "Alimentación",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-salud.html",
+        "bbox": {
+          "x": 108.11,
+          "y": 1542,
+          "width": 188.77,
+          "height": 39
+        },
+        "firstSeen": 32.561,
+        "lastSeen": 32.903,
+        "occurrences": 2,
+        "heldMs": 341.99999999999875,
+        "times": [
+          32.561,
+          32.903
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 32.561,
+        "selector": "#s04-chip-label-on",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 387,
+          "top": 1542,
+          "right": 468,
+          "bottom": 1581,
+          "width": 81,
+          "height": 39
+        },
+        "containerSelector": "#vivienda-05-chips > div:nth-of-type(2) > div:nth-of-type(2)",
+        "text": "Salud",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-salud.html",
+        "bbox": {
+          "x": 387,
+          "y": 1542,
+          "width": 81,
+          "height": 39
+        },
+        "firstSeen": 32.561,
+        "lastSeen": 32.903,
+        "occurrences": 2,
+        "heldMs": 341.99999999999875,
+        "times": [
+          32.561,
+          32.903
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 32.561,
+        "selector": "#s04-chips > div:nth-of-type(3) > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 591.02,
+          "top": 1542,
+          "right": 713.97,
+          "bottom": 1581,
+          "width": 122.95,
+          "height": 39
+        },
+        "containerSelector": "div.vivienda-05-chip.vivienda-05-chip-active > div:nth-of-type(2)",
+        "text": "Vivienda",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-salud.html",
+        "bbox": {
+          "x": 591.02,
+          "y": 1542,
+          "width": 122.95,
+          "height": 39
+        },
+        "firstSeen": 32.561,
+        "lastSeen": 32.903,
+        "occurrences": 2,
+        "heldMs": 341.99999999999875,
+        "times": [
+          32.561,
+          32.903
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 32.561,
+        "selector": "#s04-chips > div:nth-of-type(4) > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 798.36,
+          "top": 1542,
+          "right": 956.64,
+          "bottom": 1581,
+          "width": 158.28,
+          "height": 39
+        },
+        "containerSelector": "#vivienda-05-chips > div:nth-of-type(4) > div:nth-of-type(2)",
+        "text": "Transporte",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-salud.html",
+        "bbox": {
+          "x": 798.36,
+          "y": 1542,
+          "width": 158.28,
+          "height": 39
+        },
+        "firstSeen": 32.561,
+        "lastSeen": 32.903,
+        "occurrences": 2,
+        "heldMs": 341.99999999999875,
+        "times": [
+          32.561,
+          32.903
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 49.355,
+        "selector": "#\\30 6-transporte-pill",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 337.25,
+          "top": 182,
+          "right": 742.73,
+          "bottom": 218,
+          "width": 405.48,
+          "height": 36
+        },
+        "containerSelector": "#\\30 7-ajusta-reserva-title",
+        "text": "Presupuesto de emergencia",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 337.25,
+          "y": 182,
+          "width": 405.48,
+          "height": 36
+        },
+        "firstSeen": 49.355,
+        "lastSeen": 49.698,
+        "occurrences": 2,
+        "heldMs": 343.0000000000035,
+        "times": [
+          49.355,
+          49.698
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 49.355,
+        "selector": "#\\30 6-transporte-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 181.67,
+          "top": 253,
+          "right": 898.31,
+          "bottom": 406,
+          "width": 716.64,
+          "height": 153
+        },
+        "containerSelector": "#\\30 7-ajusta-reserva-title",
+        "text": "TRANSPORTE",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 181.67,
+          "y": 253,
+          "width": 716.64,
+          "height": 153
+        },
+        "firstSeen": 49.355,
+        "lastSeen": 49.698,
+        "occurrences": 2,
+        "heldMs": 343.0000000000035,
+        "times": [
+          49.355,
+          49.698
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "warning",
+        "time": 49.355,
+        "selector": "#\\30 6-transporte-subtitle",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 177.89,
+          "top": 1251,
+          "right": 902.09,
+          "bottom": 1379,
+          "width": 724.2,
+          "height": 128
+        },
+        "containerSelector": "#\\30 7-ajusta-reserva-sub",
+        "text": "Traslados esenciales y salida segura",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 177.89,
+          "y": 1251,
+          "width": 724.2,
+          "height": 128
+        },
+        "firstSeen": 49.355,
+        "lastSeen": 49.698,
+        "occurrences": 2,
+        "heldMs": 343.0000000000035,
+        "times": [
+          49.355,
+          49.698
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "div.a03-pill",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 337.25,
+          "top": 182,
+          "right": 742.73,
+          "bottom": 218,
+          "width": 405.48,
+          "height": 36
+        },
+        "containerSelector": "#s04-pill",
+        "text": "Presupuesto de emergencia",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 337.25,
+          "y": 182,
+          "width": 405.48,
+          "height": 36
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "#a03-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 137.27,
+          "top": 257,
+          "right": 942.72,
+          "bottom": 410,
+          "width": 805.45,
+          "height": 153
+        },
+        "containerSelector": "#s04-title",
+        "text": "ALIMENTACIÓN",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 137.27,
+          "y": 257,
+          "width": 805.45,
+          "height": 153
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "#a03-w1",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 303.23,
+          "top": 1251,
+          "right": 466.3,
+          "bottom": 1314,
+          "width": 163.07,
+          "height": 63
+        },
+        "containerSelector": "#s04-sub",
+        "text": "Revisa",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 303.23,
+          "y": 1251,
+          "width": 163.07,
+          "height": 63
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "#a03-w2",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 480.17,
+          "top": 1251,
+          "right": 776.77,
+          "bottom": 1314,
+          "width": 296.6,
+          "height": 63
+        },
+        "containerSelector": "#s04-sub",
+        "text": "• Planifica •",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 480.17,
+          "y": 1251,
+          "width": 296.6,
+          "height": 63
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "#a03-w3",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 282.77,
+          "top": 1316,
+          "right": 797.23,
+          "bottom": 1379,
+          "width": 514.46,
+          "height": 63
+        },
+        "containerSelector": "#s04-sub",
+        "text": "Compra lo necesario",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 282.77,
+          "y": 1316,
+          "width": 514.46,
+          "height": 63
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "div.a03-chips > div:nth-of-type(1) > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 109.91,
+          "top": 1545,
+          "right": 295.08,
+          "bottom": 1584,
+          "width": 185.17,
+          "height": 39
+        },
+        "containerSelector": "#s04-chips > div:nth-of-type(1) > div:nth-of-type(1)",
+        "text": "Alimentación Alimentación",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 109.91,
+          "y": 1545,
+          "width": 185.17,
+          "height": 39
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "#a03-chip-label-on",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 109.91,
+          "top": 1545,
+          "right": 295.08,
+          "bottom": 1584,
+          "width": 185.17,
+          "height": 39
+        },
+        "containerSelector": "#s04-chips > div:nth-of-type(1) > div:nth-of-type(1)",
+        "text": "Alimentación",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 109.91,
+          "y": 1545,
+          "width": 185.17,
+          "height": 39
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "div.a03-chips > div:nth-of-type(2) > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 387.75,
+          "top": 1545,
+          "right": 467.25,
+          "bottom": 1584,
+          "width": 79.5,
+          "height": 39
+        },
+        "containerSelector": "#s04-chip-label-on",
+        "text": "Salud",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 387.75,
+          "y": 1545,
+          "width": 79.5,
+          "height": 39
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "div.a03-chips > div:nth-of-type(3) > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 592.22,
+          "top": 1545,
+          "right": 712.77,
+          "bottom": 1584,
+          "width": 120.55,
+          "height": 39
+        },
+        "containerSelector": "#s04-chips > div:nth-of-type(3) > div:nth-of-type(1)",
+        "text": "Vivienda",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 592.22,
+          "y": 1545,
+          "width": 120.55,
+          "height": 39
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 23.649,
+        "selector": "div.a03-chips > div:nth-of-type(4) > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 799.86,
+          "top": 1545,
+          "right": 955.14,
+          "bottom": 1584,
+          "width": 155.28,
+          "height": 39
+        },
+        "containerSelector": "#s04-chips > div:nth-of-type(4) > div:nth-of-type(1)",
+        "text": "Transporte",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 799.86,
+          "y": 1545,
+          "width": 155.28,
+          "height": 39
+        },
+        "firstSeen": 23.649,
+        "lastSeen": 23.649,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.649
+        ]
+      },
+      {
+        "code": "connector_detached",
+        "severity": "info",
+        "time": 36.654,
+        "selector": "#vivienda-05-link-services",
+        "message": "Connector path endpoints render 290px from the nearest anchorable element, but the path's user-space coordinates would attach if read as screen pixels — screen/viewport numbers were likely written into SVG `d` without inverting the CTM.",
+        "rect": {
+          "left": 625.5,
+          "top": 679.5,
+          "right": 703.5,
+          "bottom": 761.5,
+          "width": 78,
+          "height": 82
+        },
+        "containerSelector": "#vivienda-05-art",
+        "fixHint": "Convert measured screen coordinates into the SVG's user space (subtract the SVG rect / invert getScreenCTM) before writing path `d`, and keep the SVG a direct child of the stage.",
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"mask\",\"localName\":\"mask\",\"namespaceURI\":null,\"before\":\"url(#vivienda-05-mask-services)\",\"after\":\"url(#vivienda-05-mask-services)\"}]"
+        },
+        "sourceFile": "compositions/frames/05-vivienda.html",
+        "bbox": {
+          "x": 625.5,
+          "y": 679.5,
+          "width": 78,
+          "height": 82
+        },
+        "firstSeen": 36.654,
+        "lastSeen": 36.654,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          36.654
+        ]
+      },
+      {
+        "code": "connector_orphan",
+        "severity": "info",
+        "time": 36.654,
+        "selector": "#vivienda-05-link-services",
+        "message": "Connector shaft is visible while both endpoints are not on stage.",
+        "rect": {
+          "left": 625.5,
+          "top": 679.5,
+          "right": 703.5,
+          "bottom": 761.5,
+          "width": 78,
+          "height": 82
+        },
+        "containerSelector": "#vivienda-05-art",
+        "fixHint": "Show the shaft only after both ends are on, and hide it with the earlier exit. Do not give the line its own clock.",
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"mask\",\"localName\":\"mask\",\"namespaceURI\":null,\"before\":\"url(#vivienda-05-mask-services)\",\"after\":\"url(#vivienda-05-mask-services)\"}]"
+        },
+        "sourceFile": "compositions/frames/05-vivienda.html",
+        "bbox": {
+          "x": 625.5,
+          "y": 679.5,
+          "width": 78,
+          "height": 82
+        },
+        "firstSeen": 36.654,
+        "lastSeen": 36.654,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          36.654
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.101,
+        "selector": "#vivienda-05-pill",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 309.13,
+          "top": 181,
+          "right": 770.86,
+          "bottom": 217,
+          "width": 461.73,
+          "height": 36
+        },
+        "containerSelector": "#\\30 6-transporte-pill",
+        "text": "PRESUPUESTO DE EMERGENCIA",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-vivienda.html",
+        "bbox": {
+          "x": 309.13,
+          "y": 181,
+          "width": 461.73,
+          "height": 36
+        },
+        "firstSeen": 40.101,
+        "lastSeen": 40.101,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.101
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.101,
+        "selector": "#vivienda-05-title",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 292.67,
+          "top": 253,
+          "right": 787.31,
+          "bottom": 406,
+          "width": 494.64,
+          "height": 153
+        },
+        "containerSelector": "#\\30 6-transporte-title",
+        "text": "VIVIENDA",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-vivienda.html",
+        "bbox": {
+          "x": 292.67,
+          "y": 253,
+          "width": 494.64,
+          "height": 153
+        },
+        "firstSeen": 40.101,
+        "lastSeen": 40.101,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.101
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.101,
+        "selector": "#vivienda-05-subtitle",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 159.06,
+          "top": 1250,
+          "right": 920.94,
+          "bottom": 1313,
+          "width": 761.88,
+          "height": 63
+        },
+        "containerSelector": "#\\30 6-transporte-subtitle",
+        "text": "Un lugar seguro para tu familia",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-vivienda.html",
+        "bbox": {
+          "x": 159.06,
+          "y": 1250,
+          "width": 761.88,
+          "height": 63
+        },
+        "firstSeen": 40.101,
+        "lastSeen": 40.101,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.101
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.101,
+        "selector": "#vivienda-05-chips > div:nth-of-type(1) > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 108.11,
+          "top": 1550,
+          "right": 296.88,
+          "bottom": 1589,
+          "width": 188.77,
+          "height": 39
+        },
+        "containerSelector": "#\\30 6-transporte-chips > div:nth-of-type(1) > div:nth-of-type(2)",
+        "text": "Alimentación",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-vivienda.html",
+        "bbox": {
+          "x": 108.11,
+          "y": 1550,
+          "width": 188.77,
+          "height": 39
+        },
+        "firstSeen": 40.101,
+        "lastSeen": 40.101,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.101
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.101,
+        "selector": "#vivienda-05-chips > div:nth-of-type(2) > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 387,
+          "top": 1550,
+          "right": 468,
+          "bottom": 1589,
+          "width": 81,
+          "height": 39
+        },
+        "containerSelector": "#\\30 6-transporte-chips > div:nth-of-type(2) > div:nth-of-type(2)",
+        "text": "Salud",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-vivienda.html",
+        "bbox": {
+          "x": 387,
+          "y": 1550,
+          "width": 81,
+          "height": 39
+        },
+        "firstSeen": 40.101,
+        "lastSeen": 40.101,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.101
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.101,
+        "selector": "div.vivienda-05-chip.vivienda-05-chip-active > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 590.89,
+          "top": 1550,
+          "right": 714.11,
+          "bottom": 1589,
+          "width": 123.22,
+          "height": 39
+        },
+        "containerSelector": "#\\30 6-transporte-chips > div:nth-of-type(3) > div:nth-of-type(2)",
+        "text": "Vivienda",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-vivienda.html",
+        "bbox": {
+          "x": 590.89,
+          "y": 1550,
+          "width": 123.22,
+          "height": 39
+        },
+        "firstSeen": 40.101,
+        "lastSeen": 40.101,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.101
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 40.101,
+        "selector": "#vivienda-05-chips > div:nth-of-type(4) > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 798.36,
+          "top": 1550,
+          "right": 956.64,
+          "bottom": 1589,
+          "width": 158.28,
+          "height": 39
+        },
+        "containerSelector": "div.\\30 6-transporte-chip.\\30 6-transporte-chip-active > div:nth-of-type(2)",
+        "text": "Transporte",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-vivienda.html",
+        "bbox": {
+          "x": 798.36,
+          "y": 1550,
+          "width": 158.28,
+          "height": 39
+        },
+        "firstSeen": 40.101,
+        "lastSeen": 40.101,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          40.101
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 43.319,
+        "selector": "#\\30 6-transporte-road-g",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -20.5,
+          "top": 634.5,
+          "right": 819.5,
+          "bottom": 1049.5,
+          "width": 840,
+          "height": 415
+        },
+        "containerSelector": "#\\30 6-transporte-scene",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 99.5,
+          "top": 429.5,
+          "right": 979.5,
+          "bottom": 1189.5,
+          "width": 880,
+          "height": 760
+        },
+        "overflow": {
+          "left": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": -20.5,
+          "y": 634.5,
+          "width": 840,
+          "height": 415
+        },
+        "firstSeen": 43.319,
+        "lastSeen": 43.319,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          43.319
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 43.319,
+        "selector": "#\\30 6-transporte-route",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -20.5,
+          "top": 634.5,
+          "right": 819.5,
+          "bottom": 1049.5,
+          "width": 840,
+          "height": 415
+        },
+        "containerSelector": "#\\30 6-transporte-scene",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 99.5,
+          "top": 429.5,
+          "right": 979.5,
+          "bottom": 1189.5,
+          "width": 880,
+          "height": 760
+        },
+        "overflow": {
+          "left": 120
+        },
+        "dataAttributes": {
+          "data-hf-svg-reference-aliases": "[{\"name\":\"mask\",\"localName\":\"mask\",\"namespaceURI\":null,\"before\":\"url(#06-transporte-route-mask)\",\"after\":\"url(#06-transporte-route-mask)\"}]"
+        },
+        "sourceFile": "compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": -20.5,
+          "y": 634.5,
+          "width": 840,
+          "height": 415
+        },
+        "firstSeen": 43.319,
+        "lastSeen": 43.319,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          43.319
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 43.319,
+        "selector": "#\\30 6-transporte-car",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 41.5,
+          "top": 371.5,
+          "right": 159.5,
+          "bottom": 447.5,
+          "width": 118,
+          "height": 76
+        },
+        "containerSelector": "#\\30 6-transporte-scene",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 99.5,
+          "top": 429.5,
+          "right": 979.5,
+          "bottom": 1189.5,
+          "width": 880,
+          "height": 760
+        },
+        "overflow": {
+          "left": 58,
+          "top": 58
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 41.5,
+          "y": 371.5,
+          "width": 118,
+          "height": 76
+        },
+        "firstSeen": 43.319,
+        "lastSeen": 43.319,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          43.319
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 43.319,
+        "selector": "#\\30 6-transporte-bus",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 15.5,
+          "top": 347.5,
+          "right": 183.5,
+          "bottom": 448.5,
+          "width": 168,
+          "height": 101
+        },
+        "containerSelector": "#\\30 6-transporte-scene",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 99.5,
+          "top": 429.5,
+          "right": 979.5,
+          "bottom": 1189.5,
+          "width": 880,
+          "height": 760
+        },
+        "overflow": {
+          "left": 84,
+          "top": 82
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 15.5,
+          "y": 347.5,
+          "width": 168,
+          "height": 101
+        },
+        "firstSeen": 43.319,
+        "lastSeen": 43.319,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          43.319
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 55.524,
+        "selector": "#\\30 7-ajusta-reserva-card-c > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 199.5,
+          "top": 1054,
+          "right": 349.5,
+          "bottom": 1102,
+          "width": 150,
+          "height": 48
+        },
+        "containerSelector": "#cierre-08-l2",
+        "text": "Vivienda",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 199.5,
+          "y": 1054,
+          "width": 150,
+          "height": 48
+        },
+        "firstSeen": 55.524,
+        "lastSeen": 55.524,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          55.524
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 55.524,
+        "selector": "#\\30 7-ajusta-reserva-card-d > div:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 707.92,
+          "top": 1054,
+          "right": 901.08,
+          "bottom": 1102,
+          "width": 193.16,
+          "height": 48
+        },
+        "containerSelector": "#cierre-08-l2",
+        "text": "Transporte",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/07-ajusta-reserva.html",
+        "bbox": {
+          "x": 707.92,
+          "y": 1054,
+          "width": 193.16,
+          "height": 48
+        },
+        "firstSeen": 55.524,
+        "lastSeen": 55.524,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          55.524
+        ]
+      }
+    ],
+    "duration": 59.98,
+    "samples": [
+      3.332,
+      9.997,
+      16.661,
+      23.326,
+      29.99,
+      36.654,
+      43.319,
+      49.983,
+      56.648
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 38,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 5,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.75:1; WCAG AA requires 3:1.",
+        "text": "Fenómeno de El Niño",
+        "fg": "rgb(43,168,74)",
+        "bg": "rgb(232,245,236)",
+        "ratio": 2.75,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(41,160,71)",
+        "large": true,
+        "selector": "#a01-apertura-pill",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 311.71875,
+          "y": 222,
+          "width": 456.5625,
+          "height": 74
+        },
+        "time": 3.332,
+        "times": [
+          3.332
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.9:1; WCAG AA requires 3:1.",
+        "text": "emergencia",
+        "fg": "rgb(43,168,74)",
+        "bg": "rgb(242,250,244)",
+        "ratio": 2.9,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(42,165,73)",
+        "large": true,
+        "selector": "div > div:nth-of-type(1) > div > div:nth-of-type(2) > h1 > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 278.53125,
+          "y": 513.65625,
+          "width": 522.921875,
+          "height": 122
+        },
+        "time": 3.332,
+        "times": [
+          3.332
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.8:1; WCAG AA requires 3:1.",
+        "text": "Presupuesto de emergencia",
+        "fg": "rgb(43,168,74)",
+        "bg": "rgb(234,247,238)",
+        "ratio": 2.8,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(41,161,71)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(2) > div:nth-of-type(2) > div",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/03-alimentacion.html",
+        "bbox": {
+          "x": 303.25,
+          "y": 168,
+          "width": 473.484375,
+          "height": 64
+        },
+        "time": 16.661,
+        "times": [
+          16.661
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.64:1; WCAG AA requires 3:1.",
+        "text": "Presupuesto de emergencia",
+        "fg": "rgb(43,168,74)",
+        "bg": "rgb(226,241,231)",
+        "ratio": 2.64,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(40,156,69)",
+        "large": true,
+        "selector": "#s04-pill",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/04-salud.html",
+        "bbox": {
+          "x": 320,
+          "y": 172,
+          "width": 440,
+          "height": 56
+        },
+        "time": 29.99,
+        "times": [
+          29.99
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.78:1; WCAG AA requires 3:1.",
+        "text": "Presupuesto de emergencia",
+        "fg": "rgb(43,168,74)",
+        "bg": "rgb(234,246,238)",
+        "ratio": 2.78,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(41,161,71)",
+        "large": true,
+        "selector": "#\\30 6-transporte-pill",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-transporte.html",
+        "bbox": {
+          "x": 303.25,
+          "y": 172,
+          "width": 473.484375,
+          "height": 56
+        },
+        "time": 43.319,
+        "times": [
+          43.319
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      3.332,
+      16.661,
+      29.99,
+      43.319,
+      56.648
+    ],
+    "checked": 29,
+    "passed": 24
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

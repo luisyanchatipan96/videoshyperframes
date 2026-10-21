@@ -1,0 +1,849 @@
+{
+  "bgm": null,
+  "bgm_pending": false,
+  "voices": [
+    {
+      "frame": 1,
+      "path": "assets/voice/01.wav",
+      "duration_s": 6.101,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Ante",
+          "start": 0.0,
+          "end": 0.273
+        },
+        {
+          "id": "w1",
+          "text": "posibles",
+          "start": 0.293,
+          "end": 0.687
+        },
+        {
+          "id": "w2",
+          "text": "afectaciones",
+          "start": 0.707,
+          "end": 1.345
+        },
+        {
+          "id": "w3",
+          "text": "del",
+          "start": 1.365,
+          "end": 1.516
+        },
+        {
+          "id": "w4",
+          "text": "fenómeno",
+          "start": 1.536,
+          "end": 2.052
+        },
+        {
+          "id": "w5",
+          "text": "de",
+          "start": 2.072,
+          "end": 2.223
+        },
+        {
+          "id": "w6",
+          "text": "El",
+          "start": 2.243,
+          "end": 2.393
+        },
+        {
+          "id": "w7",
+          "text": "Niño,",
+          "start": 2.413,
+          "end": 2.686
+        },
+        {
+          "id": "w8",
+          "text": "preparar",
+          "start": 3.102,
+          "end": 3.577
+        },
+        {
+          "id": "w9",
+          "text": "tus",
+          "start": 3.597,
+          "end": 3.781
+        },
+        {
+          "id": "w10",
+          "text": "finanzas",
+          "start": 3.801,
+          "end": 4.276
+        },
+        {
+          "id": "w11",
+          "text": "también",
+          "start": 4.296,
+          "end": 4.625
+        },
+        {
+          "id": "w12",
+          "text": "es",
+          "start": 4.645,
+          "end": 4.829
+        },
+        {
+          "id": "w13",
+          "text": "cuidar",
+          "start": 4.849,
+          "end": 5.178
+        },
+        {
+          "id": "w14",
+          "text": "a",
+          "start": 5.198,
+          "end": 5.382
+        },
+        {
+          "id": "w15",
+          "text": "tu",
+          "start": 5.402,
+          "end": 5.586
+        },
+        {
+          "id": "w16",
+          "text": "familia.",
+          "start": 5.606,
+          "end": 6.081
+        }
+      ]
+    },
+    {
+      "frame": 2,
+      "path": "assets/voice/02.wav",
+      "duration_s": 7.168,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Anota",
+          "start": 0.0,
+          "end": 0.467
+        },
+        {
+          "id": "w1",
+          "text": "cuánto",
+          "start": 0.487,
+          "end": 0.81
+        },
+        {
+          "id": "w2",
+          "text": "dinero",
+          "start": 0.83,
+          "end": 1.297
+        },
+        {
+          "id": "w3",
+          "text": "tienes",
+          "start": 1.317,
+          "end": 1.64
+        },
+        {
+          "id": "w4",
+          "text": "disponible,",
+          "start": 1.66,
+          "end": 2.27
+        },
+        {
+          "id": "w5",
+          "text": "identifica",
+          "start": 2.687,
+          "end": 3.49
+        },
+        {
+          "id": "w6",
+          "text": "tus",
+          "start": 3.51,
+          "end": 3.703
+        },
+        {
+          "id": "w7",
+          "text": "gastos",
+          "start": 3.723,
+          "end": 4.069
+        },
+        {
+          "id": "w8",
+          "text": "indispensables",
+          "start": 4.089,
+          "end": 4.892
+        },
+        {
+          "id": "w9",
+          "text": "y",
+          "start": 4.912,
+          "end": 5.105
+        },
+        {
+          "id": "w10",
+          "text": "pospón",
+          "start": 5.125,
+          "end": 5.471
+        },
+        {
+          "id": "w11",
+          "text": "las",
+          "start": 5.491,
+          "end": 5.685
+        },
+        {
+          "id": "w12",
+          "text": "compras",
+          "start": 5.705,
+          "end": 6.051
+        },
+        {
+          "id": "w13",
+          "text": "que",
+          "start": 6.071,
+          "end": 6.264
+        },
+        {
+          "id": "w14",
+          "text": "pueden",
+          "start": 6.284,
+          "end": 6.63
+        },
+        {
+          "id": "w15",
+          "text": "esperar.",
+          "start": 6.65,
+          "end": 7.148
+        }
+      ]
+    },
+    {
+      "frame": 3,
+      "path": "assets/voice/03.wav",
+      "duration_s": 7.979,
+      "words": [
+        {
+          "id": "w0",
+          "text": "En",
+          "start": 0.0,
+          "end": 0.178
+        },
+        {
+          "id": "w1",
+          "text": "alimentación,",
+          "start": 0.198,
+          "end": 0.942
+        },
+        {
+          "id": "w2",
+          "text": "revisa",
+          "start": 1.143,
+          "end": 1.573
+        },
+        {
+          "id": "w3",
+          "text": "tus",
+          "start": 1.593,
+          "end": 1.758
+        },
+        {
+          "id": "w4",
+          "text": "reservas",
+          "start": 1.778,
+          "end": 2.208
+        },
+        {
+          "id": "w5",
+          "text": "y",
+          "start": 2.228,
+          "end": 2.393
+        },
+        {
+          "id": "w6",
+          "text": "planifica",
+          "start": 2.413,
+          "end": 2.975
+        },
+        {
+          "id": "w7",
+          "text": "la",
+          "start": 2.995,
+          "end": 3.16
+        },
+        {
+          "id": "w8",
+          "text": "compra",
+          "start": 3.18,
+          "end": 3.477
+        },
+        {
+          "id": "w9",
+          "text": "de",
+          "start": 3.497,
+          "end": 3.662
+        },
+        {
+          "id": "w10",
+          "text": "agua",
+          "start": 3.682,
+          "end": 3.98
+        },
+        {
+          "id": "w11",
+          "text": "segura",
+          "start": 4.0,
+          "end": 4.429
+        },
+        {
+          "id": "w12",
+          "text": "y",
+          "start": 4.449,
+          "end": 4.615
+        },
+        {
+          "id": "w13",
+          "text": "alimentos",
+          "start": 4.635,
+          "end": 5.196
+        },
+        {
+          "id": "w14",
+          "text": "no",
+          "start": 5.216,
+          "end": 5.382
+        },
+        {
+          "id": "w15",
+          "text": "perecibles.",
+          "start": 5.402,
+          "end": 5.963
+        },
+        {
+          "id": "w16",
+          "text": "Evita",
+          "start": 6.448,
+          "end": 6.939
+        },
+        {
+          "id": "w17",
+          "text": "compras",
+          "start": 6.959,
+          "end": 7.299
+        },
+        {
+          "id": "w18",
+          "text": "excesivas.",
+          "start": 7.319,
+          "end": 7.959
+        }
+      ]
+    },
+    {
+      "frame": 4,
+      "path": "assets/voice/04.wav",
+      "duration_s": 8.469,
+      "words": [
+        {
+          "id": "w0",
+          "text": "En",
+          "start": 0.0,
+          "end": 0.21
+        },
+        {
+          "id": "w1",
+          "text": "salud,",
+          "start": 0.23,
+          "end": 0.603
+        },
+        {
+          "id": "w2",
+          "text": "reserva",
+          "start": 0.717,
+          "end": 1.117
+        },
+        {
+          "id": "w3",
+          "text": "dinero",
+          "start": 1.137,
+          "end": 1.537
+        },
+        {
+          "id": "w4",
+          "text": "para",
+          "start": 1.557,
+          "end": 1.833
+        },
+        {
+          "id": "w5",
+          "text": "medicamentos",
+          "start": 1.853,
+          "end": 2.5
+        },
+        {
+          "id": "w6",
+          "text": "habituales,",
+          "start": 2.52,
+          "end": 3.043
+        },
+        {
+          "id": "w7",
+          "text": "insumos",
+          "start": 3.197,
+          "end": 3.649
+        },
+        {
+          "id": "w8",
+          "text": "básicos",
+          "start": 3.669,
+          "end": 4.12
+        },
+        {
+          "id": "w9",
+          "text": "y",
+          "start": 4.14,
+          "end": 4.314
+        },
+        {
+          "id": "w10",
+          "text": "atención",
+          "start": 4.334,
+          "end": 4.785
+        },
+        {
+          "id": "w11",
+          "text": "necesaria.",
+          "start": 4.805,
+          "end": 5.395
+        },
+        {
+          "id": "w12",
+          "text": "Considera",
+          "start": 5.96,
+          "end": 6.488
+        },
+        {
+          "id": "w13",
+          "text": "las",
+          "start": 6.508,
+          "end": 6.663
+        },
+        {
+          "id": "w14",
+          "text": "necesidades",
+          "start": 6.683,
+          "end": 7.336
+        },
+        {
+          "id": "w15",
+          "text": "de",
+          "start": 7.356,
+          "end": 7.51
+        },
+        {
+          "id": "w16",
+          "text": "cada",
+          "start": 7.53,
+          "end": 7.81
+        },
+        {
+          "id": "w17",
+          "text": "integrante.",
+          "start": 7.83,
+          "end": 8.358
+        }
+      ]
+    },
+    {
+      "frame": 5,
+      "path": "assets/voice/05.wav",
+      "duration_s": 6.635,
+      "words": [
+        {
+          "id": "w0",
+          "text": "En",
+          "start": 0.0,
+          "end": 0.186
+        },
+        {
+          "id": "w1",
+          "text": "vivienda,",
+          "start": 0.206,
+          "end": 0.686
+        },
+        {
+          "id": "w2",
+          "text": "contempla",
+          "start": 0.852,
+          "end": 1.333
+        },
+        {
+          "id": "w3",
+          "text": "alquiler,",
+          "start": 1.353,
+          "end": 1.834
+        },
+        {
+          "id": "w4",
+          "text": "servicios",
+          "start": 2.234,
+          "end": 2.685
+        },
+        {
+          "id": "w5",
+          "text": "básicos",
+          "start": 2.705,
+          "end": 3.155
+        },
+        {
+          "id": "w6",
+          "text": "y",
+          "start": 3.175,
+          "end": 3.349
+        },
+        {
+          "id": "w7",
+          "text": "un",
+          "start": 3.369,
+          "end": 3.543
+        },
+        {
+          "id": "w8",
+          "text": "posible",
+          "start": 3.563,
+          "end": 4.013
+        },
+        {
+          "id": "w9",
+          "text": "alojamiento",
+          "start": 4.033,
+          "end": 4.761
+        },
+        {
+          "id": "w10",
+          "text": "temporal",
+          "start": 4.781,
+          "end": 5.231
+        },
+        {
+          "id": "w11",
+          "text": "si",
+          "start": 5.251,
+          "end": 5.425
+        },
+        {
+          "id": "w12",
+          "text": "debes",
+          "start": 5.445,
+          "end": 5.757
+        },
+        {
+          "id": "w13",
+          "text": "salir",
+          "start": 5.777,
+          "end": 6.089
+        },
+        {
+          "id": "w14",
+          "text": "de",
+          "start": 6.109,
+          "end": 6.283
+        },
+        {
+          "id": "w15",
+          "text": "casa.",
+          "start": 6.303,
+          "end": 6.615
+        }
+      ]
+    },
+    {
+      "frame": 6,
+      "path": "assets/voice/06.wav",
+      "duration_s": 8.619,
+      "words": [
+        {
+          "id": "w0",
+          "text": "En",
+          "start": 0.0,
+          "end": 0.228
+        },
+        {
+          "id": "w1",
+          "text": "transporte,",
+          "start": 0.248,
+          "end": 0.83
+        },
+        {
+          "id": "w2",
+          "text": "calcula",
+          "start": 1.028,
+          "end": 1.486
+        },
+        {
+          "id": "w3",
+          "text": "pasajes",
+          "start": 1.506,
+          "end": 1.964
+        },
+        {
+          "id": "w4",
+          "text": "o",
+          "start": 1.984,
+          "end": 2.161
+        },
+        {
+          "id": "w5",
+          "text": "combustible",
+          "start": 2.181,
+          "end": 2.779
+        },
+        {
+          "id": "w6",
+          "text": "para",
+          "start": 2.799,
+          "end": 3.117
+        },
+        {
+          "id": "w7",
+          "text": "traslados",
+          "start": 3.137,
+          "end": 3.594
+        },
+        {
+          "id": "w8",
+          "text": "esenciales",
+          "start": 3.614,
+          "end": 4.213
+        },
+        {
+          "id": "w9",
+          "text": "y",
+          "start": 4.233,
+          "end": 4.41
+        },
+        {
+          "id": "w10",
+          "text": "una",
+          "start": 4.43,
+          "end": 4.747
+        },
+        {
+          "id": "w11",
+          "text": "salida",
+          "start": 4.767,
+          "end": 5.225
+        },
+        {
+          "id": "w12",
+          "text": "segura,",
+          "start": 5.245,
+          "end": 5.703
+        },
+        {
+          "id": "w13",
+          "text": "siguiendo",
+          "start": 6.205,
+          "end": 6.631
+        },
+        {
+          "id": "w14",
+          "text": "las",
+          "start": 6.651,
+          "end": 6.815
+        },
+        {
+          "id": "w15",
+          "text": "indicaciones",
+          "start": 6.835,
+          "end": 7.523
+        },
+        {
+          "id": "w16",
+          "text": "de",
+          "start": 7.543,
+          "end": 7.707
+        },
+        {
+          "id": "w17",
+          "text": "las",
+          "start": 7.727,
+          "end": 7.891
+        },
+        {
+          "id": "w18",
+          "text": "autoridades.",
+          "start": 7.911,
+          "end": 8.599
+        }
+      ]
+    },
+    {
+      "frame": 7,
+      "path": "assets/voice/07.wav",
+      "duration_s": 5.44,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Ajusta",
+          "start": 0.0,
+          "end": 0.467
+        },
+        {
+          "id": "w1",
+          "text": "los",
+          "start": 0.487,
+          "end": 0.667
+        },
+        {
+          "id": "w2",
+          "text": "montos",
+          "start": 0.687,
+          "end": 1.011
+        },
+        {
+          "id": "w3",
+          "text": "a",
+          "start": 1.031,
+          "end": 1.211
+        },
+        {
+          "id": "w4",
+          "text": "tu",
+          "start": 1.231,
+          "end": 1.412
+        },
+        {
+          "id": "w5",
+          "text": "realidad",
+          "start": 1.432,
+          "end": 1.898
+        },
+        {
+          "id": "w6",
+          "text": "y,",
+          "start": 1.918,
+          "end": 2.099
+        },
+        {
+          "id": "w7",
+          "text": "si",
+          "start": 2.119,
+          "end": 2.299
+        },
+        {
+          "id": "w8",
+          "text": "puedes,",
+          "start": 2.319,
+          "end": 2.643
+        },
+        {
+          "id": "w9",
+          "text": "separa",
+          "start": 2.663,
+          "end": 3.129
+        },
+        {
+          "id": "w10",
+          "text": "una",
+          "start": 3.149,
+          "end": 3.473
+        },
+        {
+          "id": "w11",
+          "text": "pequeña",
+          "start": 3.493,
+          "end": 3.96
+        },
+        {
+          "id": "w12",
+          "text": "reserva",
+          "start": 3.98,
+          "end": 4.447
+        },
+        {
+          "id": "w13",
+          "text": "para",
+          "start": 4.467,
+          "end": 4.79
+        },
+        {
+          "id": "w14",
+          "text": "imprevistos.",
+          "start": 4.81,
+          "end": 5.42
+        }
+      ]
+    },
+    {
+      "frame": 8,
+      "path": "assets/voice/08.wav",
+      "duration_s": 3.669,
+      "words": [
+        {
+          "id": "w0",
+          "text": "Planifica",
+          "start": 0.0,
+          "end": 0.671
+        },
+        {
+          "id": "w1",
+          "text": "hoy.",
+          "start": 0.691,
+          "end": 0.89
+        },
+        {
+          "id": "w2",
+          "text": "Protege",
+          "start": 1.101,
+          "end": 1.526
+        },
+        {
+          "id": "w3",
+          "text": "lo",
+          "start": 1.546,
+          "end": 1.71
+        },
+        {
+          "id": "w4",
+          "text": "esencial",
+          "start": 1.73,
+          "end": 2.155
+        },
+        {
+          "id": "w5",
+          "text": "y",
+          "start": 2.175,
+          "end": 2.339
+        },
+        {
+          "id": "w6",
+          "text": "cuida",
+          "start": 2.359,
+          "end": 2.653
+        },
+        {
+          "id": "w7",
+          "text": "a",
+          "start": 2.673,
+          "end": 2.837
+        },
+        {
+          "id": "w8",
+          "text": "quienes",
+          "start": 2.857,
+          "end": 3.151
+        },
+        {
+          "id": "w9",
+          "text": "más",
+          "start": 3.171,
+          "end": 3.335
+        },
+        {
+          "id": "w10",
+          "text": "quieres.",
+          "start": 3.355,
+          "end": 3.649
+        }
+      ]
+    }
+  ],
+  "sfx": []
+}

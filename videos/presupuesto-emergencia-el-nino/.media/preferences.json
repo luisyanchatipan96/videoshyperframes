@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "preferences": {
+    "destination": {
+      "value": "shorts",
+      "confirmed_in": [
+        "presupuesto-emergencia-el-nino"
+      ],
+      "updated_at": "2026-10-21T15:43:23.301Z"
+    },
+    "aspect": {
+      "value": "1080x1920",
+      "confirmed_in": [
+        "presupuesto-emergencia-el-nino"
+      ],
+      "updated_at": "2026-10-21T15:43:23.368Z"
+    },
+    "language": {
+      "value": "es",
+      "confirmed_in": [
+        "presupuesto-emergencia-el-nino"
+      ],
+      "updated_at": "2026-10-21T15:43:23.422Z"
+    },
+    "flow": {
+      "value": "automation",
+      "confirmed_in": [
+        "presupuesto-emergencia-el-nino"
+      ],
+      "updated_at": "2026-10-21T15:43:23.475Z"
+    },
+    "storyboard": {
+      "value": "yes",
+      "confirmed_in": [
+        "presupuesto-emergencia-el-nino"
+      ],
+      "updated_at": "2026-10-21T15:43:23.547Z"
+    },
+    "style_preset.faceless-explainer": {
+      "value": "blue-professional",
+      "confirmed_in": [
+        "presupuesto-emergencia-el-nino"
+      ],
+      "updated_at": "2026-10-21T15:43:37.866Z"
+    }
+  },
+  "sightings": {}
+}

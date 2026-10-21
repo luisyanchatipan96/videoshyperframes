@@ -1,0 +1,392 @@
+<template id="05-vivienda-template">
+  <div data-hf-id="hf-bkt9" id="root" data-composition-id="05-vivienda" data-start="0" data-duration="7.83" data-width="1080" data-height="1920">
+    <style>
+    </style>
+    <style>
+      @font-face { font-family: 'Space Grotesk'; src: url('assets/fonts/Space_Grotesk_700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: block; }
+      @font-face { font-family: 'Space Grotesk'; src: url('assets/fonts/Space_Grotesk_600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: block; }
+      @font-face { font-family: 'Inter'; src: url('assets/fonts/Inter_500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: block; }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+      }
+
+      /* ---------- ambient layer ---------- */
+      #vivienda-05-bg {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F6F9FC 100%);
+      }
+      #vivienda-05-dots {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(circle, rgba(11, 37, 69, 0.06) 2.5px, transparent 3px);
+        background-size: 40px 40px;
+        background-position: 20px 20px;
+      }
+      #vivienda-05-halo {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 760px 620px at 50% 30%, rgba(43, 168, 74, 0.08) 0%, rgba(43, 168, 74, 0) 100%);
+      }
+      #vivienda-05-progress-track {
+        position: absolute;
+        left: 90px;
+        top: 92px;
+        width: 900px;
+        height: 8px;
+        border-radius: 4px;
+        background: rgba(43, 168, 74, 0.08);
+        overflow: hidden;
+      }
+      #vivienda-05-progress-fill {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 900px;
+        height: 8px;
+        background: #23963F;
+        transform-origin: 0% 50%;
+      }
+
+      /* ---------- content layer ---------- */
+      #vivienda-05-content {
+        position: absolute;
+        inset: 0;
+      }
+      #vivienda-05-pill-wrap {
+        position: absolute;
+        left: 0;
+        top: 168px;
+        width: 1080px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+      }
+      #vivienda-05-pill {
+        height: 64px;
+        padding: 0 34px;
+        border-radius: 100px;
+        background: rgba(43, 168, 74, 0.08);
+        border: 1.5px solid rgba(43, 168, 74, 0.2);
+        color: #23963F;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        letter-spacing: 0;
+        text-transform: none;
+        line-height: 61px;
+        white-space: nowrap;
+      }
+      #vivienda-05-title {
+        position: absolute;
+        left: 90px;
+        top: 270px;
+        width: 900px;
+        margin: 0;
+        text-align: center;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 120px;
+        letter-spacing: -0.02em;
+        color: #0B2545;
+        white-space: nowrap;
+      }
+      #vivienda-05-card {
+        position: absolute;
+        left: 100px;
+        top: 430px;
+        width: 880px;
+        height: 760px;
+        box-sizing: border-box;
+        border-radius: 14px;
+        background: rgba(43, 168, 74, 0.04);
+        border: 1.5px solid rgba(43, 168, 74, 0.2);
+        overflow: hidden;
+      }
+      #vivienda-05-art {
+        position: absolute;
+        left: -1.5px;
+        top: -1.5px;
+        width: 880px;
+        height: 760px;
+        overflow: visible;
+      }
+      #vivienda-05-subtitle {
+        position: absolute;
+        left: 90px;
+        top: 1250px;
+        width: 900px;
+        margin: 0;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 64px;
+        color: #4A5D78;
+      }
+
+      /* ---------- chip row (identical template across rubros) ---------- */
+      #vivienda-05-chips {
+        position: absolute;
+        left: 90px;
+        top: 1416px;
+        width: 900px;
+        height: 172px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .vivienda-05-chip {
+        width: 225px;
+        height: 172px;
+        position: relative;
+      }
+      .vivienda-05-chip-circle {
+        position: absolute;
+        left: 52.5px;
+        top: 0;
+        width: 120px;
+        height: 120px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 4px solid #23963F;
+        background: #FFFFFF;
+      }
+      .vivienda-05-chip-circle svg {
+        position: absolute;
+        left: -4px;
+        top: -4px;
+        width: 120px;
+        height: 120px;
+      }
+      .vivienda-05-chip-circle svg * {
+        fill: none;
+        stroke: #23963F;
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .vivienda-05-chip-label {
+        position: absolute;
+        left: 0;
+        top: 128px;
+        width: 225px;
+        text-align: center;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: #4A5D78;
+        white-space: nowrap;
+      }
+      .vivienda-05-chip-active .vivienda-05-chip-circle {
+        background: #23963F;
+      }
+      .vivienda-05-chip-active .vivienda-05-chip-circle svg * {
+        stroke: #FFFFFF;
+      }
+      .vivienda-05-chip-active .vivienda-05-chip-label {
+        color: #23963F;
+        font-weight: 700;
+      }
+    </style>
+
+    <!-- Track 0: full-bleed ambient ground -->
+    <div data-hf-id="hf-blko" id="vivienda-05-bg" class="clip" data-start="0" data-duration="7.83" data-track-index="0">
+      <div data-hf-id="hf-tpi8" id="vivienda-05-dots"></div>
+      <div data-hf-id="hf-boau" id="vivienda-05-halo"></div>
+      <div data-hf-id="hf-0eb3" id="vivienda-05-progress-track"><div data-hf-id="hf-hssh" id="vivienda-05-progress-fill"></div></div>
+    </div>
+
+    <!-- Track 1: rubro template content -->
+    <div data-hf-id="hf-axlv" id="vivienda-05-content" class="clip" data-start="0" data-duration="7.83" data-track-index="1">
+      <div data-hf-id="hf-vwwu" id="vivienda-05-pill-wrap"><div data-hf-id="hf-usl1" id="vivienda-05-pill">Presupuesto de emergencia</div></div>
+
+      <h1 data-hf-id="hf-sk8c" id="vivienda-05-title">VIVIENDA</h1>
+
+      <div data-hf-id="hf-4fyu" id="vivienda-05-card">
+        <svg data-hf-id="hf-msem" id="vivienda-05-art" viewBox="0 0 880 760" xmlns="http://www.w3.org/2000/svg">
+          <defs data-hf-id="hf-mh0t">
+            <radialGradient data-hf-id="hf-k1xg" id="vivienda-05-glow-grad" cx="50%" cy="50%" r="50%">
+              <stop data-hf-id="hf-h0wi" offset="0%" stop-color="#23963F" stop-opacity="0.32" />
+              <stop data-hf-id="hf-pwyq" offset="100%" stop-color="#23963F" stop-opacity="0" />
+            </radialGradient>
+            <mask data-hf-id="hf-6vtu" id="vivienda-05-mask-services" maskUnits="userSpaceOnUse" x="0" y="0" width="880" height="760">
+              <path data-hf-id="hf-iopq" id="vivienda-05-mask-services-path" d="M526 332 Q566 296 604 250" pathLength="1" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="1" />
+            </mask>
+            <mask data-hf-id="hf-vo7f" id="vivienda-05-mask-bed" maskUnits="userSpaceOnUse" x="0" y="0" width="880" height="760">
+              <path data-hf-id="hf-836h" id="vivienda-05-mask-bed-path" d="M566 500 H652" pathLength="1" fill="none" stroke="#FFFFFF" stroke-width="40" stroke-linecap="butt" stroke-dasharray="1" stroke-dashoffset="1" />
+            </mask>
+          </defs>
+
+          <!-- ground shadow line -->
+          <g data-hf-id="hf-8r8s" id="vivienda-05-house" fill="none" stroke="#0B2545" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <!-- flat fills (fade in after the draw) -->
+            <g data-hf-id="hf-lhht" id="vivienda-05-house-fill" stroke="none">
+              <polygon data-hf-id="hf-dypr" points="335,395 440,300 545,395 545,580 335,580" fill="rgba(11, 37, 69, 0.06)" />
+              <path data-hf-id="hf-jat4" d="M412 580 V510 Q412 495 427 495 H453 Q468 495 468 510 V580 Z" fill="rgba(43, 168, 74, 0.35)" />
+              <rect data-hf-id="hf-fktq" x="360" y="428" width="44" height="44" rx="6" fill="rgba(43, 168, 74, 0.15)" />
+              <rect data-hf-id="hf-hb2w" x="476" y="428" width="44" height="44" rx="6" fill="rgba(43, 168, 74, 0.15)" />
+            </g>
+            <!-- line-art strokes (self-draw) -->
+            <path data-hf-id="hf-azhg" class="vivienda-05-draw-house" pathLength="1" stroke-dasharray="1" d="M250 580 H630" />
+            <path data-hf-id="hf-txh1" class="vivienda-05-draw-house" pathLength="1" stroke-dasharray="1" d="M335 395 V580 H545 V395" />
+            <path data-hf-id="hf-fvh5" class="vivienda-05-draw-house" pathLength="1" stroke-dasharray="1" d="M305 405 L440 285 L575 405" />
+            <path data-hf-id="hf-hpzi" class="vivienda-05-draw-house" pathLength="1" stroke-dasharray="1" d="M500 337 V304 H528 V362" />
+            <path data-hf-id="hf-zews" class="vivienda-05-draw-house" pathLength="1" stroke-dasharray="1" d="M412 580 V510 Q412 495 427 495 H453 Q468 495 468 510 V580" />
+            <path data-hf-id="hf-ftkw" class="vivienda-05-draw-house" pathLength="1" stroke-dasharray="1" d="M366 428 H398 Q404 428 404 434 V466 Q404 472 398 472 H366 Q360 472 360 466 V434 Q360 428 366 428 Z" />
+            <path data-hf-id="hf-s4ha" class="vivienda-05-draw-house" pathLength="1" stroke-dasharray="1" d="M482 428 H514 Q520 428 520 434 V466 Q520 472 514 472 H482 Q476 472 476 466 V434 Q476 428 482 428 Z" />
+          </g>
+
+          <!-- Alquiler: key, left of the house -->
+          <g data-hf-id="hf-t14f" id="vivienda-05-key">
+            <circle data-hf-id="hf-mch8" cx="150" cy="490" r="90" fill="rgba(43, 168, 74, 0.08)" stroke="rgba(43, 168, 74, 0.35)" stroke-width="3" />
+            <circle data-hf-id="hf-kfbr" cx="118" cy="490" r="24" fill="rgba(43, 168, 74, 0.3)" stroke="none" />
+            <g data-hf-id="hf-6sk9" fill="none" stroke="#0B2545" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+              <circle data-hf-id="hf-zyu2" class="vivienda-05-draw-key" pathLength="1" stroke-dasharray="1" cx="118" cy="490" r="28" />
+              <path data-hf-id="hf-u0ih" class="vivienda-05-draw-key" pathLength="1" stroke-dasharray="1" d="M146 490 H212" />
+              <path data-hf-id="hf-rit7" class="vivienda-05-draw-key" pathLength="1" stroke-dasharray="1" d="M194 490 V512" />
+              <path data-hf-id="hf-f1tp" class="vivienda-05-draw-key" pathLength="1" stroke-dasharray="1" d="M210 490 V506" />
+            </g>
+          </g>
+
+          <!-- Servicios básicos: bulb + faucet, upper right, dotted link to house -->
+          <path data-hf-id="hf-ty38" id="vivienda-05-link-services" d="M526 332 Q566 296 604 250" fill="none" stroke="#23963F" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 14" mask="url(#vivienda-05-mask-services)" />
+          <g data-hf-id="hf-qv2u" id="vivienda-05-services">
+            <rect data-hf-id="hf-lut9" x="600" y="104" width="240" height="164" rx="24" fill="rgba(43, 168, 74, 0.08)" stroke="rgba(43, 168, 74, 0.35)" stroke-width="3" />
+            <path data-hf-id="hf-54h8" d="M652 198 C634 184 636 150 670 145 C704 150 706 184 688 198 V208 H652 Z" fill="rgba(43, 168, 74, 0.3)" stroke="none" />
+            <g data-hf-id="hf-68z1" fill="none" stroke="#0B2545" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+              <path data-hf-id="hf-rn06" class="vivienda-05-draw-services" pathLength="1" stroke-dasharray="1" d="M652 198 C634 184 636 150 670 145 C704 150 706 184 688 198 V208 H652 Z" />
+              <path data-hf-id="hf-kr9c" class="vivienda-05-draw-services" pathLength="1" stroke-dasharray="1" d="M656 224 H684" />
+              <path data-hf-id="hf-1mos" class="vivienda-05-draw-services" pathLength="1" stroke-dasharray="1" d="M670 124 V116 M640 134 L634 128 M700 134 L706 128" />
+              <path data-hf-id="hf-0x6q" class="vivienda-05-draw-services" pathLength="1" stroke-dasharray="1" d="M742 150 V176" />
+              <path data-hf-id="hf-lexh" class="vivienda-05-draw-services" pathLength="1" stroke-dasharray="1" d="M742 162 H790 Q806 162 806 178 V190" />
+              <path data-hf-id="hf-d4jv" class="vivienda-05-draw-services" pathLength="1" stroke-dasharray="1" d="M774 162 V146 M762 146 H786" />
+            </g>
+            <path data-hf-id="hf-vgnj" id="vivienda-05-drop" d="M806 206 Q814 218 814 224 A8 8 0 0 1 798 224 Q798 218 806 206 Z" fill="#23963F" />
+          </g>
+
+          <!-- Alojamiento temporal: bed under a roof, right, dotted arrow from house -->
+          <g data-hf-id="hf-9i03" id="vivienda-05-link-bed" fill="none" stroke="#23963F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" mask="url(#vivienda-05-mask-bed)">
+            <path data-hf-id="hf-h45l" d="M566 500 H646" stroke-dasharray="2 14" />
+            <path data-hf-id="hf-ha3d" d="M636 490 L648 500 L636 510" />
+          </g>
+          <g data-hf-id="hf-2xmv" id="vivienda-05-bed">
+            <circle data-hf-id="hf-zvq6" cx="750" cy="490" r="90" fill="rgba(43, 168, 74, 0.08)" stroke="rgba(43, 168, 74, 0.35)" stroke-width="3" />
+            <rect data-hf-id="hf-g6uw" x="704" y="512" width="94" height="16" rx="4" fill="rgba(43, 168, 74, 0.3)" stroke="none" />
+            <g data-hf-id="hf-7fw4" fill="none" stroke="#0B2545" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+              <path data-hf-id="hf-d5tu" class="vivienda-05-draw-bed" pathLength="1" stroke-dasharray="1" d="M694 476 L750 432 L806 476" />
+              <path data-hf-id="hf-cwad" class="vivienda-05-draw-bed" pathLength="1" stroke-dasharray="1" d="M704 494 V544" />
+              <path data-hf-id="hf-qiy0" class="vivienda-05-draw-bed" pathLength="1" stroke-dasharray="1" d="M704 512 H798 V544" />
+              <path data-hf-id="hf-zifi" class="vivienda-05-draw-bed" pathLength="1" stroke-dasharray="1" d="M704 528 H798" />
+              <path data-hf-id="hf-sxr7" class="vivienda-05-draw-bed" pathLength="1" stroke-dasharray="1" d="M716 502 H738" />
+            </g>
+          </g>
+
+          <!-- Seguridad: small green heart lighting up over the house -->
+          <circle data-hf-id="hf-edc9" id="vivienda-05-glow" cx="440" cy="196" r="96" fill="url(#vivienda-05-glow-grad)" />
+          <g data-hf-id="hf-9p1q" id="vivienda-05-heart">
+            <path data-hf-id="hf-zn8s" d="M440 236 C398 208 392 172 416 162 C429 157 440 165 440 177 C440 165 451 157 464 162 C488 172 482 208 440 236 Z" fill="#23963F" />
+            <path data-hf-id="hf-9ava" d="M424 194 L436 206 L458 182" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+        </svg>
+      </div>
+
+      <p data-hf-id="hf-yrqe" id="vivienda-05-subtitle">Un lugar seguro para tu familia</p>
+
+      <!-- Chip row: fixed order, identical size, present from t=0 -->
+      <div data-hf-id="hf-m31x" id="vivienda-05-chips">
+        <div data-hf-id="hf-ldav" class="vivienda-05-chip">
+          <div data-hf-id="hf-1we4" class="vivienda-05-chip-circle">
+            <svg data-hf-id="hf-rzuv" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 44 C50 36 33 38 32 58 C31 78 46 92 60 87 C74 92 89 78 88 58 C87 38 70 36 60 44 Z" /><path d="M60 44 L63 30" /><path d="M64 34 C70 28 78 28 82 30 C78 36 70 38 64 34 Z" />
+            </svg>
+          </div>
+          <div data-hf-id="hf-rong" class="vivienda-05-chip-label">Alimentación</div>
+        </div>
+        <div data-hf-id="hf-g9ef" class="vivienda-05-chip">
+          <div data-hf-id="hf-ut2s" class="vivienda-05-chip-circle">
+            <svg data-hf-id="hf-txlz" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+              <path data-hf-id="hf-rrkm" d="M52 34 H68 V52 H86 V68 H68 V86 H52 V68 H34 V52 H52 Z" />
+            </svg>
+          </div>
+          <div data-hf-id="hf-2uvr" class="vivienda-05-chip-label">Salud</div>
+        </div>
+        <div data-hf-id="hf-diwp" class="vivienda-05-chip vivienda-05-chip-active">
+          <div data-hf-id="hf-tm5p" class="vivienda-05-chip-circle">
+            <svg data-hf-id="hf-tjay" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+              <path data-hf-id="hf-j5ax" d="M32 58 L60 34 L88 58" />
+              <path data-hf-id="hf-l49n" d="M40 52 V86 H80 V52" />
+              <path data-hf-id="hf-inul" d="M54 86 V70 H66 V86" />
+            </svg>
+          </div>
+          <div data-hf-id="hf-ozf2" class="vivienda-05-chip-label">Vivienda</div>
+        </div>
+        <div data-hf-id="hf-fv3e" class="vivienda-05-chip">
+          <div data-hf-id="hf-u0gq" class="vivienda-05-chip-circle">
+            <svg data-hf-id="hf-t4zx" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+              <path data-hf-id="hf-bdpy" d="M38 36 H82 Q88 36 88 42 V78 H32 V42 Q32 36 38 36 Z" />
+              <path data-hf-id="hf-gv03" d="M32 58 H88" />
+              <path data-hf-id="hf-5yqv" d="M44 86 V78 M76 86 V78" />
+              <path data-hf-id="hf-a4se" d="M42 68 H46 M74 68 H78" />
+            </svg>
+          </div>
+          <div data-hf-id="hf-hb4e" class="vivienda-05-chip-label">Transporte</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/vendor/gsap.min.js"></script>
+    <script>
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var root = document.querySelector('[data-composition-id="05-vivienda"]');
+        var $ = function (id) { return root.querySelector('#' + id); };
+        var $$ = function (cls) { return root.querySelectorAll('.' + cls); };
+
+        var tl = gsap.timeline({ paused: true });
+        var IN = 'power3.out';
+        var DRAW = 'power2.out';
+
+        // Ambient: progress bar advances (frame 5 of 8) — linear, no exit.
+        tl.fromTo($('vivienda-05-progress-fill'), { scaleX: 0.5422 }, { scaleX: 0.6644, duration: 7.33, ease: 'none' }, 0);
+
+        // Scene 1 (0.0–0.9s): pill, title, card; house self-draws. Chips already present.
+        tl.fromTo($('vivienda-05-pill'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: IN }, 0.0);
+        tl.fromTo($('vivienda-05-title'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: IN }, 0.08);
+        tl.fromTo($('vivienda-05-card'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: IN }, 0.14);
+        tl.fromTo($$('vivienda-05-draw-house'), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: DRAW, stagger: 0.05 }, 0.22);
+        tl.fromTo($('vivienda-05-house-fill'), { opacity: 0 }, { opacity: 1, duration: 0.4, ease: IN }, 0.7);
+
+        // Scene 2 (0.9–3.4s): "alquiler" ≈1.4s -> key on the left.
+        tl.fromTo($('vivienda-05-key'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: IN }, 1.35);
+        tl.fromTo($$('vivienda-05-draw-key'), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.45, ease: DRAW, stagger: 0.08 }, 1.45);
+
+        // "servicios básicos" ≈2.2s -> bulb + faucet upper right, dotted line from the house.
+        tl.fromTo($('vivienda-05-mask-services-path'), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.5, ease: DRAW }, 2.1);
+        tl.fromTo($('vivienda-05-services'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: IN }, 2.2);
+        tl.fromTo($$('vivienda-05-draw-services'), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.45, ease: DRAW, stagger: 0.07 }, 2.3);
+        tl.fromTo($('vivienda-05-drop'), { opacity: 0, y: -10 }, { opacity: 1, y: 0, duration: 0.6, ease: IN }, 2.85);
+
+        // Scene 3 (3.4–5.3s): "alojamiento temporal" ≈4.0s -> bed under a roof, dotted arrow.
+        tl.fromTo($('vivienda-05-mask-bed-path'), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.45, ease: DRAW }, 3.85);
+        tl.fromTo($('vivienda-05-bed'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: IN }, 4.0);
+        tl.fromTo($$('vivienda-05-draw-bed'), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.45, ease: DRAW, stagger: 0.07 }, 4.1);
+
+        // Scene 4 (5.3–7.33s): subtitle enters; small green heart lights up over the house; quiet hold.
+        tl.fromTo($('vivienda-05-subtitle'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: IN }, 5.3);
+        tl.fromTo($('vivienda-05-glow'), { opacity: 0, scale: 0.6, svgOrigin: '440 196' }, { opacity: 1, scale: 1, svgOrigin: '440 196', duration: 0.9, ease: IN }, 5.6);
+        tl.fromTo($('vivienda-05-heart'), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: IN }, 5.65);
+
+        // Pin the timeline length to the frame duration (quiet hold to the end).
+        tl.set({}, {}, 7.33);
+
+        window.__timelines['05-vivienda'] = tl;
+      })();
+    </script>
+  </div>
+</template>

@@ -1,0 +1,400 @@
+<template id="04-salud-template">
+<script src="assets/vendor/gsap.min.js"></script>
+<style>
+  @font-face { font-family: 'Space Grotesk'; src: url('assets/fonts/Space_Grotesk_600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: block; }
+  @font-face { font-family: 'Space Grotesk'; src: url('assets/fonts/Space_Grotesk_700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: block; }
+  @font-face { font-family: 'Inter'; src: url('assets/fonts/Inter_500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: block; }
+
+  #root {
+    position: relative;
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    --s04-bg: #FFFFFF;
+    --s04-primary: #23963F;
+    --s04-text: #0B2545;
+    --s04-muted: #4A5D78;
+    --s04-accent-light: rgba(43, 168, 74, 0.08);
+    --s04-border: rgba(43, 168, 74, 0.2);
+    --s04-card-bg: rgba(43, 168, 74, 0.04);
+    --s04-blue-tint: #E9EEF5;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  /* ---------- full-bleed ambient ground ---------- */
+  #s04-bg {
+    position: absolute;
+    left: 0; top: 0;
+    width: 1080px; height: 1920px;
+    background-color: #FFFFFF;
+    background-image:
+      radial-gradient(ellipse 760px 620px at 50% 26%, rgba(43, 168, 74, 0.08) 0%, rgba(43, 168, 74, 0) 100%),
+      linear-gradient(180deg, rgba(11, 37, 69, 0.025) 0%, rgba(11, 37, 69, 0) 60%);
+  }
+  #s04-bg .s04-dots {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(11, 37, 69, 0.06) 2.4px, rgba(11, 37, 69, 0) 3px);
+    background-size: 40px 40px;
+    background-position: 20px 20px;
+  }
+
+  #s04-stage {
+    position: absolute;
+    left: 0; top: 0;
+    width: 1080px; height: 1920px;
+  }
+
+  /* ---------- progress bar (y≈96) ---------- */
+  .s04-progress-track {
+    position: absolute;
+    left: 90px; top: 92px;
+    width: 900px; height: 8px;
+    border-radius: 6px;
+    background: rgba(43, 168, 74, 0.12);
+    overflow: hidden;
+  }
+  #s04-progress-fill {
+    position: absolute;
+    left: 0; top: 0;
+    width: 900px; height: 8px;
+    background: #23963F;
+    transform-origin: 0% 50%;
+  }
+
+  /* ---------- pill (y≈200) ---------- */
+  #s04-pill {
+    position: absolute;
+    left: 0; right: 0;
+    top: 172px;
+    height: 56px;
+    margin: 0 auto;
+    width: 440px;
+    border-radius: 100px;
+    background: rgba(43, 168, 74, 0.08);
+    border: 1.5px solid rgba(43, 168, 74, 0.2);
+    color: #23963F;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    line-height: 53px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  /* ---------- title (center y≈330) ---------- */
+  #s04-title {
+    position: absolute;
+    left: 90px; width: 900px;
+    top: 268px;
+    height: 124px;
+    margin: 0;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 124px;
+    letter-spacing: -0.02em;
+    color: #0B2545;
+    text-align: center;
+  }
+
+  /* ---------- illustration card 880×760, y 430–1190 ---------- */
+  #s04-card {
+    position: absolute;
+    left: 100px; top: 430px;
+    width: 880px; height: 760px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    background: rgba(43, 168, 74, 0.04);
+    border: 1.5px solid rgba(43, 168, 74, 0.2);
+  }
+  #s04-art {
+    position: absolute;
+    left: 100px; top: 430px;
+    width: 880px; height: 760px;
+    overflow: visible;
+  }
+
+  /* ---------- subtitle y≈1250–1380 ---------- */
+  #s04-sub {
+    position: absolute;
+    left: 100px; width: 880px;
+    top: 1250px;
+    height: 130px;
+    margin: 0;
+    font-family: "Inter", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 65px;
+    color: #4A5D78;
+    text-align: center;
+  }
+
+  /* ---------- chip row y≈1420–1580 ---------- */
+  #s04-chips {
+    position: absolute;
+    left: 90px; top: 1416px;
+    width: 900px; height: 168px;
+  }
+  .s04-chip {
+    position: absolute;
+    top: 0;
+    width: 225px; height: 168px;
+  }
+  .s04-chip svg {
+    position: absolute;
+    left: 52.5px; top: 0;
+    width: 120px; height: 120px;
+    overflow: visible;
+  }
+  .s04-chip-label {
+    position: absolute;
+    left: 0; width: 225px;
+    top: 128px;
+    font-family: "Space Grotesk", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #0B2545;
+    text-align: center;
+    white-space: nowrap;
+  }
+</style>
+
+<div data-hf-id="hf-guip" id="root" data-composition-id="04-salud" data-width="1080" data-height="1920" data-start="0" data-duration="9.67">
+
+  <div data-hf-id="hf-bynx" id="s04-bg" class="clip" data-start="0" data-duration="9.67" data-track-index="0">
+    <div data-hf-id="hf-9rro" class="s04-dots"></div>
+  </div>
+
+  <div data-hf-id="hf-7r45" id="s04-stage" class="clip" data-start="0" data-duration="9.67" data-track-index="1">
+
+    <div data-hf-id="hf-jsbn" class="s04-progress-track"><div data-hf-id="hf-uyju" id="s04-progress-fill"></div></div>
+
+    <div data-hf-id="hf-4mim" id="s04-pill">Presupuesto de emergencia</div>
+    <h1 data-hf-id="hf-33pg" id="s04-title">SALUD</h1>
+
+    <div data-hf-id="hf-p42z" id="s04-card"></div>
+
+    <svg data-hf-id="hf-t89t" id="s04-art" viewBox="0 0 880 760" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+      <!-- halo behind the botiquín (money assigned) -->
+      <circle data-hf-id="hf-968h" id="s04-halo" cx="480" cy="200" r="176" fill="#23963F" fill-opacity="0.12"/>
+
+      <!-- Row A: envelope / sobre de ahorro -->
+      <g data-hf-id="hf-g2i3" id="s04-envelope">
+        <rect data-hf-id="hf-yg3q" x="100" y="140" width="176" height="118" rx="14" fill="#E9EEF5" stroke="#0B2545" stroke-width="6"/>
+        <path data-hf-id="hf-cktn" d="M108 150 L188 208 L268 150" stroke="#0B2545" stroke-width="6"/>
+      </g>
+
+      <!-- Row A: botiquín (white box, GREEN cross) -->
+      <g data-hf-id="hf-y569" id="s04-kit">
+        <path data-hf-id="hf-bnvo" d="M420 92 V72 a14 14 0 0 1 14 -14 h92 a14 14 0 0 1 14 14 V92" stroke="#0B2545" stroke-width="6"/>
+        <rect data-hf-id="hf-73nr" x="340" y="92" width="280" height="212" rx="22" fill="#FFFFFF" stroke="#0B2545" stroke-width="6"/>
+        <path data-hf-id="hf-4bdg" d="M340 140 H620" stroke="#0B2545" stroke-width="6" stroke-opacity="0.35"/>
+        <rect data-hf-id="hf-wz5j" x="462" y="168" width="36" height="112" rx="6" fill="#23963F"/>
+        <rect data-hf-id="hf-bw9w" x="424" y="206" width="112" height="36" rx="6" fill="#23963F"/>
+      </g>
+
+      <!-- Row A: cápsula de medicamento -->
+      <g data-hf-id="hf-r8vk" id="s04-capsule">
+        <g data-hf-id="hf-n3wq" transform="rotate(-32 728 210)">
+          <path data-hf-id="hf-5p72" d="M728 186 H692 a24 24 0 0 0 0 48 H728 Z" fill="#23963F" stroke="#0B2545" stroke-width="6"/>
+          <path data-hf-id="hf-x3zs" d="M728 186 H764 a24 24 0 0 1 0 48 H728 Z" fill="#FFFFFF" stroke="#0B2545" stroke-width="6"/>
+        </g>
+      </g>
+
+      <!-- Coin (travels from envelope into botiquín) -->
+      <g data-hf-id="hf-rq0g" id="s04-coin">
+        <circle data-hf-id="hf-w5zc" cx="188" cy="128" r="30" fill="#23963F" stroke="#0B2545" stroke-width="5"/>
+        <circle data-hf-id="hf-qobh" cx="188" cy="128" r="16" stroke="#FFFFFF" stroke-width="4" stroke-opacity="0.85"/>
+      </g>
+
+      <!-- Row B: receta -->
+      <g data-hf-id="hf-npxt" id="s04-rx">
+        <rect data-hf-id="hf-h2fe" x="120" y="356" width="230" height="232" rx="16" fill="#FFFFFF" stroke="#0B2545" stroke-width="6"/>
+        <g data-hf-id="hf-kyos" id="s04-rx-head">
+          <circle data-hf-id="hf-7xd8" cx="170" cy="404" r="22" fill="#23963F"/>
+          <rect data-hf-id="hf-gdbg" x="165" y="391" width="10" height="26" rx="2" fill="#FFFFFF"/>
+          <rect data-hf-id="hf-i3sz" x="157" y="399" width="26" height="10" rx="2" fill="#FFFFFF"/>
+          <path data-hf-id="hf-f86y" d="M208 398 H310" stroke="#0B2545" stroke-width="6" stroke-opacity="0.6"/>
+        </g>
+        <path data-hf-id="hf-x21z" id="s04-rx-l1" d="M150 462 H318" stroke="#0B2545" stroke-width="6" stroke-opacity="0.3"/>
+        <path data-hf-id="hf-ifun" id="s04-rx-l2" d="M150 502 H318" stroke="#0B2545" stroke-width="6" stroke-opacity="0.3"/>
+        <path data-hf-id="hf-sun0" id="s04-rx-l3" d="M150 542 H260" stroke="#0B2545" stroke-width="6" stroke-opacity="0.3"/>
+      </g>
+
+      <!-- Row B: calendario de tratamiento -->
+      <g data-hf-id="hf-szyx" id="s04-cal">
+        <rect data-hf-id="hf-395v" x="420" y="372" width="340" height="216" rx="16" fill="#FFFFFF" stroke="#0B2545" stroke-width="6"/>
+        <path data-hf-id="hf-0waz" d="M423 420 H757" stroke="#0B2545" stroke-width="6"/>
+        <path data-hf-id="hf-65xd" d="M500 356 V388 M680 356 V388" stroke="#0B2545" stroke-width="6"/>
+        <!-- day grid 5×2 -->
+        <g data-hf-id="hf-5jah" stroke="#0B2545" stroke-opacity="0.22" stroke-width="3">
+          <rect data-hf-id="hf-m0ju" x="442" y="436" width="48" height="48" rx="8"/>
+          <rect data-hf-id="hf-r26d" x="504" y="436" width="48" height="48" rx="8"/>
+          <rect data-hf-id="hf-k0mt" x="566" y="436" width="48" height="48" rx="8"/>
+          <rect data-hf-id="hf-3zfg" x="628" y="436" width="48" height="48" rx="8"/>
+          <rect data-hf-id="hf-8i61" x="690" y="436" width="48" height="48" rx="8"/>
+          <rect data-hf-id="hf-qry2" x="442" y="498" width="48" height="48" rx="8"/>
+          <rect data-hf-id="hf-y4rt" x="504" y="498" width="48" height="48" rx="8"/>
+          <rect data-hf-id="hf-n195" x="566" y="498" width="48" height="48" rx="8"/>
+          <rect data-hf-id="hf-z818" x="628" y="498" width="48" height="48" rx="8"/>
+          <rect data-hf-id="hf-2ydx" x="690" y="498" width="48" height="48" rx="8"/>
+        </g>
+      </g>
+      <!-- three marked days (every other day) -->
+      <g data-hf-id="hf-aa08" id="s04-day1">
+        <rect data-hf-id="hf-wdmv" x="504" y="436" width="48" height="48" rx="8" fill="#23963F"/>
+        <path data-hf-id="hf-2b5c" class="s04-check" d="M516 461 L524 469 L540 452" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="40" stroke-dashoffset="40"/>
+      </g>
+      <g data-hf-id="hf-ixw3" id="s04-day2">
+        <rect data-hf-id="hf-4m4u" x="628" y="436" width="48" height="48" rx="8" fill="#23963F"/>
+        <path data-hf-id="hf-pouw" class="s04-check" d="M640 461 L648 469 L664 452" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="40" stroke-dashoffset="40"/>
+      </g>
+      <g data-hf-id="hf-ezs2" id="s04-day3">
+        <rect data-hf-id="hf-6lcg" x="442" y="498" width="48" height="48" rx="8" fill="#23963F"/>
+        <path data-hf-id="hf-saf0" class="s04-check" d="M454 523 L462 531 L478 514" stroke="#FFFFFF" stroke-width="5" stroke-dasharray="40" stroke-dashoffset="40"/>
+      </g>
+
+      <!-- Row C: family (adulto, adulto, niño, persona mayor) -->
+      <g data-hf-id="hf-09gv" id="s04-family">
+        <!-- dim bases -->
+        <g data-hf-id="hf-0tin" stroke="#0B2545" stroke-opacity="0.22" stroke-width="5">
+          <circle data-hf-id="hf-nnvm" cx="290" cy="642" r="18"/>
+          <path data-hf-id="hf-w2mu" d="M260 736 V706 a30 30 0 0 1 60 0 V736 Z"/>
+          <circle data-hf-id="hf-6h67" cx="390" cy="642" r="18"/>
+          <path data-hf-id="hf-bl3j" d="M360 736 V706 a30 30 0 0 1 60 0 V736 Z"/>
+          <circle data-hf-id="hf-lmj0" cx="490" cy="668" r="14"/>
+          <path data-hf-id="hf-7wbn" d="M468 736 V714 a22 22 0 0 1 44 0 V736 Z"/>
+          <circle data-hf-id="hf-r0vs" cx="590" cy="648" r="17"/>
+          <path data-hf-id="hf-fzq2" d="M562 736 V708 a28 28 0 0 1 56 0 V736 Z"/>
+          <path data-hf-id="hf-kyze" d="M634 736 V700 a8 8 0 0 0 -16 0"/>
+        </g>
+      </g>
+      <g data-hf-id="hf-gq36" id="s04-p1">
+        <circle data-hf-id="hf-bav5" cx="290" cy="642" r="18" fill="#E9EEF5" stroke="#0B2545" stroke-width="5"/>
+        <path data-hf-id="hf-g1mt" d="M260 736 V706 a30 30 0 0 1 60 0 V736 Z" fill="#23963F" stroke="#0B2545" stroke-width="5"/>
+      </g>
+      <g data-hf-id="hf-crz5" id="s04-p2">
+        <circle data-hf-id="hf-8zyq" cx="390" cy="642" r="18" fill="#E9EEF5" stroke="#0B2545" stroke-width="5"/>
+        <path data-hf-id="hf-dczi" d="M360 736 V706 a30 30 0 0 1 60 0 V736 Z" fill="#23963F" stroke="#0B2545" stroke-width="5"/>
+      </g>
+      <g data-hf-id="hf-9spk" id="s04-p3">
+        <circle data-hf-id="hf-8w03" cx="490" cy="668" r="14" fill="#E9EEF5" stroke="#0B2545" stroke-width="5"/>
+        <path data-hf-id="hf-d6aq" d="M468 736 V714 a22 22 0 0 1 44 0 V736 Z" fill="#23963F" stroke="#0B2545" stroke-width="5"/>
+      </g>
+      <g data-hf-id="hf-5ulj" id="s04-p4">
+        <circle data-hf-id="hf-anh1" cx="590" cy="648" r="17" fill="#E9EEF5" stroke="#0B2545" stroke-width="5"/>
+        <path data-hf-id="hf-nvrt" d="M562 736 V708 a28 28 0 0 1 56 0 V736 Z" fill="#23963F" stroke="#0B2545" stroke-width="5"/>
+        <path data-hf-id="hf-h1hn" d="M634 736 V700 a8 8 0 0 0 -16 0" stroke="#0B2545" stroke-width="5"/>
+      </g>
+    </svg>
+
+    <p data-hf-id="hf-6h7a" id="s04-sub">Medicamentos habituales<br data-hf-id="hf-x5px">y atención necesaria</p>
+
+    <!-- 4 identical rubro chips, fixed order; Salud active -->
+    <div data-hf-id="hf-l9xy" id="s04-chips">
+      <div data-hf-id="hf-yivu" class="s04-chip" style="left:0px;">
+        <svg data-hf-id="hf-7r09" viewBox="0 0 120 120" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle data-hf-id="hf-ob2y" cx="60" cy="60" r="57" fill="#FFFFFF" stroke="#23963F" stroke-width="4"/>
+          <path d="M60 44 C50 36 33 38 32 58 C31 78 46 92 60 87 C74 92 89 78 88 58 C87 38 70 36 60 44 Z" stroke="#23963F" stroke-width="5"/><path d="M60 44 L63 30" stroke="#23963F" stroke-width="5"/><path d="M64 34 C70 28 78 28 82 30 C78 36 70 38 64 34 Z" stroke="#23963F" stroke-width="5"/>
+        </svg>
+        <div data-hf-id="hf-o9ul" class="s04-chip-label">Alimentación</div>
+      </div>
+      <div data-hf-id="hf-cmdd" class="s04-chip" style="left:225px;">
+        <svg data-hf-id="hf-ir0t" viewBox="0 0 120 120" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle data-hf-id="hf-t5q6" cx="60" cy="60" r="57" fill="#FFFFFF" stroke="#23963F" stroke-width="4"/>
+          <path data-hf-id="hf-suk6" d="M52 36 H68 V52 H84 V68 H68 V84 H52 V68 H36 V52 H52 Z" stroke="#23963F" stroke-width="5"/>
+          <g data-hf-id="hf-af15" id="s04-chip-on">
+            <circle data-hf-id="hf-02zk" cx="60" cy="60" r="59" fill="#23963F"/>
+            <path data-hf-id="hf-fee0" d="M52 36 H68 V52 H84 V68 H68 V84 H52 V68 H36 V52 H52 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="3"/>
+          </g>
+        </svg>
+        <div data-hf-id="hf-14h9" class="s04-chip-label" id="s04-chip-label-on">Salud</div>
+      </div>
+      <div data-hf-id="hf-75zf" class="s04-chip" style="left:450px;">
+        <svg data-hf-id="hf-jxxw" viewBox="0 0 120 120" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle data-hf-id="hf-tk17" cx="60" cy="60" r="57" fill="#FFFFFF" stroke="#23963F" stroke-width="4"/>
+          <path data-hf-id="hf-y2rf" d="M34 60 L60 38 L86 60 M42 54 V84 H78 V54" stroke="#23963F" stroke-width="5"/>
+          <path data-hf-id="hf-680l" d="M55 84 V70 H65 V84" stroke="#23963F" stroke-width="5"/>
+        </svg>
+        <div data-hf-id="hf-j557" class="s04-chip-label">Vivienda</div>
+      </div>
+      <div data-hf-id="hf-mz6k" class="s04-chip" style="left:675px;">
+        <svg data-hf-id="hf-jjmv" viewBox="0 0 120 120" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle data-hf-id="hf-tyc8" cx="60" cy="60" r="57" fill="#FFFFFF" stroke="#23963F" stroke-width="4"/>
+          <rect data-hf-id="hf-u94t" x="38" y="36" width="44" height="42" rx="8" stroke="#23963F" stroke-width="5"/>
+          <path data-hf-id="hf-h9hf" d="M38 58 H82" stroke="#23963F" stroke-width="5"/>
+          <circle data-hf-id="hf-n1qm" cx="49" cy="84" r="5" stroke="#23963F" stroke-width="5"/>
+          <circle data-hf-id="hf-85xr" cx="71" cy="84" r="5" stroke="#23963F" stroke-width="5"/>
+        </svg>
+        <div data-hf-id="hf-gs0b" class="s04-chip-label">Transporte</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  (function () {
+    window.__timelines = window.__timelines || {};
+    var tl = gsap.timeline({ paused: true });
+    var E = "power3.out";
+    var D = 0.6;
+
+    function rise(sel, at, dist, dur) {
+      tl.fromTo(sel, { opacity: 0, y: dist == null ? 40 : dist },
+        { opacity: 1, y: 0, duration: dur || D, ease: E }, at);
+    }
+
+    // persistent progress bar: this frame spans ~23.3s → ~32.5s of 59.98s
+    tl.fromTo("#s04-progress-fill", { scaleX: 0.3893 },
+      { scaleX: 0.5422, duration: 9.17, ease: "none" }, 0);
+
+    // Scene 1 (0.0–0.7): pill, title, empty card; Salud chip fills green
+    rise("#s04-pill", 0.0);
+    rise("#s04-title", 0.08);
+    rise("#s04-card", 0.18);
+    tl.fromTo("#s04-chip-on", { opacity: 0 }, { opacity: 1, duration: 0.45, ease: "power2.out" }, 0.2);
+    tl.fromTo("#s04-chip-label-on", { color: "#0B2545" }, { color: "#23963F", duration: 0.45, ease: "power2.out" }, 0.2);
+
+    // Scene 2 (0.7–3.2): "reserva dinero" → envelope + coin; "medicamentos habituales" → botiquín
+    rise("#s04-envelope", 0.75, 30);
+    tl.fromTo("#s04-coin", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 1.05);
+    rise("#s04-kit", 1.9, 40, 0.65);
+    rise("#s04-capsule", 2.1, 30);
+    rise("#s04-sub", 1.9, 40, 0.65);
+    // coin arcs from envelope into the botiquín (target ≈ 480,150)
+    tl.to("#s04-coin", { x: 292, duration: 0.8, ease: "power2.inOut" }, 2.45);
+    tl.to("#s04-coin", { y: -70, duration: 0.4, ease: "power2.out" }, 2.45);
+    tl.to("#s04-coin", { y: 34, duration: 0.4, ease: "power2.in" }, 2.85);
+    tl.to("#s04-coin", { scale: 0.4, opacity: 0, transformOrigin: "50% 50%",duration: 0.25, ease: "power2.in" }, 3.1);
+    tl.fromTo("#s04-halo", { opacity: 0 }, { opacity: 1, duration: 0.6, ease: E }, 3.15);
+
+    // Scene 3 (3.2–6.0): "insumos básicos" → receta; "atención necesaria" → calendario + 3 checks
+    rise("#s04-rx", 3.25, 40);
+    tl.fromTo(["#s04-rx-l1", "#s04-rx-l2", "#s04-rx-l3"], { scaleX: 0, transformOrigin: "0% 50%" },
+      { scaleX: 1, duration: 0.45, ease: E, stagger: 0.15 }, 3.5);
+    rise("#s04-cal", 4.38, 40);
+    var days = ["#s04-day1", "#s04-day2", "#s04-day3"];
+    for (var i = 0; i < days.length; i++) {
+      var t = 4.85 + i * 0.32;
+      tl.fromTo(days[i], { opacity: 0 }, { opacity: 1, duration: 0.25, ease: "power2.out" }, t);
+      tl.fromTo(days[i] + " .s04-check", { attr: { "stroke-dashoffset": 40 } },
+        { attr: { "stroke-dashoffset": 0 }, duration: 0.35, ease: "power2.out" }, t + 0.1);
+    }
+
+    // Scene 4 (6.0–9.17): "Considera las necesidades de cada integrante" → family lights up one by one, then hold
+    rise("#s04-family", 6.0, 24);
+    var people = ["#s04-p1", "#s04-p2", "#s04-p3", "#s04-p4"];
+    var cues = [6.7, 7.15, 7.6, 8.0];
+    for (var j = 0; j < people.length; j++) {
+      tl.fromTo(people[j], { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.45, ease: E }, cues[j]);
+    }
+
+    window.__timelines["04-salud"] = tl;
+  })();
+</script>
+</template>

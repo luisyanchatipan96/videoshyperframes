@@ -1,0 +1,455 @@
+<template id="06-transporte-template">
+  <div data-hf-id="hf-yk2d"
+    id="root"
+    data-composition-id="06-transporte"
+    data-start="0"
+    data-duration="9.82"
+    data-width="1080"
+    data-height="1920"
+  >
+    <style>
+      @font-face { font-family: 'Space Grotesk'; src: url('assets/fonts/Space_Grotesk_600.woff2') format('woff2'); font-weight: 600; font-style: normal; font-display: block; }
+      @font-face { font-family: 'Space Grotesk'; src: url('assets/fonts/Space_Grotesk_700.woff2') format('woff2'); font-weight: 700; font-style: normal; font-display: block; }
+      @font-face { font-family: 'Inter'; src: url('assets/fonts/Inter_500.woff2') format('woff2'); font-weight: 500; font-style: normal; font-display: block; }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        --bg: #FFFFFF;
+        --primary: #23963F;
+        --text: #0B2545;
+        --text-muted: #4A5D78;
+        --accent-light: rgba(43, 168, 74, 0.08);
+        --border: rgba(43, 168, 74, 0.2);
+        --card-bg: rgba(43, 168, 74, 0.04);
+      }
+
+      /* ---------- ambient ground (full-bleed clip) ---------- */
+      [id="06-transporte-bg"] {
+        position: absolute;
+        inset: 0;
+        background-color: var(--bg);
+        background-image:
+          radial-gradient(ellipse 760px 620px at 540px 520px, rgba(43, 168, 74, 0.08), rgba(43, 168, 74, 0) 70%),
+          radial-gradient(circle at 2px 2px, rgba(11, 37, 69, 0.06) 2px, transparent 2.5px);
+        background-size: 1080px 1920px, 36px 36px;
+        background-repeat: no-repeat, repeat;
+      }
+      [id="06-transporte-progress-track"] {
+        position: absolute;
+        left: 0;
+        top: 92px;
+        width: 1080px;
+        height: 8px;
+        background: var(--accent-light);
+      }
+      [id="06-transporte-progress-fill"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1080px;
+        height: 8px;
+        background: var(--primary);
+        transform-origin: 0 50%;
+      }
+
+      /* ---------- rubro template ---------- */
+      [id="06-transporte-pill"] {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 172px;
+        width: max-content;
+        padding: 0 34px;
+        height: 56px;
+        line-height: 56px;
+        border-radius: 100px;
+        background: var(--accent-light);
+        color: var(--primary);
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        letter-spacing: 0.04em;
+        white-space: nowrap;
+      }
+      [id="06-transporte-title"] {
+        position: absolute;
+        left: 90px;
+        width: 900px;
+        top: 266px;
+        height: 128px;
+        line-height: 128px;
+        margin: 0;
+        text-align: center;
+        color: var(--text);
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 700;
+        font-size: 120px;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+      }
+      [id="06-transporte-card"] {
+        position: absolute;
+        left: 100px;
+        top: 430px;
+        width: 880px;
+        height: 760px;
+        box-sizing: border-box;
+        border-radius: 14px;
+        background: var(--card-bg);
+        border: 1.5px solid var(--border);
+        overflow: hidden;
+      }
+      [id="06-transporte-scene"] {
+        position: absolute;
+        left: -1.5px;
+        top: -1.5px;
+        width: 880px;
+        height: 760px;
+        display: block;
+      }
+      [id="06-transporte-subtitle"] {
+        position: absolute;
+        left: 110px;
+        width: 860px;
+        top: 1250px;
+        height: 130px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--text-muted);
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 52px;
+        line-height: 1.25;
+      }
+      [id="06-transporte-chips"] {
+        position: absolute;
+        left: 90px;
+        top: 1415px;
+        width: 900px;
+        height: 160px;
+        display: grid;
+        grid-template-columns: repeat(4, 225px);
+      }
+      [class~="06-transporte-chip"] {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      [class~="06-transporte-chip-dot"] {
+        width: 120px;
+        height: 120px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 4px solid var(--primary);
+        background: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      [class~="06-transporte-chip-dot"] svg {
+        width: 64px;
+        height: 64px;
+        fill: none;
+        stroke: var(--primary);
+        stroke-width: 5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      [class~="06-transporte-chip-label"] {
+        margin-top: 10px;
+        height: 30px;
+        line-height: 30px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        color: var(--text-muted);
+        white-space: nowrap;
+      }
+      [class~="06-transporte-chip-active"] [class~="06-transporte-chip-dot"] {
+        background: var(--primary);
+      }
+      [class~="06-transporte-chip-active"] [class~="06-transporte-chip-dot"] svg {
+        stroke: #FFFFFF;
+      }
+      [class~="06-transporte-chip-active"] [class~="06-transporte-chip-label"] {
+        color: var(--primary);
+      }
+
+      /* ---------- illustration strokes ---------- */
+      [id="06-transporte-scene"] .ink {
+        stroke: #0B2545;
+        stroke-width: 6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+
+    <!-- ambient ground: full duration, lowest track -->
+    <div data-hf-id="hf-glby" id="06-transporte-bg" class="clip" data-start="0" data-duration="9.82" data-track-index="0">
+      <div data-hf-id="hf-n8na" id="06-transporte-progress-track"><div data-hf-id="hf-31ni" id="06-transporte-progress-fill"></div></div>
+    </div>
+
+    <div data-hf-id="hf-7xe9" id="06-transporte-layer" class="clip" data-start="0" data-duration="9.82" data-track-index="1">
+      <div data-hf-id="hf-pcei" id="06-transporte-pill">Presupuesto de emergencia</div>
+      <h1 data-hf-id="hf-j4jb" id="06-transporte-title">TRANSPORTE</h1>
+
+      <div data-hf-id="hf-teh3" id="06-transporte-card">
+        <svg data-hf-id="hf-nq9i" id="06-transporte-scene" viewBox="0 0 880 760" xmlns="http://www.w3.org/2000/svg">
+          <defs data-hf-id="hf-mh0t">
+            <mask data-hf-id="hf-js1i" id="06-transporte-route-mask" maskUnits="userSpaceOnUse" x="-200" y="0" width="1200" height="760">
+              <path data-hf-id="hf-tq4j"
+                id="06-transporte-route-reveal"
+                d="M -120 620 L 80 620 C 330 620 330 400 440 400 C 560 400 560 205 720 205"
+                fill="none"
+                stroke="#FFFFFF"
+                stroke-width="40"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </mask>
+          </defs>
+
+          <!-- gray S road -->
+          <g data-hf-id="hf-u5s9" id="06-transporte-road-g">
+            <path data-hf-id="hf-kwol"
+              id="06-transporte-road"
+              d="M -120 620 L 80 620 C 330 620 330 400 440 400 C 560 400 560 205 720 205"
+              fill="none"
+              stroke="#DFE5EC"
+              stroke-width="76"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+
+          <!-- green dotted safe route (revealed by mask self-draw) -->
+          <path data-hf-id="hf-5lm8"
+            id="06-transporte-route"
+            d="M -120 620 L 80 620 C 330 620 330 400 440 400 C 560 400 560 205 720 205"
+            fill="none"
+            stroke="#23963F"
+            stroke-width="12"
+            stroke-linecap="round"
+            stroke-dasharray="0.1 30"
+            mask="url(#06-transporte-route-mask)"
+          />
+
+          <!-- destination 1: health center (green cross) -->
+          <g data-hf-id="hf-8tp5" id="06-transporte-health">
+            <path data-hf-id="hf-7z1a" class="ink" d="M 646 166 V 78 L 750 26 L 854 78 V 166 Z" fill="#FFFFFF" />
+            <path data-hf-id="hf-ckrs" d="M 740 58 H 760 V 76 H 778 V 96 H 760 V 114 H 740 V 96 H 722 V 76 H 740 Z" fill="#23963F" />
+            <path data-hf-id="hf-pvdc" class="ink" d="M 732 166 V 136 Q 732 128 740 128 H 760 Q 768 128 768 136 V 166" fill="rgba(43,168,74,0.12)" />
+            <rect data-hf-id="hf-0s4t" class="ink" x="672" y="112" width="34" height="30" rx="6" fill="rgba(11,37,69,0.08)" />
+            <rect data-hf-id="hf-v30o" class="ink" x="794" y="112" width="34" height="30" rx="6" fill="rgba(11,37,69,0.08)" />
+          </g>
+
+          <!-- destination 2: meeting point (people gathered in a circle) -->
+          <g data-hf-id="hf-oeem" id="06-transporte-meet">
+            <circle data-hf-id="hf-nbbr" id="06-transporte-meet-ring" cx="300" cy="262" r="84" fill="rgba(43,168,74,0.10)" stroke="#23963F" stroke-width="6" />
+            <g data-hf-id="hf-gvhf" class="ink" fill="#FFFFFF">
+              <circle data-hf-id="hf-6yun" cx="300" cy="226" r="15" />
+              <path data-hf-id="hf-12q7" d="M 276 278 Q 276 250 300 250 Q 324 250 324 278 Z" />
+              <circle data-hf-id="hf-vlvy" cx="254" cy="250" r="13" />
+              <path data-hf-id="hf-yrvh" d="M 234 296 Q 234 272 254 272 Q 274 272 274 296 Z" />
+              <circle data-hf-id="hf-xx4y" cx="346" cy="250" r="13" />
+              <path data-hf-id="hf-ok0x" d="M 326 296 Q 326 272 346 272 Q 366 272 366 296 Z" />
+            </g>
+          </g>
+
+          <!-- information sign (navy panel, white arrow) -->
+          <g data-hf-id="hf-pj6g" id="06-transporte-sign">
+            <line data-hf-id="hf-8zyf" class="ink" x1="140" y1="500" x2="140" y2="584" />
+            <rect data-hf-id="hf-htk4" x="78" y="418" width="124" height="86" rx="14" fill="#0B2545" />
+            <path data-hf-id="hf-4p75" d="M 104 461 H 168 M 148 441 L 170 461 L 148 481" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+
+          <!-- ticket (pasajes) -->
+          <g data-hf-id="hf-1frf" id="06-transporte-ticket">
+            <path data-hf-id="hf-nfxm"
+              class="ink"
+              d="M 590 604 H 726 V 626 A 12 12 0 0 0 726 650 V 672 H 590 V 650 A 12 12 0 0 0 590 626 Z"
+              fill="rgba(43,168,74,0.14)"
+            />
+            <line data-hf-id="hf-y6hx" x1="616" y1="626" x2="672" y2="626" stroke="#23963F" stroke-width="6" stroke-linecap="round" />
+            <line data-hf-id="hf-qhmt" x1="616" y1="650" x2="652" y2="650" stroke="#23963F" stroke-width="6" stroke-linecap="round" />
+            <line data-hf-id="hf-dndf" x1="698" y1="612" x2="698" y2="664" stroke="#0B2545" stroke-width="4" stroke-dasharray="6 7" stroke-linecap="round" />
+          </g>
+
+          <!-- fuel drop (combustible) -->
+          <g data-hf-id="hf-r0sg" id="06-transporte-drop">
+            <path data-hf-id="hf-joit" class="ink" d="M 800 592 C 800 592 768 632 768 654 A 32 32 0 0 0 832 654 C 832 632 800 592 800 592 Z" fill="#23963F" />
+            <path data-hf-id="hf-c56m" d="M 786 656 A 14 14 0 0 0 798 670" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+          </g>
+
+          <!-- car (placed along the road by script) -->
+          <g data-hf-id="hf-l9p3" id="06-transporte-car">
+            <g data-hf-id="hf-2dec" transform="translate(0 18)">
+              <path data-hf-id="hf-bb6j" class="ink" d="M -58 -16 V -36 Q -58 -44 -50 -46 L -30 -50 L -16 -72 Q -12 -76 -6 -76 H 22 Q 28 -76 32 -70 L 44 -50 L 52 -48 Q 60 -46 60 -38 V -16 Z" fill="#23963F" />
+              <path data-hf-id="hf-450v" d="M -8 -68 H 20 L 30 -52 H -18 Z" fill="#FFFFFF" />
+              <g data-hf-id="hf-9hkc" id="06-transporte-car-w1">
+                <circle data-hf-id="hf-2sv9" class="ink" cx="-32" cy="-14" r="14" fill="#0B2545" />
+                <line data-hf-id="hf-edqo" x1="-32" y1="-22" x2="-32" y2="-6" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+              </g>
+              <g data-hf-id="hf-kd1z" id="06-transporte-car-w2">
+                <circle data-hf-id="hf-dor2" class="ink" cx="34" cy="-14" r="14" fill="#0B2545" />
+                <line data-hf-id="hf-i5p2" x1="34" y1="-22" x2="34" y2="-6" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+              </g>
+            </g>
+          </g>
+
+          <!-- bus (placed along the road by script) -->
+          <g data-hf-id="hf-domn" id="06-transporte-bus">
+            <g data-hf-id="hf-cjn0" transform="translate(0 18)">
+              <rect data-hf-id="hf-d1s8" class="ink" x="-84" y="-100" width="168" height="84" rx="16" fill="#FFFFFF" />
+              <rect data-hf-id="hf-m4dv" x="-81" y="-46" width="162" height="14" fill="#23963F" />
+              <rect data-hf-id="hf-buyy" x="-70" y="-88" width="30" height="28" rx="6" fill="rgba(11,37,69,0.14)" />
+              <rect data-hf-id="hf-uabc" x="-32" y="-88" width="30" height="28" rx="6" fill="rgba(11,37,69,0.14)" />
+              <rect data-hf-id="hf-znzs" x="6" y="-88" width="30" height="28" rx="6" fill="rgba(11,37,69,0.14)" />
+              <rect data-hf-id="hf-3oft" x="46" y="-88" width="28" height="44" rx="6" fill="rgba(11,37,69,0.14)" />
+              <g data-hf-id="hf-mvt0" id="06-transporte-bus-w1">
+                <circle data-hf-id="hf-2ebd" class="ink" cx="-48" cy="-14" r="15" fill="#0B2545" />
+                <line data-hf-id="hf-khb4" x1="-48" y1="-23" x2="-48" y2="-5" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+              </g>
+              <g data-hf-id="hf-vjov" id="06-transporte-bus-w2">
+                <circle data-hf-id="hf-hxyt" class="ink" cx="50" cy="-14" r="15" fill="#0B2545" />
+                <line data-hf-id="hf-l174" x1="50" y1="-23" x2="50" y2="-5" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+
+      <p data-hf-id="hf-gf4d" id="06-transporte-subtitle">Traslados esenciales<br data-hf-id="hf-x5px">y salida segura</p>
+
+      <!-- fixed row of 4 rubro chips: present from t=0, never animated -->
+      <div data-hf-id="hf-rfuq" id="06-transporte-chips">
+        <div data-hf-id="hf-hwni" class="06-transporte-chip">
+          <div data-hf-id="hf-h9c0" class="06-transporte-chip-dot">
+            <svg data-hf-id="hf-l6o9" viewBox="0 0 64 64"><g transform="translate(-13 -13) scale(0.75)" stroke-width="6.7"><path d="M60 44 C50 36 33 38 32 58 C31 78 46 92 60 87 C74 92 89 78 88 58 C87 38 70 36 60 44 Z" /><path d="M60 44 L63 30" /><path d="M64 34 C70 28 78 28 82 30 C78 36 70 38 64 34 Z" /></g></svg>
+          </div>
+          <div data-hf-id="hf-qoyl" class="06-transporte-chip-label">Alimentación</div>
+        </div>
+        <div data-hf-id="hf-1bwy" class="06-transporte-chip">
+          <div data-hf-id="hf-lk6w" class="06-transporte-chip-dot">
+            <svg data-hf-id="hf-tsl9" viewBox="0 0 64 64"><path data-hf-id="hf-mf9i" d="M 25 10 H 39 V 25 H 54 V 39 H 39 V 54 H 25 V 39 H 10 V 25 H 25 Z" /></svg>
+          </div>
+          <div data-hf-id="hf-hocw" class="06-transporte-chip-label">Salud</div>
+        </div>
+        <div data-hf-id="hf-1q7z" class="06-transporte-chip">
+          <div data-hf-id="hf-kd9t" class="06-transporte-chip-dot">
+            <svg data-hf-id="hf-uzic" viewBox="0 0 64 64"><path data-hf-id="hf-cse2" d="M 10 30 L 32 11 L 54 30 V 54 H 10 Z" /><path data-hf-id="hf-9sb8" d="M 26 54 V 40 H 38 V 54" /></svg>
+          </div>
+          <div data-hf-id="hf-pdcb" class="06-transporte-chip-label">Vivienda</div>
+        </div>
+        <div data-hf-id="hf-zdun" class="06-transporte-chip 06-transporte-chip-active">
+          <div data-hf-id="hf-krku" class="06-transporte-chip-dot">
+            <svg data-hf-id="hf-ul7b" viewBox="0 0 64 64"><rect data-hf-id="hf-wud9" x="12" y="10" width="40" height="36" rx="7" /><path data-hf-id="hf-w1yi" d="M 12 30 H 52" /><circle data-hf-id="hf-wxut" cx="22" cy="50" r="4" /><circle data-hf-id="hf-etq7" cx="42" cy="50" r="4" /></svg>
+          </div>
+          <div data-hf-id="hf-26rv" class="06-transporte-chip-label">Transporte</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/vendor/gsap.min.js"></script>
+    <script>
+      (function () {
+        var FID = "06-transporte";
+        var $ = function (s) { return document.getElementById(FID + "-" + s); };
+
+        var road = $("road");
+        var reveal = $("route-reveal");
+        var bus = $("bus");
+        var car = $("car");
+        var busW = [$("bus-w1"), $("bus-w2")];
+        var carW = [$("car-w1"), $("car-w2")];
+        var busHubs = [[-48, -14], [50, -14]];
+        var carHubs = [[-32, -14], [34, -14]];
+
+        var L = road.getTotalLength();
+
+        // length along the road where x first reaches targetX (deterministic bisection)
+        function lenAtX(targetX) {
+          var lo = 0, hi = L;
+          for (var i = 0; i < 40; i++) {
+            var mid = (lo + hi) / 2;
+            if (road.getPointAtLength(mid).x < targetX) lo = mid; else hi = mid;
+          }
+          return (lo + hi) / 2;
+        }
+
+        var BUS_READY = lenAtX(150);   // bus fully inside the card at the road start
+        var BUS_STOP = lenAtX(570);    // bus parked at the health-center door
+        var CAR_STOP = lenAtX(392);    // car parked beside the meeting point
+
+        // mask self-draw: measured length, one dash
+        var RL = reveal.getTotalLength() * 1.05;
+        reveal.style.strokeDasharray = RL + " " + RL;
+        reveal.style.strokeDashoffset = RL;
+
+        var st = { bus: 0, car: 0, spin: 0 };
+
+        function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+
+        function place(g, wheels, hubs, r, d) {
+          var p = road.getPointAtLength(d);
+          var q = road.getPointAtLength(Math.min(L, d + 2));
+          var o = road.getPointAtLength(Math.max(0, d - 2));
+          var ang = Math.atan2(q.y - o.y, q.x - o.x) * 180 / Math.PI;
+          ang = clamp(ang, -26, 26);
+          g.setAttribute("transform", "translate(" + p.x.toFixed(2) + " " + p.y.toFixed(2) + ") rotate(" + ang.toFixed(2) + ")");
+          var rot = (d / r) * (180 / Math.PI) + st.spin;
+          for (var i = 0; i < wheels.length; i++) {
+            wheels[i].setAttribute("transform", "rotate(" + rot.toFixed(2) + " " + hubs[i][0] + " " + hubs[i][1] + ")");
+          }
+        }
+
+        function render() {
+          place(bus, busW, busHubs, 15, st.bus);
+          place(car, carW, carHubs, 14, st.car);
+        }
+        render();
+
+        var tl = gsap.timeline({ paused: true, onUpdate: render });
+
+        // ---- Scene 1 (0.0–1.0): template + gray S road; chips already present ----
+        tl.fromTo($("progress-fill"), { scaleX: 0.6644 }, { scaleX: 0.8198, duration: 9.32, ease: "none" }, 0);
+        tl.fromTo($("pill"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 0.05);
+        tl.fromTo($("title"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 0.15);
+        tl.fromTo($("card"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }, 0.25);
+        tl.fromTo($("road-g"), { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power1.out" }, 0.5);
+        // destinations sit faint on the map until named
+        tl.fromTo($("health"), { opacity: 0, y: 30 }, { opacity: 0.35, y: 0, duration: 0.6, ease: "power3.out" }, 0.6);
+        tl.fromTo($("meet"), { opacity: 0, y: 30 }, { opacity: 0.35, y: 0, duration: 0.6, ease: "power3.out" }, 0.7);
+
+        // ---- Scene 2 (1.0–3.1): ticket on "pasajes", drop on "combustible", bus enters ----
+        tl.fromTo($("ticket"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 1.5);
+        tl.fromTo($("drop"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 2.18);
+        tl.fromTo(st, { bus: 0 }, { bus: BUS_READY, duration: 0.85, ease: "power2.out", onUpdate: render }, 2.2);
+
+        // ---- Scene 3 (3.1–6.2): route draws green, bus → health center, car → meeting point ----
+        tl.fromTo($("subtitle"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 3.1);
+        tl.fromTo(reveal, { strokeDashoffset: RL }, { strokeDashoffset: 0, duration: 1.3, ease: "power2.out" }, 3.14);
+        tl.fromTo(st, { bus: BUS_READY }, { bus: BUS_STOP, duration: 1.7, ease: "power2.inOut", onUpdate: render, immediateRender: false }, 3.45);
+        tl.fromTo($("health"), { opacity: 0.35 }, { opacity: 1, duration: 0.5, ease: "power1.out", immediateRender: false }, 3.6);
+        tl.fromTo($("meet"), { opacity: 0.35 }, { opacity: 1, duration: 0.5, ease: "power1.out", immediateRender: false }, 4.77);
+        tl.fromTo(st, { car: 0 }, { car: CAR_STOP, duration: 1.3, ease: "power2.inOut", onUpdate: render }, 4.8);
+
+        // ---- Scene 4 (6.2–9.32): info sign on "indicaciones"; hold, wheels turn slowly ----
+        tl.fromTo($("sign"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 6.84);
+        tl.fromTo(st, { spin: 0 }, { spin: 120, duration: 3.12, ease: "none", onUpdate: render }, 6.2);
+
+        render();
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines[FID] = tl;
+      })();
+    </script>
+  </div>
+</template>

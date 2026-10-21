@@ -1,0 +1,17 @@
+TÍTULO: “Ante una emergencia, prioriza lo esencial”
+ESCENA 1 | 0–7 s — Texto: “Fenómeno de El Niño” / “Prepara tu presupuesto de emergencia”
+VO: Ante posibles afectaciones del fenómeno de El Niño, preparar tus finanzas también es cuidar a tu familia.
+ESCENA 2 | 7–16 s — Texto: “Revisa cuánto tienes” / “Identifica lo indispensable” / “Pospón gastos no esenciales”
+VO: Anota cuánto dinero tienes disponible, identifica tus gastos indispensables y pospón las compras que pueden esperar.
+ESCENA 3 | 16–25 s — Texto: “ALIMENTACIÓN” / “Revisa • Planifica • Compra lo necesario”
+VO: En alimentación, revisa tus reservas y planifica la compra de agua segura y alimentos no perecibles. Evita compras excesivas.
+ESCENA 4 | 25–33 s — Texto: “SALUD” / “Medicamentos habituales y atención necesaria”
+VO: En salud, reserva dinero para medicamentos habituales, insumos básicos y atención necesaria. Considera las necesidades de cada integrante.
+ESCENA 5 | 33–41 s — Texto: “VIVIENDA” / “Un lugar seguro para tu familia”
+VO: En vivienda, contempla alquiler, servicios básicos y un posible alojamiento temporal si debes salir de casa.
+ESCENA 6 | 41–49 s — Texto: “TRANSPORTE” / “Traslados esenciales y salida segura”
+VO: En transporte, calcula pasajes o combustible para traslados esenciales y una salida segura, siguiendo las indicaciones de las autoridades.
+ESCENA 7 | 49–56 s — Texto: “Ajusta según tus necesidades” / “Separa una reserva, si puedes”
+VO: Ajusta los montos a tu realidad y, si puedes, separa una pequeña reserva para imprevistos.
+ESCENA 8 | 56–60 s — Texto: “Planifica hoy.” / “Protege lo esencial.”
+VO: Planifica hoy. Protege lo esencial y cuida a quienes más quieres.
