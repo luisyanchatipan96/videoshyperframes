@@ -1,3 +1,4 @@
 node_modules/
 .hyperframes/artifacts/
 .DS_Store
+.hyperframes/preview/
