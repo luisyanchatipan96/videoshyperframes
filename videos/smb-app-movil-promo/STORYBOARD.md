@@ -14,13 +14,12 @@ music: none
 - voiceover: ""
 - duration: 3s
 - transition_in: cut
-- status: outline
+- status: built
 - src: compositions/frames/01-apertura.html
 - type: hook
 - persuasion: Future pacing
 - beat: curiosity
 - blueprint: kinetic-type-beats
-- asset_candidates: none — typography-only
 - on_screen: "Tu cooperativa." / "En tu bolsillo."
 
 narrativeRole: Abre con la promesa en lenguaje del socio, sin nombrar todavía la app.
@@ -32,7 +31,7 @@ keyMessage: Tu cooperativa ahora cabe en tu teléfono.
 - voiceover: ""
 - duration: 4.5s
 - transition_in: crossfade
-- status: outline
+- status: built
 - src: compositions/frames/02-la-nueva-app.html
 - type: product_intro
 - persuasion: Show-don't-tell proof
@@ -50,7 +49,7 @@ keyMessage: Esta es la nueva App Móvil de San Miguel de los Bancos.
 - voiceover: ""
 - duration: 4s
 - transition_in: zoom-through
-- status: outline
+- status: built
 - src: compositions/frames/03-acceso.html
 - type: feature_showcase
 - persuasion: Friction reduction
@@ -68,7 +67,7 @@ keyMessage: Ingresar y pagar toma un toque.
 - voiceover: ""
 - duration: 4s
 - transition_in: crossfade
-- status: outline
+- status: built
 - src: compositions/frames/04-mis-productos.html
 - type: feature_showcase
 - persuasion: Feature-to-benefit translation
@@ -86,7 +85,7 @@ keyMessage: Todos tus productos, en una pantalla.
 - voiceover: ""
 - duration: 6s
 - transition_in: zoom-through
-- status: outline
+- status: built
 - src: compositions/frames/05-funciones.html
 - type: feature_showcase
 - persuasion: Value stacking
@@ -104,7 +103,7 @@ keyMessage: Todo lo que haces en la agencia, ahora en la app.
 - voiceover: ""
 - duration: 4.5s
 - transition_in: crossfade
-- status: outline
+- status: built
 - src: compositions/frames/06-lo-nuevo.html
 - type: benefit_highlight
 - persuasion: Novelty + rule of three (plus one)
@@ -122,13 +121,13 @@ keyMessage: La app trae funciones nuevas.
 - voiceover: ""
 - duration: 4s
 - transition_in: crossfade
-- status: outline
+- status: built
 - src: compositions/frames/07-descargala.html
 - type: cta
 - persuasion: Call to act
 - beat: motivation
 - blueprint: logo-assemble-lockup
-- asset_candidates: capture/assets/phone-login.png — pantalla de ingreso; capture/assets/phone-home.png — pantalla de inicio; capture/assets/logo-smb.png — logo; insignias App Store y Google Play (pendientes del usuario)
+- asset_candidates: capture/assets/phone-login.png — pantalla de ingreso; capture/assets/phone-home.png — pantalla de inicio; capture/assets/logo-smb.png — logo; capture/assets/badge-app-store.svg — insignia oficial App Store; capture/assets/badge-google-play.svg — insignia oficial Google Play
 - on_screen: "Descárgala ya." / "Disponible en App Store y Google Play" / "¡Somos tu gente!"
 
 narrativeRole: Cierra con la acción concreta y dónde descargarla.

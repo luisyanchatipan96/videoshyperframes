@@ -16,4 +16,6 @@
 - capture/assets/tile-estado-cuenta.png — feature tile: Estado de cuenta (Nuevo).
 - capture/assets/tile-certificado.png — feature tile: Certificado Bancario (Nuevo).
 - capture/assets/tile-cuentas-hijos.png — feature tile: Crear cuentas hijos (Nuevo).
-- Store badges: pending — user will upload official App Store / Google Play badges.
+
+- capture/assets/badge-app-store.svg — official Apple badge (black, "Download on the App Store"), 80.93×24.22 viewBox. Supplied by user.
+- capture/assets/badge-google-play.svg — official Google Play badge (black, "DISPONIBLE EN Google Play"), 80.55×24.11 viewBox. Supplied by user.

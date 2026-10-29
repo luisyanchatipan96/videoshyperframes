@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js" integrity="sha384-sG0Hv1tP1lZCk9KQmrIbY/XNwi+OY84GQqhMscbnsoBFqAz8KNCil1kvfL3Hbbk2" crossorigin="anonymous"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #F5F5F7;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="30"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div
+        id="el-01-apertura"
+        class="scene"
+        data-composition-id="01-apertura"
+        data-composition-src="compositions/frames/01-apertura.html"
+        data-start="0"
+        data-duration="3"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-02-la-nueva-app"
+        class="scene"
+        data-composition-id="02-la-nueva-app"
+        data-composition-src="compositions/frames/02-la-nueva-app.html"
+        data-start="3"
+        data-duration="4.5"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-03-acceso"
+        class="scene"
+        data-composition-id="03-acceso"
+        data-composition-src="compositions/frames/03-acceso.html"
+        data-start="7.5"
+        data-duration="4"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-04-mis-productos"
+        class="scene"
+        data-composition-id="04-mis-productos"
+        data-composition-src="compositions/frames/04-mis-productos.html"
+        data-start="11.5"
+        data-duration="4"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-05-funciones"
+        class="scene"
+        data-composition-id="05-funciones"
+        data-composition-src="compositions/frames/05-funciones.html"
+        data-start="15.5"
+        data-duration="6"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-06-lo-nuevo"
+        class="scene"
+        data-composition-id="06-lo-nuevo"
+        data-composition-src="compositions/frames/06-lo-nuevo.html"
+        data-start="21.5"
+        data-duration="4.5"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-07-descargala"
+        class="scene"
+        data-composition-id="07-descargala"
+        data-composition-src="compositions/frames/07-descargala.html"
+        data-start="26"
+        data-duration="4"
+        data-track-index="1"
+      ></div>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

@@ -26,7 +26,8 @@ Usar los colores de la marca (azul #04478C / #005089 y verde #4DC600) y su lema 
 - capture/assets/phone-home.png — teléfono con la pantalla de inicio (Mis productos, ¿Qué te gustaría hacer?).
 - capture/assets/logo-smb.png — logo de la cooperativa (sobre blanco).
 - capture/assets/tile-*.png, home-*.png, login-*.png — recortes de funciones y secciones de las pantallas.
-- Insignias oficiales de App Store y Google Play — PENDIENTES: las enviará el usuario.
+- capture/assets/badge-app-store.svg, capture/assets/badge-google-play.svg — insignias oficiales de las tiendas (enviadas por el usuario), para el cierre.
+- Los datos del mockup (saldo, cuenta) son ficticios según el usuario.
 
 ## Customizations
 
