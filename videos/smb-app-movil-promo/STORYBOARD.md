@@ -24,7 +24,7 @@ music: none
 - voiceover: ""
 - duration: 3s
 - transition_in: cut
-- status: built
+- status: animated
 - src: compositions/frames/01-apertura.html
 - type: hook
 - persuasion: Future pacing
@@ -49,7 +49,7 @@ Scene 3 (2.0–3.0s): hold quieto.
 - voiceover: ""
 - duration: 4s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/02-la-nueva-app.html
 - type: product_intro
 - persuasion: Show-don't-tell proof
@@ -74,7 +74,7 @@ Scene 3 (1.8–4.0s): un brillo de luz diagonal cruza una sola vez la pantalla d
 - voiceover: ""
 - duration: 4s
 - transition_in: zoom-through
-- status: built
+- status: animated
 - src: compositions/frames/03-acceso.html
 - type: feature_showcase
 - persuasion: Friction reduction
@@ -99,7 +99,7 @@ Scene 3 (3.2–4.0s): el marco queda en Huella dactilar como en el boceto; hold.
 - voiceover: ""
 - duration: 4s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/04-mis-productos.html
 - type: feature_showcase
 - persuasion: Feature-to-benefit translation
@@ -124,7 +124,7 @@ Scene 3 (2.2–4.0s): dentro de la tarjeta, un resalte verde suave (anillo #4DC6
 - voiceover: ""
 - duration: 5s
 - transition_in: zoom-through
-- status: built
+- status: animated
 - src: compositions/frames/05-funciones.html
 - type: feature_showcase
 - persuasion: Value stacking
@@ -149,7 +149,7 @@ Scene 3 (2.6–5.0s): «Todo desde tu app.» entra en 2.6s; hold quieto.
 - voiceover: ""
 - duration: 4s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/06-transferencias.html
 - type: benefit_highlight
 - persuasion: Speed promise (Friction reduction)
@@ -174,7 +174,7 @@ Scene 3 (1.8–4.0s): la flecha verde se dibuja veloz bajo las tarjetas (0.35s) 
 - voiceover: ""
 - duration: 3.5s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/07-descargala.html
 - type: cta
 - persuasion: Call to act

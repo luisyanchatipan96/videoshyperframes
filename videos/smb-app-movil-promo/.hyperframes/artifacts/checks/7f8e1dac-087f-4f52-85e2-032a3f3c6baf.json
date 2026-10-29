@@ -1,0 +1,1241 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 58,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-apertura-logo\" starts with a digit, so the common selector `#01-apertura-logo` throws a SyntaxError in querySelector().",
+        "selector": "#01-apertura-logo",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-apertura-l1\" starts with a digit, so the common selector `#01-apertura-l1` throws a SyntaxError in querySelector().",
+        "selector": "#01-apertura-l1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-apertura-l2\" starts with a digit, so the common selector `#01-apertura-l2` throws a SyntaxError in querySelector().",
+        "selector": "#01-apertura-l2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-apertura-l3\" starts with a digit, so the common selector `#01-apertura-l3` throws a SyntaxError in querySelector().",
+        "selector": "#01-apertura-l3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-apertura-green\" starts with a digit, so the common selector `#01-apertura-green` throws a SyntaxError in querySelector().",
+        "selector": "#01-apertura-green",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-la-nueva-app-title\" starts with a digit, so the common selector `#02-la-nueva-app-title` throws a SyntaxError in querySelector().",
+        "selector": "#02-la-nueva-app-title",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-la-nueva-app-sub1\" starts with a digit, so the common selector `#02-la-nueva-app-sub1` throws a SyntaxError in querySelector().",
+        "selector": "#02-la-nueva-app-sub1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-la-nueva-app-sub2\" starts with a digit, so the common selector `#02-la-nueva-app-sub2` throws a SyntaxError in querySelector().",
+        "selector": "#02-la-nueva-app-sub2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-la-nueva-app-phone\" starts with a digit, so the common selector `#02-la-nueva-app-phone` throws a SyntaxError in querySelector().",
+        "selector": "#02-la-nueva-app-phone",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-la-nueva-app-phone-img\" starts with a digit, so the common selector `#02-la-nueva-app-phone-img` throws a SyntaxError in querySelector().",
+        "selector": "#02-la-nueva-app-phone-img",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-la-nueva-app-screen\" starts with a digit, so the common selector `#02-la-nueva-app-screen` throws a SyntaxError in querySelector().",
+        "selector": "#02-la-nueva-app-screen",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-la-nueva-app-shine\" starts with a digit, so the common selector `#02-la-nueva-app-shine` throws a SyntaxError in querySelector().",
+        "selector": "#02-la-nueva-app-shine",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-la-nueva-app-phone\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-la-nueva-app-phone\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-la-nueva-app-phone` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-la-nueva-app-screen\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-la-nueva-app-screen\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-la-nueva-app-screen` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "id_override_reduced_specificity",
+        "severity": "warning",
+        "message": "Selector \"[id=\"02-la-nueva-app-shine\"]\" sets left/top through [id=...] or :where(#id), which has class-level or zero specificity, so a compound class rule (e.g. \".parent .row\") on the same element can silently win over this override.",
+        "selector": "[id=\"02-la-nueva-app-shine\"]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Use `#\\30 2-la-nueva-app-shine` instead; id specificity beats any selector built only from classes."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/03-acceso.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/03-acceso.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "overlapping_gsap_tweens",
+        "severity": "warning",
+        "message": "GSAP tweens overlap on \"#acceso03-frame\" for x, y between 1.00s and 1.10s.",
+        "selector": "#acceso03-frame",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/03-acceso.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`."
+      },
+      {
+        "code": "overlapping_gsap_tweens",
+        "severity": "warning",
+        "message": "GSAP tweens overlap on \"#acceso03-b-user\" for scale between 1.05s and 1.15s.",
+        "selector": "#acceso03-b-user",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/03-acceso.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Shorten the earlier tween, move the later tween, or add `overwrite: \"auto\"`."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/04-mis-productos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/04-mis-productos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-w1\" starts with a digit, so the common selector `#05-funciones-w1` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-w1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-w2\" starts with a digit, so the common selector `#05-funciones-w2` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-w2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-w3\" starts with a digit, so the common selector `#05-funciones-w3` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-w3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-sub\" starts with a digit, so the common selector `#05-funciones-sub` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-sub",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-c0\" starts with a digit, so the common selector `#05-funciones-c0` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-c0",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-c1\" starts with a digit, so the common selector `#05-funciones-c1` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-c1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-c2\" starts with a digit, so the common selector `#05-funciones-c2` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-c2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-c3\" starts with a digit, so the common selector `#05-funciones-c3` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-c3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-c4\" starts with a digit, so the common selector `#05-funciones-c4` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-c4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-c5\" starts with a digit, so the common selector `#05-funciones-c5` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-c5",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-c6\" starts with a digit, so the common selector `#05-funciones-c6` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-c6",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-c7\" starts with a digit, so the common selector `#05-funciones-c7` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-c7",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-funciones-c8\" starts with a digit, so the common selector `#05-funciones-c8` throws a SyntaxError in querySelector().",
+        "selector": "#05-funciones-c8",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transferencias-l1\" starts with a digit, so the common selector `#06-transferencias-l1` throws a SyntaxError in querySelector().",
+        "selector": "#06-transferencias-l1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transferencias-l2\" starts with a digit, so the common selector `#06-transferencias-l2` throws a SyntaxError in querySelector().",
+        "selector": "#06-transferencias-l2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transferencias-wipea\" starts with a digit, so the common selector `#06-transferencias-wipea` throws a SyntaxError in querySelector().",
+        "selector": "#06-transferencias-wipea",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transferencias-transferir\" starts with a digit, so the common selector `#06-transferencias-transferir` throws a SyntaxError in querySelector().",
+        "selector": "#06-transferencias-transferir",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transferencias-ring\" starts with a digit, so the common selector `#06-transferencias-ring` throws a SyntaxError in querySelector().",
+        "selector": "#06-transferencias-ring",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transferencias-trail\" starts with a digit, so the common selector `#06-transferencias-trail` throws a SyntaxError in querySelector().",
+        "selector": "#06-transferencias-trail",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transferencias-arrow\" starts with a digit, so the common selector `#06-transferencias-arrow` throws a SyntaxError in querySelector().",
+        "selector": "#06-transferencias-arrow",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transferencias-shaft\" starts with a digit, so the common selector `#06-transferencias-shaft` throws a SyntaxError in querySelector().",
+        "selector": "#06-transferencias-shaft",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"06-transferencias-head\" starts with a digit, so the common selector `#06-transferencias-head` throws a SyntaxError in querySelector().",
+        "selector": "#06-transferencias-head",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-descargala-layer\" starts with a digit, so the common selector `#07-descargala-layer` throws a SyntaxError in querySelector().",
+        "selector": "#07-descargala-layer",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/07-descargala.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-descargala-phone-login\" starts with a digit, so the common selector `#07-descargala-phone-login` throws a SyntaxError in querySelector().",
+        "selector": "#07-descargala-phone-login",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/07-descargala.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-descargala-phone-home\" starts with a digit, so the common selector `#07-descargala-phone-home` throws a SyntaxError in querySelector().",
+        "selector": "#07-descargala-phone-home",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/07-descargala.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-descargala-title\" starts with a digit, so the common selector `#07-descargala-title` throws a SyntaxError in querySelector().",
+        "selector": "#07-descargala-title",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/07-descargala.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-descargala-badge-apple\" starts with a digit, so the common selector `#07-descargala-badge-apple` throws a SyntaxError in querySelector().",
+        "selector": "#07-descargala-badge-apple",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/07-descargala.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-descargala-badge-google\" starts with a digit, so the common selector `#07-descargala-badge-google` throws a SyntaxError in querySelector().",
+        "selector": "#07-descargala-badge-google",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/07-descargala.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-app-movil-promo/compositions/frames/07-descargala.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      }
+    ],
+    "filesScanned": 8
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 5,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 7.221,
+        "selector": "#\\30 2-la-nueva-app-sub2",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 223.16,
+          "top": 296.61,
+          "right": 856.83,
+          "bottom": 366.61,
+          "width": 633.67,
+          "height": 70
+        },
+        "containerSelector": "#acceso03-h1",
+        "text": "San Miguel de los Bancos",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-la-nueva-app.html",
+        "bbox": {
+          "x": 223.16,
+          "y": 296.61,
+          "width": 633.67,
+          "height": 70
+        },
+        "firstSeen": 7.221,
+        "lastSeen": 7.221,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          7.221
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 15.209,
+        "selector": "#el-04-mis-productos > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 158.38,
+          "top": 186.75,
+          "right": 921.6,
+          "bottom": 327.84,
+          "width": 763.22,
+          "height": 141.09
+        },
+        "containerSelector": "#\\30 5-funciones-w1",
+        "text": "Revisa tu saldo,",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-k": "h",
+          "data-line": "1"
+        },
+        "sourceFile": "compositions/frames/04-mis-productos.html",
+        "bbox": {
+          "x": 158.38,
+          "y": 186.75,
+          "width": 763.22,
+          "height": 141.09
+        },
+        "firstSeen": 15.209,
+        "lastSeen": 15.209,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          15.209
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 20.279,
+        "selector": "#\\30 5-funciones-w2",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 648.61,
+          "top": 225,
+          "right": 883.23,
+          "bottom": 342,
+          "width": 234.62,
+          "height": 117
+        },
+        "containerSelector": "#\\30 6-transferencias-l1",
+        "text": "Paga.",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 648.61,
+          "y": 225,
+          "width": 234.62,
+          "height": 117
+        },
+        "firstSeen": 20.279,
+        "lastSeen": 20.279,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          20.279
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 20.279,
+        "selector": "#\\30 5-funciones-w3",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 345.16,
+          "top": 313.19,
+          "right": 734.84,
+          "bottom": 430.19,
+          "width": 389.68,
+          "height": 117
+        },
+        "containerSelector": "#\\30 6-transferencias-l1",
+        "text": "Gestiona.",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 345.16,
+          "y": 313.19,
+          "width": 389.68,
+          "height": 117
+        },
+        "firstSeen": 20.279,
+        "lastSeen": 20.279,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          20.279
+        ]
+      },
+      {
+        "code": "connector_orphan",
+        "severity": "info",
+        "time": 22.917,
+        "selector": "#\\30 6-transferencias-shaft",
+        "message": "Connector shaft is visible while both endpoints are not on stage.",
+        "rect": {
+          "left": 430,
+          "top": 1240,
+          "right": 620,
+          "bottom": 1240,
+          "width": 190,
+          "height": 0
+        },
+        "containerSelector": "#\\30 6-transferencias-arrow",
+        "fixHint": "Show the shaft only after both ends are on, and hide it with the earlier exit. Do not give the line its own clock.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-transferencias.html",
+        "bbox": {
+          "x": 430,
+          "y": 1240,
+          "width": 190,
+          "height": 0
+        },
+        "firstSeen": 22.917,
+        "lastSeen": 22.917,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.917
+        ]
+      }
+    ],
+    "duration": 27.5,
+    "samples": [
+      1.528,
+      4.583,
+      7.639,
+      10.694,
+      13.75,
+      16.806,
+      19.861,
+      22.917,
+      25.972
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 5,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.528,
+      7.639,
+      13.75,
+      19.861,
+      25.972
+    ],
+    "checked": 13,
+    "passed": 13
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 28 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 220
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
