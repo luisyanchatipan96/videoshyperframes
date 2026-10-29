@@ -11,6 +11,11 @@ Proyectos de video creados con [HyperFrames](https://hyperframes.heygen.com).
   - Texto de locución: `renders/locucion.txt`
   - Plan y guion: `BRIEF.md`, `STORYBOARD.md`, `SCRIPT.md`
 
+- `videos/smb-app-movil-promo/` — Promoción de la App Móvil de la Cooperativa San Miguel de los Bancos.
+  Video vertical (1080×1920, 27,5 s, sin audio) estilo Apple con tipografía Poppins.
+  - Video final: `renders/app-movil-san-miguel-de-los-bancos.mp4`
+  - Plan: `BRIEF.md`, `STORYBOARD.md`; bocetos en `boards/storyboard.html`
+
 ## Skills
 
 Las skills de HyperFrames están en `.agents/skills/` (enlazadas desde `.claude/skills/`),
