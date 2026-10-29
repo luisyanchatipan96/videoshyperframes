@@ -1,21 +1,21 @@
 <template id="05-funciones-template">
-  <div id="root" data-composition-id="05-funciones" data-start="0" data-duration="6" data-width="1080" data-height="1920">
+  <div id="root" data-composition-id="05-funciones" data-start="0" data-duration="5" data-width="1080" data-height="1920">
     <style>
-      @font-face{font-family:'Inter';src:url('assets/fonts/Inter_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Inter';src:url('assets/fonts/Inter_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Inter';src:url('assets/fonts/Inter_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Inter';src:url('assets/fonts/Inter_700.woff2') format('woff2');font-weight:700;}
-      #root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Inter',sans-serif;}
+      @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
+      #root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;}
       [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%, #FFFFFF 0%, #F5F5F7 60%, #ECEDF1 100%);}
       [data-k="layer"]{position:absolute;inset:0;}
-      .h{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.035em;line-height:1.02;}
+      .h{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.03em;line-height:1.05;}
       .g{color:#2F8A00;}
       .sub{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#5B6B7F;font-weight:500;letter-spacing:-0.01em;}
       .card{position:absolute;border-radius:44px;background:#fff;box-shadow:0 40px 90px rgba(4,71,140,.14),0 6px 18px rgba(4,71,140,.08);overflow:hidden;}
       .card img{display:block;width:100%;height:auto;}
       
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="6" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="6" data-track-index="1">
-      <p class="h" style="top:250px;font-size:90px;">Transfiere. Paga.<br>Gestiona.</p>
-      <p class="h g" style="top:480px;font-size:60px;font-weight:600;">Todo desde tu app.</p>
+    <div data-k="bg" class="clip" data-start="0" data-duration="5" data-track-index="0"></div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="5" data-track-index="1">
+      <p class="h" style="top:240px;font-size:84px;">Transfiere. Paga.<br>Gestiona.</p>
+      <p class="h g" style="top:480px;font-size:56px;font-weight:600;">Todo desde tu app.</p>
 <div class="card" style="left:81px;top:640px;width:294px;border-radius:30px;"><img src="assets/tile-transferir.png"></div>
 <div class="card" style="left:393px;top:640px;width:294px;border-radius:30px;"><img src="assets/tile-pagar-servicios.png"></div>
 <div class="card" style="left:705px;top:640px;width:294px;border-radius:30px;"><img src="assets/tile-wipea.png"></div>
@@ -31,7 +31,7 @@
     <script>
       window.__timelines = window.__timelines || {};
       var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 6);
+      tl.set({}, {}, 5);
       window.__timelines["05-funciones"] = tl;
     </script>
   </div>
