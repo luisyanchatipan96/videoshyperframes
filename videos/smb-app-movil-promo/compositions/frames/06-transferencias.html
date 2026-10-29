@@ -3,29 +3,66 @@
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;}
-      [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%, #FFFFFF 0%, #F5F5F7 60%, #ECEDF1 100%);}
-      [data-k="layer"]{position:absolute;inset:0;}
-      .h{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.03em;line-height:1.05;}
-      .g{color:#2F8A00;}
-      .sub{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#5B6B7F;font-weight:500;letter-spacing:-0.01em;}
-      .card{position:absolute;border-radius:44px;background:#fff;box-shadow:0 40px 90px rgba(4,71,140,.14),0 6px 18px rgba(4,71,140,.08);overflow:hidden;}
-      .card img{display:block;width:100%;height:auto;}
-      
+      [data-composition-id="06-transferencias"] [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%, #FFFFFF 0%, #F5F5F7 60%, #ECEDF1 100%);}
+      [data-composition-id="06-transferencias"] [data-k="layer"]{position:absolute;inset:0;}
+      [data-composition-id="06-transferencias"] .h{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.03em;line-height:1.05;}
+      [data-composition-id="06-transferencias"] .g{color:#2F8A00;}
+      [data-composition-id="06-transferencias"] .card{position:absolute;border-radius:44px;background:#fff;box-shadow:0 40px 90px rgba(4,71,140,.14),0 6px 18px rgba(4,71,140,.08);overflow:hidden;}
+      [data-composition-id="06-transferencias"] .card img{display:block;width:100%;height:auto;}
+      [data-composition-id="06-transferencias"] [data-k="trail"]{position:absolute;left:300px;top:1233px;width:330px;height:14px;border-radius:7px;background:linear-gradient(90deg, rgba(77,198,0,0) 0%, rgba(77,198,0,.18) 45%, rgba(77,198,0,.55) 100%);}
+      [data-composition-id="06-transferencias"] [data-k="ring"]{position:absolute;left:570px;top:760px;width:400px;height:403px;border-radius:48px;box-sizing:border-box;border:6px solid #4DC600;box-shadow:0 0 48px rgba(77,198,0,.45), inset 0 0 36px rgba(77,198,0,.25);pointer-events:none;}
     </style>
     <div data-k="bg" class="clip" data-start="0" data-duration="4" data-track-index="0"></div>
     <div data-k="layer" class="clip" data-start="0" data-duration="4" data-track-index="1">
-      <p class="h" style="top:300px;font-size:120px;">Transferencias</p>
-      <p class="h g" style="top:440px;font-size:120px;">al instante.</p>
-      <div class="card" style="left:110px;top:760px;width:400px;border-radius:48px;"><img src="assets/tile-wipea.png"></div>
-      <div class="card" style="left:570px;top:760px;width:400px;border-radius:48px;"><img src="assets/tile-transferir.png"></div>
-      <svg style="position:absolute;left:420px;top:1200px;" width="240" height="80" viewBox="0 0 240 80"><path d="M10 40 H200 M170 12 L210 40 L170 68" fill="none" stroke="#4DC600" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <p id="06-transferencias-l1" class="h" style="top:300px;font-size:120px;">Transferencias</p>
+      <p id="06-transferencias-l2" class="h g" style="top:440px;font-size:120px;">al instante.</p>
+      <div id="06-transferencias-wipea" class="card" style="left:110px;top:760px;width:400px;border-radius:48px;"><img src="assets/tile-wipea.png"></div>
+      <div id="06-transferencias-transferir" class="card" style="left:570px;top:760px;width:400px;border-radius:48px;"><img src="assets/tile-transferir.png"></div>
+      <div id="06-transferencias-ring" data-k="ring"></div>
+      <div id="06-transferencias-trail" data-k="trail"></div>
+      <svg id="06-transferencias-arrow" style="position:absolute;left:420px;top:1200px;overflow:visible;" width="240" height="80" viewBox="0 0 240 80">
+        <path id="06-transferencias-shaft" d="M10 40 H200" fill="none" stroke="#4DC600" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="200" stroke-dashoffset="0"/>
+        <path id="06-transferencias-head" d="M170 12 L210 40 L170 68" fill="none" stroke="#4DC600" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="100" stroke-dashoffset="0"/>
+      </svg>
     </div>
     <script src="assets/vendor/gsap.min.js"></script>
     <script>
-      window.__timelines = window.__timelines || {};
-      var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 4);
-      window.__timelines["06-transferencias"] = tl;
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var $ = function (s) { return document.getElementById("06-transferencias-" + s); };
+        var tl = gsap.timeline({ paused: true });
+
+        // Scene 1 (0.0–0.9s): headline lines arrive one after another, blur clears
+        tl.fromTo($("l1"), { opacity: 0, y: 50, filter: "blur(20px)" },
+          { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "expo.out" }, 0.05);
+        tl.fromTo($("l2"), { opacity: 0, y: 50, filter: "blur(20px)" },
+          { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "expo.out" }, 0.35);
+
+        // Scene 2 (0.8–1.8s): cards glide in from the sides to their posed spots
+        tl.fromTo($("wipea"), { opacity: 0, x: -460, scale: 0.92, filter: "blur(12px)" },
+          { opacity: 1, x: 0, scale: 1, filter: "blur(0px)", duration: 0.9, ease: "power3.out" }, 0.8);
+        tl.fromTo($("transferir"), { opacity: 0, x: 460, scale: 0.92, filter: "blur(12px)" },
+          { opacity: 1, x: 0, scale: 1, filter: "blur(0px)", duration: 0.9, ease: "power3.out" }, 0.95);
+
+        // Scene 3 (1.8–4.0s): signature move — the green arrow draws fast (0.35s) with a motion trail
+        tl.fromTo($("shaft"), { strokeDashoffset: 200 },
+          { strokeDashoffset: 0, duration: 0.25, ease: "power3.in" }, 1.85);
+        tl.fromTo($("head"), { strokeDashoffset: 100 },
+          { strokeDashoffset: 0, duration: 0.12, ease: "power3.out" }, 2.08);
+        tl.fromTo($("arrow"), { x: -40, filter: "blur(6px)" },
+          { x: 0, filter: "blur(0px)", duration: 0.4, ease: "expo.out" }, 1.85);
+        tl.fromTo($("trail"), { opacity: 0, x: -260, scaleX: 0.4, transformOrigin: "100% 50%" },
+          { opacity: 1, x: 0, scaleX: 1, duration: 0.3, ease: "power3.in" }, 1.85);
+        tl.to($("trail"), { opacity: 0, scaleX: 0.2, duration: 0.35, ease: "power2.out" }, 2.15);
+
+        // one-shot green flash on Transferir, then still hold
+        tl.fromTo($("ring"), { opacity: 0, scale: 0.98 },
+          { opacity: 1, scale: 1.02, duration: 0.14, ease: "power2.out" }, 2.22);
+        tl.to($("ring"), { opacity: 0, scale: 1.05, duration: 0.55, ease: "power2.out" }, 2.36);
+
+        tl.set({}, {}, 4);
+        window.__timelines["06-transferencias"] = tl;
+      })();
     </script>
   </div>
 </template>
