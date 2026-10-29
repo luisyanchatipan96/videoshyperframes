@@ -10,21 +10,23 @@
       .sub{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#5B6B7F;font-weight:500;letter-spacing:-0.01em;}
       .card{position:absolute;border-radius:44px;background:#fff;box-shadow:0 40px 90px rgba(4,71,140,.14),0 6px 18px rgba(4,71,140,.08);overflow:hidden;}
       .card img{display:block;width:100%;height:auto;}
-      .acceso03-group{position:absolute;inset:0;transform-origin:540px 1022px;}
+      .acceso03-group{position:absolute;inset:0;}
       .acceso03-w{display:inline-block;}
-      .acceso03-btn{position:absolute;width:413px;height:279px;border-radius:40px;background-color:#fff;background-image:url('assets/login-opciones.png');background-repeat:no-repeat;background-size:900px 645px;transform-origin:50% 50%;}
-      .acceso03-frame{position:absolute;left:0;top:0;width:444px;height:322px;box-sizing:border-box;border:8px solid #4DC600;border-radius:40px;}
+      .acceso03-btn{position:absolute;width:409px;height:274px;}
+      .acceso03-btn-card{position:absolute;inset:0;border-radius:36px;background:#fff;overflow:hidden;box-shadow:0 34px 70px rgba(4,71,140,.16),0 6px 16px rgba(4,71,140,.08);transform-origin:50% 50%;}
+      .acceso03-btn-card img{position:absolute;left:-3px;top:-3px;width:415px;height:280px;}
+      .acceso03-frame{position:absolute;left:0;top:0;width:439px;height:304px;box-sizing:border-box;border:8px solid #4DC600;border-radius:40px;}
     </style>
     <div data-hf-id="hf-kesz" data-k="bg" class="clip" data-start="0" data-duration="4.5" data-track-index="0"></div>
     <div data-hf-id="hf-ypa8" data-k="layer" class="clip" data-start="0" data-duration="4.5" data-track-index="1">
       <p data-hf-id="hf-7t0m" id="acceso03-h1" class="h" style="top:280px;font-size:92px;">Accede de forma</p>
       <p data-hf-id="hf-kvz8" class="h g" style="top:400px;font-size:76px;font-weight:600;"><span data-hf-id="hf-ej1x" id="acceso03-w1" class="acceso03-w">fácil,</span> <span data-hf-id="hf-csle" id="acceso03-w2" class="acceso03-w">rápida</span> <span data-hf-id="hf-g9sk" id="acceso03-w3" class="acceso03-w">y segura.</span></p>
       <div data-hf-id="hf-sc86" id="acceso03-group" class="acceso03-group">
-        <div data-hf-id="hf-51i8" class="card" style="left:90px;top:700px;width:900px;"><img data-hf-id="hf-3bkt" src="assets/login-opciones.png"></div>
-        <!-- crops of the real buttons (measured cells: x 9 / 475, y 11 / 359 in the 900x645 source) -->
-        <div data-hf-id="hf-sp25" id="acceso03-b-user" class="acceso03-btn" style="left:99px;top:711px;background-position:-9px -11px;"></div>
-        <div data-hf-id="hf-j5uq" id="acceso03-b-huella" class="acceso03-btn" style="left:565px;top:711px;background-position:-475px -11px;"></div>
-        <div data-hf-id="hf-9us9" id="acceso03-b-qr" class="acceso03-btn" style="left:565px;top:1059px;background-position:-475px -359px;"></div>
+        <!-- four floating buttons, each its own card (cut from the real login screen) -->
+        <div id="acceso03-b-user" class="acceso03-btn" style="left:70px;top:700px;"><div id="acceso03-c-user" class="acceso03-btn-card"><img src="assets/btn-usuario.png"></div></div>
+        <div id="acceso03-b-huella" class="acceso03-btn" style="left:601px;top:700px;"><div id="acceso03-c-huella" class="acceso03-btn-card"><img src="assets/btn-huella.png"></div></div>
+        <div id="acceso03-b-verif" class="acceso03-btn" style="left:70px;top:1064px;"><div id="acceso03-c-verif" class="acceso03-btn-card"><img src="assets/btn-verificar.png"></div></div>
+        <div id="acceso03-b-qr" class="acceso03-btn" style="left:601px;top:1064px;"><div id="acceso03-c-qr" class="acceso03-btn-card"><img src="assets/btn-qr.png"></div></div>
         <div data-hf-id="hf-v64u" id="acceso03-frame" class="acceso03-frame"></div>
       </div>
     </div>
@@ -33,13 +35,18 @@
       window.__timelines = window.__timelines || {};
       var tl = gsap.timeline({ paused: true });
       // frame positions (same offsets as the approved sketch on Huella: left 556, top 686)
-      var P = { user: { x: 90, y: 686 }, huella: { x: 556, y: 686 }, qr: { x: 556, y: 1034 } };
+      var P = { user: { x: 55, y: 685 }, huella: { x: 586, y: 685 }, qr: { x: 586, y: 1049 } };
 
       // Scene 1 (0.0–0.8): headline + card approach
       tl.fromTo("#acceso03-h1", { opacity: 0, y: 50, filter: "blur(16px)" },
         { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.7, ease: "power3.out" }, 0);
-      tl.fromTo("#acceso03-group", { opacity: 0, scale: 1.08, filter: "blur(16px)" },
-        { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.9, ease: "power3.out" }, 0.05);
+      // the four buttons float in one by one, each from its own side, and settle apart
+      var F = [["#acceso03-b-user", -60, 90, -4, 0.05], ["#acceso03-b-huella", 60, 110, 4, 0.15],
+               ["#acceso03-b-verif", -60, 130, 3, 0.25], ["#acceso03-b-qr", 60, 150, -3, 0.35]];
+      F.forEach(function (b) {
+        tl.fromTo(b[0], { opacity: 0, x: b[1], y: b[2], rotation: b[3], scale: 0.9, filter: "blur(12px)" },
+          { opacity: 1, x: 0, y: 0, rotation: 0, scale: 1, filter: "blur(0px)", duration: 0.9, ease: "power3.out" }, b[4]);
+      });
 
       // Scene 2 (0.8–3.2): green line word by word + frame travels the buttons
       var words = [["#acceso03-w1", 0.8], ["#acceso03-w2", 1.4], ["#acceso03-w3", 2.0]];
@@ -50,22 +57,22 @@
 
       tl.fromTo("#acceso03-frame", { x: P.user.x, y: P.user.y, opacity: 0, scale: 1.06 },
         { x: P.user.x, y: P.user.y, opacity: 1, scale: 1, duration: 0.35, ease: "power3.out" }, 0.75);
-      tl.fromTo("#acceso03-b-user", { scale: 1 }, { scale: 1.04, duration: 0.35, ease: "power3.out" }, 0.8);
+      tl.fromTo("#acceso03-c-user", { scale: 1 }, { scale: 1.04, duration: 0.35, ease: "power3.out" }, 0.8);
 
       // → Huella dactilar (lands 1.4)
       tl.to("#acceso03-frame", { x: P.huella.x, y: P.huella.y, duration: 0.45, ease: "power3.inOut" }, 1.0);
-      tl.to("#acceso03-b-user", { scale: 1, duration: 0.35, ease: "power3.inOut" }, 1.05);
-      tl.fromTo("#acceso03-b-huella", { scale: 1 }, { scale: 1.04, duration: 0.35, ease: "power3.out" }, 1.3);
+      tl.to("#acceso03-c-user", { scale: 1, duration: 0.35, ease: "power3.inOut" }, 1.05);
+      tl.fromTo("#acceso03-c-huella", { scale: 1 }, { scale: 1.04, duration: 0.35, ease: "power3.out" }, 1.3);
 
       // → Pagar con QR (lands 2.0)
       tl.to("#acceso03-frame", { x: P.qr.x, y: P.qr.y, duration: 0.45, ease: "power3.inOut" }, 1.6);
-      tl.to("#acceso03-b-huella", { scale: 1, duration: 0.35, ease: "power3.inOut" }, 1.65);
-      tl.fromTo("#acceso03-b-qr", { scale: 1 }, { scale: 1.04, duration: 0.35, ease: "power3.out" }, 1.9);
+      tl.to("#acceso03-c-huella", { scale: 1, duration: 0.35, ease: "power3.inOut" }, 1.65);
+      tl.fromTo("#acceso03-c-qr", { scale: 1 }, { scale: 1.04, duration: 0.35, ease: "power3.out" }, 1.9);
 
       // back to Huella dactilar, settled by 3.2 (as in the sketch)
       tl.to("#acceso03-frame", { x: P.huella.x, y: P.huella.y, duration: 0.6, ease: "power3.inOut" }, 2.45);
-      tl.to("#acceso03-b-qr", { scale: 1, duration: 0.4, ease: "power3.inOut" }, 2.5);
-      tl.to("#acceso03-b-huella", { scale: 1.04, duration: 0.4, ease: "power3.out" }, 2.8);
+      tl.to("#acceso03-c-qr", { scale: 1, duration: 0.4, ease: "power3.inOut" }, 2.5);
+      tl.to("#acceso03-c-huella", { scale: 1.04, duration: 0.4, ease: "power3.out" }, 2.8);
 
       // Scene 3 (3.2–4.0): hold
       tl.set({}, {}, 4);
