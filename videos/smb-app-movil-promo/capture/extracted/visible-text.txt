@@ -1,0 +1,5 @@
+Brief: Promociona la App Móvil de la Cooperativa San Miguel de los Bancos con sus funciones, usa sus colores, haz una presentación estilo Apple, promociona sus opciones y coloca que está disponible en App Store y Google Play.
+
+Texto visible en el mockup (MockUp_Nuevo_App_Movil_SMB_2026):
+Pantalla de ingreso: San Miguel de los Bancos — Cooperativa de Ahorro y Crédito. ¡Somos tu gente! Banca móvil San Miguel de los Bancos. «Avanzamos contigo... Porque somos tu gente!!». Ver QR. Usuario y contraseña. Huella dactilar. Verificar transferencia. Pagar con QR.
+Pantalla de inicio: Mis productos — Todos, Cuentas, Créditos, Inversiones. Ahorro a la vista — Saldo disponible. ¿Qué te gustaría hacer? WIPEA (Nuevo — Transfiere en un Wip), Pagar Servicios, Transferir, Wallet joven (Nuevo), Verificar Transferencias (Nuevo), Rapidito (Nuevo), Estado de cuenta (Nuevo), Certificado Bancario (Nuevo), Crear cuentas hijos (Nuevo). Menú: Inicio, Otros Servicios, Perfil.
