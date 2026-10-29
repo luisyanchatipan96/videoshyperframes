@@ -11,6 +11,9 @@ Responde al usuario en español.
 2. Sigue `/hyperframes`. Si el usuario pide "como la última vez" o un video del mismo estilo,
    ofrece la receta `explicativo-institucional-vertical` (faceless-explainer, 1080×1920, español,
    voz Kokoro `ef_dora` a velocidad 0.92, preset blue-professional con azul #0B2545, verde #23963F y blanco).
+   Para promociones de apps o productos, ofrece la receta `promo-app-vertical-apple` (product-launch-video,
+   1080×1920, español, estilo Apple: fondo #F5F5F7, tipografía Poppins, sin audio por defecto; base en
+   `videos/smb-app-movil-promo/`). Con mockups .ai: son PDF; extrae con `pdftocairo -png -transp`.
 3. Crea el proyecto en `videos/<nombre>/` con `npx hyperframes init`.
 
 ## Particularidades de este entorno en la nube (aprendidas en el primer video)

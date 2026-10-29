@@ -1,0 +1,61 @@
+NARRACIÓN — App Móvil Cooperativa San Miguel de los Bancos
+Video de 27,5 s · vertical 1080×1920
+
+────────────────────────────────────────
+1) TEXTO PARA PEGAR EN ELEVENLABS (con pausas)
+────────────────────────────────────────
+Compatible con los modelos Eleven Multilingual v2 y Eleven Turbo/Flash v2.5,
+que reconocen la etiqueta <break time="…s" />. Pégalo tal cual:
+
+<break time="0.3s" />Tu cooperativa, al alcance de tu bolsillo.<break time="0.5s" />
+Accede a la App Móvil de tu Cooperativa San Miguel de los Bancos.<break time="0.6s" />
+Ingresa de forma fácil, rápida y segura.<break time="1.0s" />
+Revisa tu saldo, tus créditos, inversiones y mucho más.<break time="0.8s" />
+Transfiere, paga tus servicios y gestiona todo desde tu app.<break time="1.0s" />
+Con WIPEA, tus transferencias llegan al instante.<break time="0.8s" />
+Descárgala ya en App Store y Google Play.
+
+(Si usas el modelo Eleven v3, que no lee <break>, reemplaza cada etiqueta por
+"..." y separa cada frase en su propia línea.)
+
+────────────────────────────────────────
+2) GUION POR ESCENA (referencia de tiempos)
+────────────────────────────────────────
+Escena 01 · 0,0–3,0 s · Apertura
+  «Tu cooperativa, al alcance de tu bolsillo.»
+  Pausa breve antes de la escena 2.
+
+Escena 02 · 3,0–7,0 s · La App Móvil
+  «Accede a la App Móvil de tu Cooperativa San Miguel de los Bancos.»
+  Pausa breve mientras el teléfono termina de girar.
+
+Escena 03 · 7,0–11,0 s · Acceso
+  «Ingresa de forma fácil, rápida y segura.»
+  Pausa larga: deja que el marco verde recorra los botones.
+
+Escena 04 · 11,0–15,0 s · Mis productos
+  «Revisa tu saldo, tus créditos, inversiones y mucho más.»
+  Pausa breve.
+
+Escena 05 · 15,0–20,0 s · Funciones
+  «Transfiere, paga tus servicios y gestiona todo desde tu app.»
+  Pausa larga: las 9 funciones terminan de armarse.
+
+Escena 06 · 20,0–24,0 s · Transferencias al instante
+  «Con WIPEA, tus transferencias llegan al instante.»
+  Pausa breve.
+
+Escena 07 · 24,0–27,5 s · Descárgala
+  «Descárgala ya en App Store y Google Play.»
+  Cierre firme, sin pausa final.
+
+────────────────────────────────────────
+3) AJUSTES RECOMENDADOS EN ELEVENLABS
+────────────────────────────────────────
+- Voz: cálida, cercana y segura, en español latino (masculina o femenina).
+- Modelo: Eleven Multilingual v2.
+- Stability ≈ 45 % · Similarity ≈ 75 % · Style ≈ 15–20 % · Speaker boost activado.
+- Velocidad: normal (1.0). Si el audio pasa de 27,5 s, súbela un poco (≈1.05)
+  o acorta la pausa de la escena 3 y la de la escena 5.
+- Exporta en MP3 o WAV y envíamelo: lo coloco en el video, sincronizo cada frase
+  con su escena y vuelvo a renderizar.

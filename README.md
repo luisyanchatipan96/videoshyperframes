@@ -21,9 +21,12 @@ Proyectos de video creados con [HyperFrames](https://hyperframes.heygen.com).
 Las skills de HyperFrames están en `.agents/skills/` (enlazadas desde `.claude/skills/`),
 así se cargan solas al abrir este repositorio en una sesión de Claude Code.
 
-## Receta guardada
+## Recetas guardadas
 
 `.media/recipes/explicativo-institucional-vertical/` guarda el estilo de este video
 (vertical 1080×1920, español, voz `ef_dora`, azul oscuro, verde y blanco, plantilla de rubros).
 Para un video nuevo con el mismo estilo, abre una sesión con este repositorio y pide:
 «haz otro video como la última vez» y entrega tu guion.
+
+`.media/recipes/promo-app-vertical-apple/` guarda el estilo del video de la App Móvil SMB
+(vertical, estilo Apple, tipografía Poppins). Pide: «haz una promo como la de la App Móvil».
