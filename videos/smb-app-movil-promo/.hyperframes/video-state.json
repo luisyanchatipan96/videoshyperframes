@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "9d5d4808-e23d-4a3a-aa16-50f97cfc3785",
-  "currentRevision": "70e9e80e-c7be-4a31-b3d9-dc3a946afb4f",
+  "currentRevision": "559ab43d-d7ec-4f83-9fa9-2367208d0efa",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -311,6 +311,10 @@
     "assets/btn-qr.png": {
       "hash": "eff06690a3168e61aab16b3cb0cb3a2b890cd2666be59027389af03754cc61eb",
       "content": "/root/.cache/hyperframes/history/9d5d4808-e23d-4a3a-aa16-50f97cfc3785/blobs/ef/eff06690a3168e61aab16b3cb0cb3a2b890cd2666be59027389af03754cc61eb"
+    },
+    "revision-escena-03.jpg": {
+      "hash": "0bb1d019314f8c67e6b85d17944a851160bb8b7321e4138bcb16dfd353bea00d",
+      "content": "/root/.cache/hyperframes/history/9d5d4808-e23d-4a3a-aa16-50f97cfc3785/blobs/0b/0bb1d019314f8c67e6b85d17944a851160bb8b7321e4138bcb16dfd353bea00d"
     }
   },
   "revisions": {
@@ -655,6 +659,21 @@
         "revision-2.jpg": {
           "before": null,
           "after": "/root/.cache/hyperframes/history/9d5d4808-e23d-4a3a-aa16-50f97cfc3785/blobs/70/70f34d7938c01184b258332d3033caf9cda21b23ae741b1e082c02d2428f5276"
+        }
+      }
+    },
+    "559ab43d-d7ec-4f83-9fa9-2367208d0efa": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793313244280,
+      "endedAt": 1793313246282,
+      "files": {
+        "revision-escena-03.jpg": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/9d5d4808-e23d-4a3a-aa16-50f97cfc3785/blobs/0b/0bb1d019314f8c67e6b85d17944a851160bb8b7321e4138bcb16dfd353bea00d"
         }
       }
     }
