@@ -7,7 +7,7 @@ destination: reels
 aspect: 1080x1920
 language: es
 audience: "Socios y potenciales socios de la Cooperativa San Miguel de los Bancos"
-length: 30s
+length: 27.5s
 angle: feature-reveal
 narration: no
 capture: none
@@ -32,6 +32,8 @@ Usar los colores de la marca (azul #04478C / #005089 y verde #4DC600) y su lema 
 ## Customizations
 
 - Sin voz en off y sin música (video mudo; el audio se agrega después).
+- Tipografía Poppins (pedido del usuario).
+- 7 escenas, 27,5 s (el usuario eliminó la escena de firma y el logo de las escenas 2 y 7).
 - Insignias oficiales de las tiendas en el cierre (archivos del usuario).
 
 ## Notes
