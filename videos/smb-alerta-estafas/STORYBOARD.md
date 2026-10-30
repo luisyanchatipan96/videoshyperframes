@@ -23,7 +23,7 @@ structure: how-to
 - voiceover: "¿Te escribieron por WhatsApp diciendo que son asesores de crédito de la Cooperativa San Miguel de los Bancos? ¡Cuidado!"
 - duration: 7s
 - transition_in: cut
-- status: built
+- status: animated
 - src: compositions/frames/01-alerta.html
 - type: hook
 - persuasion: Pattern interrupt
@@ -47,7 +47,7 @@ Scene 3 (6.0s, en «¡Cuidado!»): el sello «¡ALERTA!» cae con golpe sobre la
 - voiceover: "Personas que se hacen pasar por la cooperativa te piden dinero para revisar tu buró de crédito o agilizar un trámite. Es una estafa."
 - duration: 10s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/02-asi-enganan.html
 - type: pain_point
 - persuasion: Show-don't-tell (worked example)
@@ -71,7 +71,7 @@ Scene 3 (6.1s, en «Es una estafa»): el sello rojo «ESTAFA» cae con golpe sob
 - voiceover: "En la Cooperativa San Miguel de los Bancos todos los trámites son gratuitos. Nunca te pediremos dinero por WhatsApp para revisar tu buró ni aprobar un crédito."
 - duration: 9s
 - transition_in: zoom-through
-- status: built
+- status: animated
 - src: compositions/frames/03-la-verdad.html
 - type: product_intro
 - persuasion: Reframe
@@ -95,7 +95,7 @@ Scene 3 (3.75s): «Nunca te pediremos dinero por WhatsApp» sube; hold.
 - voiceover: "Desconfía si te piden depósitos, si te escriben desde números desconocidos, si te presionan para actuar rápido o si te piden claves y códigos."
 - duration: 9s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/04-senales.html
 - type: feature_showcase
 - persuasion: Checklist (progressive disclosure)
@@ -119,7 +119,7 @@ Scene 3: hold.
 - voiceover: "Si te pasa: no transfieras o deposites dinero, no compartas tus datos personales, bloquea el número y contáctanos por nuestros canales oficiales."
 - duration: 10s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/05-que-hacer.html
 - type: benefit_highlight
 - persuasion: Action steps
@@ -143,7 +143,7 @@ Scene 3: hold.
 - voiceover: "Para cualquier trámite, acércate a nuestras oficinas en San Miguel de los Bancos, Pedro Vicente Maldonado, Puerto Quito y Mindo."
 - duration: 9.5s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/06-oficinas.html
 - type: cta
 - persuasion: Proximity + trust
@@ -167,7 +167,7 @@ Scene 3 (6.6s): «Realiza tus trámites de forma presencial y gratuita» sube; h
 - voiceover: "Recuerda: tus trámites son gratuitos."
 - duration: 5.5s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/07-cierre.html
 - type: branding
 - persuasion: Brand recall

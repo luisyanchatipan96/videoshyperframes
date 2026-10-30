@@ -25,6 +25,10 @@ Proyectos de video creados con [HyperFrames](https://hyperframes.heygen.com).
   - `renders/lente-directo-banner-1920x175.webm` — VP9 con audio
   - `renders/lente-directo-banner-1920x176-compatible.mp4` — 1920×176 para reproductores que exigen altura par
 
+- `videos/smb-alerta-estafas/` — Reel educativo contra estafas que suplantan a la Cooperativa SMB por WhatsApp.
+  Vertical 1080×1920, 60 s, voz Daniela + música y efectos (ElevenLabs).
+  - Video final: `renders/alerta-tramites-gratuitos-smb.mp4`
+
 ## Skills
 
 Las skills de HyperFrames están en `.agents/skills/` (enlazadas desde `.claude/skills/`),

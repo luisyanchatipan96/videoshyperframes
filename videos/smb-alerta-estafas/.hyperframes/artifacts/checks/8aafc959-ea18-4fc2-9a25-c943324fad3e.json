@@ -1,0 +1,1836 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 67,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "composition_file_too_large",
+        "severity": "warning",
+        "message": "This HTML composition file has 304 lines. Smaller sub-compositions are easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-alerta-stamp\" starts with a digit, so the common selector `#01-alerta-stamp` throws a SyntaxError in querySelector().",
+        "selector": "#01-alerta-stamp",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/01-alerta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-alerta-l1\" starts with a digit, so the common selector `#01-alerta-l1` throws a SyntaxError in querySelector().",
+        "selector": "#01-alerta-l1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/01-alerta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-alerta-l2\" starts with a digit, so the common selector `#01-alerta-l2` throws a SyntaxError in querySelector().",
+        "selector": "#01-alerta-l2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/01-alerta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-alerta-l3\" starts with a digit, so the common selector `#01-alerta-l3` throws a SyntaxError in querySelector().",
+        "selector": "#01-alerta-l3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/01-alerta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-alerta-phone\" starts with a digit, so the common selector `#01-alerta-phone` throws a SyntaxError in querySelector().",
+        "selector": "#01-alerta-phone",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/01-alerta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"01-alerta-notif\" starts with a digit, so the common selector `#01-alerta-notif` throws a SyntaxError in querySelector().",
+        "selector": "#01-alerta-notif",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/01-alerta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/01-alerta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/01-alerta.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-title\" starts with a digit, so the common selector `#02-asi-enganan-title` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-title",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-phone\" starts with a digit, so the common selector `#02-asi-enganan-phone` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-phone",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-chat\" starts with a digit, so the common selector `#02-asi-enganan-chat` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-chat",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-t1\" starts with a digit, so the common selector `#02-asi-enganan-t1` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-t1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-m1\" starts with a digit, so the common selector `#02-asi-enganan-m1` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-m1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-t2\" starts with a digit, so the common selector `#02-asi-enganan-t2` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-t2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-m2\" starts with a digit, so the common selector `#02-asi-enganan-m2` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-m2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-hl\" starts with a digit, so the common selector `#02-asi-enganan-hl` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-hl",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-t3\" starts with a digit, so the common selector `#02-asi-enganan-t3` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-t3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-m3\" starts with a digit, so the common selector `#02-asi-enganan-m3` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-m3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-t4\" starts with a digit, so the common selector `#02-asi-enganan-t4` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-t4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-m4\" starts with a digit, so the common selector `#02-asi-enganan-m4` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-m4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"02-asi-enganan-stamp\" starts with a digit, so the common selector `#02-asi-enganan-stamp` throws a SyntaxError in querySelector().",
+        "selector": "#02-asi-enganan-stamp",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"03-la-verdad-logo\" starts with a digit, so the common selector `#03-la-verdad-logo` throws a SyntaxError in querySelector().",
+        "selector": "#03-la-verdad-logo",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/03-la-verdad.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"03-la-verdad-head\" starts with a digit, so the common selector `#03-la-verdad-head` throws a SyntaxError in querySelector().",
+        "selector": "#03-la-verdad-head",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/03-la-verdad.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"03-la-verdad-seal\" starts with a digit, so the common selector `#03-la-verdad-seal` throws a SyntaxError in querySelector().",
+        "selector": "#03-la-verdad-seal",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/03-la-verdad.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"03-la-verdad-glint\" starts with a digit, so the common selector `#03-la-verdad-glint` throws a SyntaxError in querySelector().",
+        "selector": "#03-la-verdad-glint",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/03-la-verdad.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"03-la-verdad-sub\" starts with a digit, so the common selector `#03-la-verdad-sub` throws a SyntaxError in querySelector().",
+        "selector": "#03-la-verdad-sub",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/03-la-verdad.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/03-la-verdad.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/03-la-verdad.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-senales-title\" starts with a digit, so the common selector `#04-senales-title` throws a SyntaxError in querySelector().",
+        "selector": "#04-senales-title",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-senales-card1\" starts with a digit, so the common selector `#04-senales-card1` throws a SyntaxError in querySelector().",
+        "selector": "#04-senales-card1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-senales-ic1\" starts with a digit, so the common selector `#04-senales-ic1` throws a SyntaxError in querySelector().",
+        "selector": "#04-senales-ic1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-senales-card2\" starts with a digit, so the common selector `#04-senales-card2` throws a SyntaxError in querySelector().",
+        "selector": "#04-senales-card2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-senales-ic2\" starts with a digit, so the common selector `#04-senales-ic2` throws a SyntaxError in querySelector().",
+        "selector": "#04-senales-ic2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-senales-card3\" starts with a digit, so the common selector `#04-senales-card3` throws a SyntaxError in querySelector().",
+        "selector": "#04-senales-card3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-senales-ic3\" starts with a digit, so the common selector `#04-senales-ic3` throws a SyntaxError in querySelector().",
+        "selector": "#04-senales-ic3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-senales-card4\" starts with a digit, so the common selector `#04-senales-card4` throws a SyntaxError in querySelector().",
+        "selector": "#04-senales-card4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"04-senales-ic4\" starts with a digit, so the common selector `#04-senales-ic4` throws a SyntaxError in querySelector().",
+        "selector": "#04-senales-ic4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/04-senales.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-title\" starts with a digit, so the common selector `#05-que-hacer-title` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-title",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-card1\" starts with a digit, so the common selector `#05-que-hacer-card1` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-card1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-ck1\" starts with a digit, so the common selector `#05-que-hacer-ck1` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-ck1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-ckp1\" starts with a digit, so the common selector `#05-que-hacer-ckp1` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-ckp1",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-card2\" starts with a digit, so the common selector `#05-que-hacer-card2` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-card2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-ck2\" starts with a digit, so the common selector `#05-que-hacer-ck2` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-ck2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-ckp2\" starts with a digit, so the common selector `#05-que-hacer-ckp2` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-ckp2",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-card3\" starts with a digit, so the common selector `#05-que-hacer-card3` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-card3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-ck3\" starts with a digit, so the common selector `#05-que-hacer-ck3` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-ck3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-ckp3\" starts with a digit, so the common selector `#05-que-hacer-ckp3` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-ckp3",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-card4\" starts with a digit, so the common selector `#05-que-hacer-card4` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-card4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-ck4\" starts with a digit, so the common selector `#05-que-hacer-ck4` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-ck4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"05-que-hacer-ckp4\" starts with a digit, so the common selector `#05-que-hacer-ckp4` throws a SyntaxError in querySelector().",
+        "selector": "#05-que-hacer-ckp4",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/06-oficinas.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/06-oficinas.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-cierre-advisor\" starts with a digit, so the common selector `#07-cierre-advisor` throws a SyntaxError in querySelector().",
+        "selector": "#07-cierre-advisor",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-cierre-badge\" starts with a digit, so the common selector `#07-cierre-badge` throws a SyntaxError in querySelector().",
+        "selector": "#07-cierre-badge",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-cierre-glow\" starts with a digit, so the common selector `#07-cierre-glow` throws a SyntaxError in querySelector().",
+        "selector": "#07-cierre-glow",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-cierre-tag\" starts with a digit, so the common selector `#07-cierre-tag` throws a SyntaxError in querySelector().",
+        "selector": "#07-cierre-tag",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-cierre-head\" starts with a digit, so the common selector `#07-cierre-head` throws a SyntaxError in querySelector().",
+        "selector": "#07-cierre-head",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "id_requires_css_escape",
+        "severity": "warning",
+        "message": "id=\"07-cierre-gratis\" starts with a digit, so the common selector `#07-cierre-gratis` throws a SyntaxError in querySelector().",
+        "selector": "#07-cierre-gratis",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Rename the id to start with a letter (recommended), or build selectors with `#${CSS.escape(id)}` at runtime."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/smb-alerta-estafas/compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      }
+    ],
+    "filesScanned": 8
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 7,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-01-alerta-voice\" is 6.29s but its slot (data-duration) is 7.00s — the slot is shortened to the media length when rendered. Set data-duration to ~6.29s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "60",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-02-asi-enganan-voice\" is 6.85s but its slot (data-duration) is 10.00s — the slot is shortened to the media length when rendered. Set data-duration to ~6.85s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "60",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-03-la-verdad-voice\" is 7.47s but its slot (data-duration) is 9.00s — the slot is shortened to the media length when rendered. Set data-duration to ~7.47s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "60",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-04-senales-voice\" is 6.71s but its slot (data-duration) is 9.00s — the slot is shortened to the media length when rendered. Set data-duration to ~6.71s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "60",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-05-que-hacer-voice\" is 7.47s but its slot (data-duration) is 10.00s — the slot is shortened to the media length when rendered. Set data-duration to ~7.47s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "60",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-06-oficinas-voice\" is 6.19s but its slot (data-duration) is 9.50s — the slot is shortened to the media length when rendered. Set data-duration to ~6.19s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "60",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-07-cierre-voice\" is 2.23s but its slot (data-duration) is 5.50s — the slot is shortened to the media length when rendered. Set data-duration to ~2.23s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "60",
+          "data-width": "1080",
+          "data-height": "1920"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 2,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 23.333,
+        "selector": "#\\30 3-la-verdad-glint",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 995.4,
+          "top": 820,
+          "right": 1254.6,
+          "bottom": 1120,
+          "width": 259.19,
+          "height": 300
+        },
+        "containerSelector": "#\\30 3-la-verdad-seal",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 150,
+          "top": 860,
+          "right": 930,
+          "bottom": 1080,
+          "width": 780,
+          "height": 220
+        },
+        "overflow": {
+          "right": 324.6,
+          "top": 40,
+          "bottom": 40
+        },
+        "dataAttributes": {
+          "data-k": "03-la-verdad-glint"
+        },
+        "sourceFile": "compositions/frames/03-la-verdad.html",
+        "bbox": {
+          "x": 995.4,
+          "y": 820,
+          "width": 259.19,
+          "height": 300
+        },
+        "firstSeen": 23.333,
+        "lastSeen": 23.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.333
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 23.333,
+        "selector": "#\\30 3-la-verdad-glint",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 995.4,
+          "top": 820,
+          "right": 1254.6,
+          "bottom": 1120,
+          "width": 259.19,
+          "height": 300
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 174.6
+        },
+        "dataAttributes": {
+          "data-k": "03-la-verdad-glint"
+        },
+        "sourceFile": "compositions/frames/03-la-verdad.html",
+        "bbox": {
+          "x": 995.4,
+          "y": 820,
+          "width": 259.19,
+          "height": 300
+        },
+        "firstSeen": 23.333,
+        "lastSeen": 23.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          23.333
+        ]
+      }
+    ],
+    "duration": 60,
+    "samples": [
+      3.333,
+      10,
+      16.667,
+      23.333,
+      30,
+      36.667,
+      43.333,
+      50,
+      56.667
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 2,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.18:1; WCAG AA requires 3:1.",
+        "text": "hacer",
+        "fg": "rgb(77,198,0)",
+        "bg": "rgb(252,252,252)",
+        "ratio": 2.18,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(65,167,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(5) > div > div:nth-of-type(2) > p > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/05-que-hacer.html",
+        "bbox": {
+          "x": 508.625,
+          "y": 275,
+          "width": 262.390625,
+          "height": 129
+        },
+        "time": 43.333,
+        "times": [
+          43.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.24:1; WCAG AA requires 3:1.",
+        "text": "Coop. San Miguel de los Bancos",
+        "fg": "rgb(77,198,0)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.24,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(66,170,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(7) > div > div:nth-of-type(2) > div > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 546,
+          "y": 452,
+          "width": 417.40625,
+          "height": 36
+        },
+        "time": 56.667,
+        "times": [
+          56.667
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      3.333,
+      16.667,
+      30,
+      43.333,
+      56.667
+    ],
+    "checked": 30,
+    "passed": 28
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"+593 9•• ••• •••\" renders at 26 px for 9.88 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "+593 9•• ••• •••",
+        "selector": "#\\30 2-asi-enganan-chat > div:nth-of-type(4)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-asi-enganan.html",
+        "bbox": {
+          "x": 308,
+          "y": 506.36,
+          "width": 188.69,
+          "height": 36
+        },
+        "time": 7.375,
+        "times": [
+          7.375
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 9.875,
+        "elements": [
+          {
+            "selector": "#\\30 2-asi-enganan-chat > div:nth-of-type(4)",
+            "text": "+593 9•• ••• •••",
+            "fontPx": 26,
+            "time": 7.375,
+            "seconds": 9.875
+          }
+        ]
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.50 s (13.50–17.00 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 13.5,
+        "seconds": 3.5,
+        "floorSeconds": 3,
+        "until": 17
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 4.25 s (21.75–26.00 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 21.75,
+        "seconds": 4.25,
+        "floorSeconds": 3,
+        "until": 26
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.25 s (41.75–45.00 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 41.75,
+        "seconds": 3.25,
+        "floorSeconds": 3,
+        "until": 45
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"Coop. San Miguel de los Bancos\" renders at 25 px for 4.75 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Coop. San Miguel de los Bancos",
+        "selector": "#\\30 7-cierre-tag > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/07-cierre.html",
+        "bbox": {
+          "x": 547.83,
+          "y": 453.3,
+          "width": 406.14,
+          "height": 35.03
+        },
+        "time": 55.25,
+        "times": [
+          55.25
+        ],
+        "fontPx": 25.3,
+        "floorPx": 28,
+        "seconds": 4.75,
+        "elements": [
+          {
+            "selector": "#\\30 7-cierre-tag > span:nth-of-type(1)",
+            "text": "Coop. San Miguel de los Bancos",
+            "fontPx": 25.3,
+            "time": 55.25,
+            "seconds": 4.75
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 480
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 12,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-3",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 27.05,
+        "timeRange": [
+          27.05,
+          28.05
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-4",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 28.05,
+        "timeRange": [
+          28.05,
+          29.05
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-5",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 29.95,
+        "timeRange": [
+          29.95,
+          30.95
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-6",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 31.45,
+        "timeRange": [
+          31.45,
+          32.45
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-7",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 35.95,
+        "timeRange": [
+          35.95,
+          36.95
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-8",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 37.9,
+        "timeRange": [
+          37.9,
+          38.9
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-9",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 39.75,
+        "timeRange": [
+          39.75,
+          40.75
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-10",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 40.95,
+        "timeRange": [
+          40.95,
+          41.95
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-11",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 47.55,
+        "timeRange": [
+          47.55,
+          48.55
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-12",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 48.9,
+        "timeRange": [
+          48.9,
+          49.9
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-13",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 50.05,
+        "timeRange": [
+          50.05,
+          51.05
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      },
+      {
+        "code": "audio_clip_silent",
+        "severity": "warning",
+        "message": "assets/sfx-pop.wav is silent for the whole part this clip plays (0-1 s of the file).",
+        "selector": "#el-sfx-14",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 50.65,
+        "timeRange": [
+          50.65,
+          51.65
+        ],
+        "fixHint": "Check the file has sound there, or move data-media-start to where it does."
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
