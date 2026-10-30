@@ -31,4 +31,4 @@
 
 ## Line 7 — Cierre (Frame 7)
 
-    Tus trámites son gratuitos. ¡Somos tu gente!
+    Recuerda: tus trámites son gratuitos.

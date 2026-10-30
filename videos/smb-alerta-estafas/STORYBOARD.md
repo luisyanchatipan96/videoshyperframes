@@ -106,15 +106,15 @@ keyMessage: Si te pasa: no transfieras o deposites dinero, no compartas tus dato
 - persuasion: Proximity + trust
 - beat: confidence
 - blueprint: compose
-- on_screen: "Visítanos en nuestras oficinas" / "San Miguel de los Bancos" / "Pedro Vicente Maldonado" / "Puerto Quito" / "Mindo"
+- on_screen: "Visítanos en nuestras oficinas" / "San Miguel de los Bancos" / "Pedro Vicente Maldonado" / "Puerto Quito" / "Mindo" / "Realiza tus trámites de forma presencial y gratuita" (grande)
 
 narrativeRole: Nuestras oficinas.
 keyMessage: Para cualquier trámite, acércate a nuestras oficinas en San Miguel de los Bancos, Pedro Vicente Maldonado, Puerto Quito y Mindo.
 
 ## Frame 7 — Cierre
 
-- scene: Logo, «Tus trámites son gratuitos» y «¡Somos tu gente!».
-- voiceover: "Tus trámites son gratuitos. ¡Somos tu gente!"
+- scene: Ilustración de un asesor sonriente con la credencial de la cooperativa (etiqueta «Asesor de Crédito · Coop. San Miguel de los Bancos»), sin logo; texto grande «Tus trámites son gratuitos».
+- voiceover: "Recuerda: tus trámites son gratuitos."
 - duration: 4s
 - transition_in: crossfade
 - status: built
@@ -123,7 +123,7 @@ keyMessage: Para cualquier trámite, acércate a nuestras oficinas en San Miguel
 - persuasion: Brand recall
 - beat: belonging
 - blueprint: logo-assemble-lockup
-- on_screen: "Tus trámites son gratuitos" / "¡Somos tu gente!"
+- on_screen: "Tus trámites son gratuitos"
 
 narrativeRole: Cierre.
-keyMessage: Tus trámites son gratuitos. ¡Somos tu gente!
+keyMessage: Recuerda: tus trámites son gratuitos.
