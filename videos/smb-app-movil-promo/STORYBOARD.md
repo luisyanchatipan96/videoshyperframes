@@ -21,7 +21,7 @@ music: none
 ## Frame 1 — Apertura
 
 - scene: Logo de la cooperativa arriba; la frase aparece en tres golpes: «Tu cooperativa» / «al alcance de» / «tu bolsillo.» con «bolsillo» en verde.
-- voiceover: ""
+- voiceover: "Tu cooperativa, al alcance de tu bolsillo."
 - duration: 3s
 - transition_in: cut
 - status: animated
@@ -46,7 +46,7 @@ Scene 3 (2.0–3.0s): hold quieto.
 ## Frame 2 — La nueva app
 
 - scene: El teléfono con la pantalla de ingreso sube desde abajo y gira suavemente hasta quedar de frente, centrado; arriba aparece el título (sin logo).
-- voiceover: ""
+- voiceover: "Accede a la App Móvil de tu Cooperativa San Miguel de los Bancos."
 - duration: 4s
 - transition_in: crossfade
 - status: animated
@@ -71,7 +71,7 @@ Scene 3 (1.8–4.0s): un brillo de luz diagonal cruza una sola vez la pantalla d
 ## Frame 3 — Acceso fácil
 
 - scene: Acercamiento a los botones de ingreso; se iluminan uno a uno Usuario y contraseña, Huella dactilar y Pagar con QR mientras aparecen «fácil», «rápida» y «segura».
-- voiceover: ""
+- voiceover: "Ingresa de forma fácil, rápida y segura."
 - duration: 4s
 - transition_in: zoom-through
 - status: animated
@@ -96,7 +96,7 @@ Scene 3 (3.2–4.0s): el marco queda en Huella dactilar como en el boceto; hold.
 ## Frame 4 — Mis productos
 
 - scene: Cambio a la pantalla de inicio; la tarjeta «Mis productos» (Todos, Cuentas, Créditos) se acerca en primer plano.
-- voiceover: ""
+- voiceover: "Revisa tu saldo, tus créditos, inversiones y mucho más."
 - duration: 4s
 - transition_in: crossfade
 - status: animated
@@ -121,7 +121,7 @@ Scene 3 (2.2–4.0s): dentro de la tarjeta, un resalte verde suave (anillo #4DC6
 ## Frame 5 — Todo lo que necesitas
 
 - scene: Las 9 funciones del menú «¿Qué te gustaría hacer?» se ensamblan en cascada en una cuadrícula 3×3 grande; Transferir y Pagar Servicios se destacan primero.
-- voiceover: ""
+- voiceover: "Transfiere, paga tus servicios y gestiona todo desde tu app."
 - duration: 5s
 - transition_in: zoom-through
 - status: animated
@@ -146,7 +146,7 @@ Scene 3 (2.6–5.0s): «Todo desde tu app.» entra en 2.6s; hold quieto.
 ## Frame 6 — Transferencias al instante
 
 - scene: «Transferencias al instante.» en grande; la tarjeta WIPEA («Transfiere en un Wip», Nuevo) llega al centro y junto a ella Transferir; una flecha verde cruza rápida entre ambas.
-- voiceover: ""
+- voiceover: "Con WIPEA, tus transferencias llegan al instante."
 - duration: 4s
 - transition_in: crossfade
 - status: animated
@@ -171,7 +171,7 @@ Scene 3 (1.8–4.0s): la flecha verde se dibuja veloz bajo las tarjetas (0.35s) 
 ## Frame 7 — Descárgala
 
 - scene: Los dos teléfonos (ingreso e inicio) lado a lado, levemente inclinados; debajo «Descárgala ya.» y las insignias oficiales de App Store y Google Play (sin logo).
-- voiceover: ""
+- voiceover: "Descárgala ya en App Store y Google Play."
 - duration: 3.5s
 - transition_in: crossfade
 - status: animated
