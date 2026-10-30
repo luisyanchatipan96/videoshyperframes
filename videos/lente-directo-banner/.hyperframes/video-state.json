@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "92d91325-286e-431e-9813-840162f72748",
-  "currentRevision": "36ae63b3-bf51-418f-ba9b-76ce4f866363",
+  "currentRevision": "f1919934-eae7-4fed-81fc-cbe756a33317",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -56,10 +56,6 @@
       "hash": "3171196af4d271ae0bfa745dfeb8d74f71ac3296a38b5f751b926fadb15f172a",
       "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/3171196af4d271ae0bfa745dfeb8d74f71ac3296a38b5f751b926fadb15f172a"
     },
-    "assets/logo-lente-directo-blanco.png": {
-      "hash": "93cff7bc4fe158176cb488cc2df229f6b948e59beac4f0b499d7bead155d5b4e",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/93/93cff7bc4fe158176cb488cc2df229f6b948e59beac4f0b499d7bead155d5b4e"
-    },
     "BRIEF.md": {
       "hash": "111d87d5b70e76e80b2b811da9200401b481d2a9fc87174862c551d23ce77c7b",
       "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/11/111d87d5b70e76e80b2b811da9200401b481d2a9fc87174862c551d23ce77c7b"
@@ -89,60 +85,76 @@
       "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/315b6f649a40eb55b7ae817d0ea3e4917b00cb4f70ab7b96bb83cfc05be45cf3"
     },
     "compositions/frames/01-apertura.html": {
-      "hash": "4d36f03ac8bcef538c93cc0e002aede7aee51863fb5a891e7f4adf1d5143501f",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/4d/4d36f03ac8bcef538c93cc0e002aede7aee51863fb5a891e7f4adf1d5143501f"
+      "hash": "18ac550d89cb284322ba0a37d8a509f1b56c1865323d4d44ad567b0e840a758f",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/18/18ac550d89cb284322ba0a37d8a509f1b56c1865323d4d44ad567b0e840a758f"
     },
     "compositions/frames/02-apoya.html": {
-      "hash": "d7e3a137ba38ce842bfe9be8b7d0be411bdda619a18138da31f25bc80cfaf334",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/d7/d7e3a137ba38ce842bfe9be8b7d0be411bdda619a18138da31f25bc80cfaf334"
+      "hash": "960a968ede21644a3737f341c34f29f3ac8b4f23c5dc54132dc8dc90d08cd5b2",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/96/960a968ede21644a3737f341c34f29f3ac8b4f23c5dc54132dc8dc90d08cd5b2"
     },
     "compositions/frames/03-precio.html": {
-      "hash": "8fa1007f6d8efd3f635aa3b6445e3b184cb5007c0d2f931ca7d829622944715e",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/8f/8fa1007f6d8efd3f635aa3b6445e3b184cb5007c0d2f931ca7d829622944715e"
+      "hash": "e5edacccaabf57671d6ce96a7f487799d3efd67b2794d60c4a38f18d50d7e37f",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/e5/e5edacccaabf57671d6ce96a7f487799d3efd67b2794d60c4a38f18d50d7e37f"
     },
     "compositions/frames/04-comunidad.html": {
-      "hash": "c5945c09b931176344fd8ffa018a0f5a71d9b5bfcc47de2af8bce8f134b74fb5",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/c5/c5945c09b931176344fd8ffa018a0f5a71d9b5bfcc47de2af8bce8f134b74fb5"
+      "hash": "4532abdefed103835761db0b3b0d2e225c91a8b22171e3f53027f4a470fdc3b3",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/45/4532abdefed103835761db0b3b0d2e225c91a8b22171e3f53027f4a470fdc3b3"
     },
     "compositions/frames/05-cierre.html": {
-      "hash": "f601409f9c90141771ff49b7b997cf0eae2224926c7418f3275a63f4363acdbf",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/f6/f601409f9c90141771ff49b7b997cf0eae2224926c7418f3275a63f4363acdbf"
+      "hash": "cefdf29292c8eac119466af1a55dbc5dca07ebf9a4181df617d2cd9d62d1edcd",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/ce/cefdf29292c8eac119466af1a55dbc5dca07ebf9a4181df617d2cd9d62d1edcd"
     },
     "frame.md": {
       "hash": "99c19bdb39e32ff6bc0540049ff2e8b958b0334505aec649f775b1119776ffc5",
       "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/99/99c19bdb39e32ff6bc0540049ff2e8b958b0334505aec649f775b1119776ffc5"
     },
     "STORYBOARD.md": {
-      "hash": "ea102fbefb067afa52463de51642c9466258f3755fc8ad05ff6c2e75b855d8bd",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/ea/ea102fbefb067afa52463de51642c9466258f3755fc8ad05ff6c2e75b855d8bd"
+      "hash": "4efd47f9b11ea2ee87c34e78efa64581315cd51976ba26512980ddc89a28a293",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/4e/4efd47f9b11ea2ee87c34e78efa64581315cd51976ba26512980ddc89a28a293"
     },
     "user_script.txt": {
       "hash": "315b6f649a40eb55b7ae817d0ea3e4917b00cb4f70ab7b96bb83cfc05be45cf3",
       "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/315b6f649a40eb55b7ae817d0ea3e4917b00cb4f70ab7b96bb83cfc05be45cf3"
     },
+    "boards/stills/contact-sheet.jpg": {
+      "hash": "766689471ef9b02fb21406ab09324838d8814fd3f9b16446e9c2ed5463f31d56",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/76/766689471ef9b02fb21406ab09324838d8814fd3f9b16446e9c2ed5463f31d56"
+    },
     "boards/stills/frame-00-at-3s.png": {
-      "hash": "0368bd499d68a6fa78f0231bb5a12267d603f746f7a95268b5b87c5f20dd9475",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/03/0368bd499d68a6fa78f0231bb5a12267d603f746f7a95268b5b87c5f20dd9475"
+      "hash": "c00d26b9e8ad87ca034b75b4acd29222398818f8f0deae491ac95e4b91342ef0",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/c0/c00d26b9e8ad87ca034b75b4acd29222398818f8f0deae491ac95e4b91342ef0"
     },
     "boards/stills/frame-01-at-7s.png": {
-      "hash": "0f4f15f30e5efd705ccb1031cc6ccabc9ddc16f2a4c0ebc24cc98e32d2822f03",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/0f/0f4f15f30e5efd705ccb1031cc6ccabc9ddc16f2a4c0ebc24cc98e32d2822f03"
+      "hash": "d7c5ad9bcfc427054c82f1d51faec2b2ee0572f60a605770477acc21b85c3e1b",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/d7/d7c5ad9bcfc427054c82f1d51faec2b2ee0572f60a605770477acc21b85c3e1b"
     },
     "boards/stills/frame-02-at-11s.png": {
-      "hash": "664b40c520c0d2a81f26c0e29d95d11b6c7c5ea395173563bd8204dc6cac7cc4",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/66/664b40c520c0d2a81f26c0e29d95d11b6c7c5ea395173563bd8204dc6cac7cc4"
+      "hash": "6910ef8722821b8e5d9c576f91dfbc73051fed6b70d5bdce5f1c5f6c95ae31e1",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/69/6910ef8722821b8e5d9c576f91dfbc73051fed6b70d5bdce5f1c5f6c95ae31e1"
     },
     "boards/stills/frame-03-at-15.5s.png": {
-      "hash": "dac4a01f6b9a36aae3061dcf1705c9ab786ca70c9041aec3d5c2865d076d6734",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/da/dac4a01f6b9a36aae3061dcf1705c9ab786ca70c9041aec3d5c2865d076d6734"
+      "hash": "bb45e3d0698118253794f9c4ae8922e1721d02ab8b5243dd14862d8d663d1355",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/bb/bb45e3d0698118253794f9c4ae8922e1721d02ab8b5243dd14862d8d663d1355"
     },
     "boards/stills/frame-04-at-19s.png": {
-      "hash": "6a63a6b4b53f60cd4a1e03d9427742d0f79a4b80fb0dacd73d19cb61723c04d9",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/6a/6a63a6b4b53f60cd4a1e03d9427742d0f79a4b80fb0dacd73d19cb61723c04d9"
+      "hash": "1625226cbf6c5ade637b4480aba0967fd8a9ad1293a2e408f00b135157276f1f",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/16/1625226cbf6c5ade637b4480aba0967fd8a9ad1293a2e408f00b135157276f1f"
     },
-    "boards/stills/contact-sheet.jpg": {
-      "hash": "da0edb130f7370213a3df757c3ffd3b033f7c4eaa86444259f2d4330d3d09016",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/da/da0edb130f7370213a3df757c3ffd3b033f7c4eaa86444259f2d4330d3d09016"
+    "boards/bocetos.png": {
+      "hash": "9805741a008bdac0cecb3a60ee9e09dd576f9108dae228cb8b61482b0ee5e0aa",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/98/9805741a008bdac0cecb3a60ee9e09dd576f9108dae228cb8b61482b0ee5e0aa"
+    },
+    "boards/storyboard.html": {
+      "hash": "0c91faad70a7afc4ebe17de5839752fc7c73b2e94f8ceb388da0447d56dff27b",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/0c/0c91faad70a7afc4ebe17de5839752fc7c73b2e94f8ceb388da0447d56dff27b"
+    },
+    "capture/assets/logo-lente-directo.png": {
+      "hash": "2094b21cb78fa26fdaa84d730f71c9c15be2551531b71000de9de5f2e9f257cc",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/20/2094b21cb78fa26fdaa84d730f71c9c15be2551531b71000de9de5f2e9f257cc"
+    },
+    "assets/logo-lente-directo.png": {
+      "hash": "2094b21cb78fa26fdaa84d730f71c9c15be2551531b71000de9de5f2e9f257cc",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/20/2094b21cb78fa26fdaa84d730f71c9c15be2551531b71000de9de5f2e9f257cc"
     }
   },
   "revisions": {
@@ -267,6 +279,85 @@
           "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/e2/e25e6358416df889b5aaaca207a1bce57df0517876484e32ec3de1ee57b63785"
         }
       }
+    },
+    "f1919934-eae7-4fed-81fc-cbe756a33317": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793332454214,
+      "endedAt": 1793332454276,
+      "files": {
+        "assets/logo-lente-directo-blanco.png": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/93/93cff7bc4fe158176cb488cc2df229f6b948e59beac4f0b499d7bead155d5b4e",
+          "after": null
+        },
+        "assets/logo-lente-directo.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/20/2094b21cb78fa26fdaa84d730f71c9c15be2551531b71000de9de5f2e9f257cc"
+        },
+        "boards/bocetos.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/98/9805741a008bdac0cecb3a60ee9e09dd576f9108dae228cb8b61482b0ee5e0aa"
+        },
+        "boards/stills/contact-sheet.jpg": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/da/da0edb130f7370213a3df757c3ffd3b033f7c4eaa86444259f2d4330d3d09016",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/76/766689471ef9b02fb21406ab09324838d8814fd3f9b16446e9c2ed5463f31d56"
+        },
+        "boards/stills/frame-00-at-3s.png": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/03/0368bd499d68a6fa78f0231bb5a12267d603f746f7a95268b5b87c5f20dd9475",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/c0/c00d26b9e8ad87ca034b75b4acd29222398818f8f0deae491ac95e4b91342ef0"
+        },
+        "boards/stills/frame-01-at-7s.png": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/0f/0f4f15f30e5efd705ccb1031cc6ccabc9ddc16f2a4c0ebc24cc98e32d2822f03",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/d7/d7c5ad9bcfc427054c82f1d51faec2b2ee0572f60a605770477acc21b85c3e1b"
+        },
+        "boards/stills/frame-02-at-11s.png": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/66/664b40c520c0d2a81f26c0e29d95d11b6c7c5ea395173563bd8204dc6cac7cc4",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/69/6910ef8722821b8e5d9c576f91dfbc73051fed6b70d5bdce5f1c5f6c95ae31e1"
+        },
+        "boards/stills/frame-03-at-15.5s.png": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/da/dac4a01f6b9a36aae3061dcf1705c9ab786ca70c9041aec3d5c2865d076d6734",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/bb/bb45e3d0698118253794f9c4ae8922e1721d02ab8b5243dd14862d8d663d1355"
+        },
+        "boards/stills/frame-04-at-19s.png": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/6a/6a63a6b4b53f60cd4a1e03d9427742d0f79a4b80fb0dacd73d19cb61723c04d9",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/16/1625226cbf6c5ade637b4480aba0967fd8a9ad1293a2e408f00b135157276f1f"
+        },
+        "boards/storyboard.html": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/0c/0c91faad70a7afc4ebe17de5839752fc7c73b2e94f8ceb388da0447d56dff27b"
+        },
+        "capture/assets/logo-lente-directo.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/20/2094b21cb78fa26fdaa84d730f71c9c15be2551531b71000de9de5f2e9f257cc"
+        },
+        "compositions/frames/01-apertura.html": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/4d/4d36f03ac8bcef538c93cc0e002aede7aee51863fb5a891e7f4adf1d5143501f",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/18/18ac550d89cb284322ba0a37d8a509f1b56c1865323d4d44ad567b0e840a758f"
+        },
+        "compositions/frames/02-apoya.html": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/d7/d7e3a137ba38ce842bfe9be8b7d0be411bdda619a18138da31f25bc80cfaf334",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/96/960a968ede21644a3737f341c34f29f3ac8b4f23c5dc54132dc8dc90d08cd5b2"
+        },
+        "compositions/frames/03-precio.html": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/8f/8fa1007f6d8efd3f635aa3b6445e3b184cb5007c0d2f931ca7d829622944715e",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/e5/e5edacccaabf57671d6ce96a7f487799d3efd67b2794d60c4a38f18d50d7e37f"
+        },
+        "compositions/frames/04-comunidad.html": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/c5/c5945c09b931176344fd8ffa018a0f5a71d9b5bfcc47de2af8bce8f134b74fb5",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/45/4532abdefed103835761db0b3b0d2e225c91a8b22171e3f53027f4a470fdc3b3"
+        },
+        "compositions/frames/05-cierre.html": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/f6/f601409f9c90141771ff49b7b997cf0eae2224926c7418f3275a63f4363acdbf",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/ce/cefdf29292c8eac119466af1a55dbc5dca07ebf9a4181df617d2cd9d62d1edcd"
+        },
+        "STORYBOARD.md": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/ea/ea102fbefb067afa52463de51642c9466258f3755fc8ad05ff6c2e75b855d8bd",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/4e/4efd47f9b11ea2ee87c34e78efa64581315cd51976ba26512980ddc89a28a293"
+        }
+      }
     }
   },
   "checks": {
@@ -277,13 +368,13 @@
   "snapshots": {
     "latest": {
       "revision": null,
-      "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-4"
+      "id": "7989d94d-9d62-440e-8b50-8add2d884c5b-4"
     },
     "revisions": {},
     "unversioned": [
       {
         "scope": "full",
-        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-0",
+        "id": "7989d94d-9d62-440e-8b50-8add2d884c5b-0",
         "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-00-at-3s.png",
         "time": 3,
         "metadata": {
@@ -294,16 +385,16 @@
           "warnings": [],
           "partial": false
         },
-        "createdAt": 1793332208412,
-        "contentHash": "c00d26b9e8ad87ca034b75b4acd29222398818f8f0deae491ac95e4b91342ef0",
+        "createdAt": 1793332456760,
+        "contentHash": "3da540ef1e2d0944e13e64c500dec79a9390c00a55465fb0d4535134806f2512",
         "revision": null,
-        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputFingerprint": "902b2434407b04da2ca960a35d4929aad7d09a0ae895af4869255334dd6e20f4",
         "inputScope": "local-project-files",
         "attribution": "inputs-changed"
       },
       {
         "scope": "full",
-        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-1",
+        "id": "7989d94d-9d62-440e-8b50-8add2d884c5b-1",
         "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-01-at-7s.png",
         "time": 7,
         "metadata": {
@@ -314,16 +405,16 @@
           "warnings": [],
           "partial": false
         },
-        "createdAt": 1793332208412,
-        "contentHash": "d7c5ad9bcfc427054c82f1d51faec2b2ee0572f60a605770477acc21b85c3e1b",
+        "createdAt": 1793332456761,
+        "contentHash": "c813d11a44e53f9d51d84f21b2cd5f5abe0fa6979bb96bc6621a53d532a99475",
         "revision": null,
-        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputFingerprint": "902b2434407b04da2ca960a35d4929aad7d09a0ae895af4869255334dd6e20f4",
         "inputScope": "local-project-files",
         "attribution": "inputs-changed"
       },
       {
         "scope": "full",
-        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-2",
+        "id": "7989d94d-9d62-440e-8b50-8add2d884c5b-2",
         "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-02-at-11s.png",
         "time": 11,
         "metadata": {
@@ -334,16 +425,16 @@
           "warnings": [],
           "partial": false
         },
-        "createdAt": 1793332208412,
-        "contentHash": "6910ef8722821b8e5d9c576f91dfbc73051fed6b70d5bdce5f1c5f6c95ae31e1",
+        "createdAt": 1793332456761,
+        "contentHash": "53444ce4e84b002cb9767c5c8330b6c42ad8afc1b117cb68203c74128ca581f3",
         "revision": null,
-        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputFingerprint": "902b2434407b04da2ca960a35d4929aad7d09a0ae895af4869255334dd6e20f4",
         "inputScope": "local-project-files",
         "attribution": "inputs-changed"
       },
       {
         "scope": "full",
-        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-3",
+        "id": "7989d94d-9d62-440e-8b50-8add2d884c5b-3",
         "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-03-at-15.5s.png",
         "time": 15.5,
         "metadata": {
@@ -354,16 +445,16 @@
           "warnings": [],
           "partial": false
         },
-        "createdAt": 1793332208412,
-        "contentHash": "bb45e3d0698118253794f9c4ae8922e1721d02ab8b5243dd14862d8d663d1355",
+        "createdAt": 1793332456761,
+        "contentHash": "34ed72a644d2c70e58348cb2619c2e4131624b9af1809863dcc3d8a9a73d8b00",
         "revision": null,
-        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputFingerprint": "902b2434407b04da2ca960a35d4929aad7d09a0ae895af4869255334dd6e20f4",
         "inputScope": "local-project-files",
         "attribution": "inputs-changed"
       },
       {
         "scope": "full",
-        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-4",
+        "id": "7989d94d-9d62-440e-8b50-8add2d884c5b-4",
         "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-04-at-19s.png",
         "time": 19,
         "metadata": {
@@ -374,10 +465,10 @@
           "warnings": [],
           "partial": false
         },
-        "createdAt": 1793332208412,
-        "contentHash": "1625226cbf6c5ade637b4480aba0967fd8a9ad1293a2e408f00b135157276f1f",
+        "createdAt": 1793332456761,
+        "contentHash": "60ec9e5bcb2e64129d9b03153c9f246c78ce8a8b5bf9beff7471c0b648a845b6",
         "revision": null,
-        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputFingerprint": "902b2434407b04da2ca960a35d4929aad7d09a0ae895af4869255334dd6e20f4",
         "inputScope": "local-project-files",
         "attribution": "inputs-changed"
       }

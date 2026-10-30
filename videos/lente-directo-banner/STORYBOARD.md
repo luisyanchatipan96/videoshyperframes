@@ -10,7 +10,7 @@ music: host
 
 ## Frame 1 — Apertura
 
-- scene: Fondo azul oscuro que se ilumina con una línea de luz que barre el banner; el logo/nombre «Lente Directo» entra con elegancia a la izquierda y la frase aparece al centro.
+- scene: Fondo #e2b176 (color de marca) que se ilumina con una línea de luz que barre el banner; el logo/nombre «Lente Directo» entra con elegancia a la izquierda y la frase aparece al centro.
 - voiceover: "Las historias que importan merecen llegar más lejos."
 - duration: 4s
 - transition_in: cut
@@ -20,7 +20,7 @@ music: host
 - persuasion: Purpose framing
 - beat: aspiration
 - blueprint: titlecard-reveal
-- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco
+- asset_candidates: capture/assets/logo-lente-directo.png — logo corregido (blanco, para fondo e2b176)
 - on_screen: "Las historias que importan merecen llegar más lejos."
 
 narrativeRole: Abre con el propósito del medio, sin vender todavía.
@@ -28,7 +28,7 @@ keyMessage: Lente Directo cuenta historias que importan.
 
 ## Frame 2 — Apoya
 
-- scene: Entra el icono de Facebook con una animación breve a la derecha; el nombre «Lente Directo» queda destacado con un brillo; al centro «Apoya a Lente Directo».
+- scene: Entra el icono de Facebook con una animación breve a la derecha; el nombre «Lente Directo» queda destacado con un brillo; al centro «En Lente Directo crecemos junto a ti».
 - voiceover: "En Lente Directo, tu apoyo impulsa información cercana y de calidad."
 - duration: 4s
 - transition_in: crossfade
@@ -38,8 +38,8 @@ keyMessage: Lente Directo cuenta historias que importan.
 - persuasion: Community appeal
 - beat: belonging
 - blueprint: kinetic-type-beats
-- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco; capture/assets/facebook-logo.svg — símbolo de Facebook
-- on_screen: "Apoya a Lente Directo"
+- asset_candidates: capture/assets/logo-lente-directo.png — logo corregido (blanco, para fondo e2b176); capture/assets/facebook-logo.svg — símbolo de Facebook
+- on_screen: "En Lente Directo crecemos junto a ti"
 
 narrativeRole: Presenta la suscripción como apoyo al medio.
 keyMessage: Tu apoyo impulsa a Lente Directo.
@@ -56,7 +56,7 @@ keyMessage: Tu apoyo impulsa a Lente Directo.
 - persuasion: Price anchoring (low cost)
 - beat: ease
 - blueprint: dataviz-countup
-- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco; capture/assets/facebook-logo.svg — símbolo de Facebook
+- asset_candidates: capture/assets/logo-lente-directo.png — logo corregido (blanco, para fondo e2b176); capture/assets/facebook-logo.svg — símbolo de Facebook
 - on_screen: "Suscríbete por $2,99 al mes"
 
 narrativeRole: Da el dato clave: el precio.
@@ -74,7 +74,7 @@ keyMessage: Cuesta $2,99 al mes.
 - persuasion: Belonging
 - beat: motivation
 - blueprint: kinetic-type-beats
-- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco
+- asset_candidates: capture/assets/logo-lente-directo.png — logo corregido (blanco, para fondo e2b176)
 - on_screen: "Forma parte de nuestra comunidad"
 
 narrativeRole: Invita a unirse a la comunidad.
@@ -92,7 +92,7 @@ keyMessage: Hay una comunidad de suscriptores.
 - persuasion: Call to act
 - beat: urgency-to-act
 - blueprint: titlecard-reveal
-- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco; capture/assets/facebook-logo.svg — símbolo de Facebook
+- asset_candidates: capture/assets/logo-lente-directo.png — logo corregido (blanco, para fondo e2b176); capture/assets/facebook-logo.svg — símbolo de Facebook
 - on_screen: "Haz clic en Suscribirte"
 
 narrativeRole: Llamado a la acción final legible.
