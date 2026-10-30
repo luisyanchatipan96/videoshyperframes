@@ -1,0 +1,46 @@
+<template id="02-asi-enganan-template">
+  <div id="root" data-composition-id="02-asi-enganan" data-start="0" data-duration="11" data-width="1080" data-height="1920">
+    <style>
+      @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
+      #root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;}
+      [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%, #FFFFFF 0%, #F5F5F7 60%, #ECEDF1 100%);}
+      [data-k="layer"]{position:absolute;inset:0;}
+      .h{position:absolute;left:70px;right:70px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.03em;line-height:1.08;}
+      .g{color:#4DC600;} .r{color:#E5484D;}
+      .sub{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#5B6B7F;font-weight:500;}
+      .card{position:absolute;background:#fff;border-radius:36px;box-shadow:0 30px 70px rgba(4,71,140,.14),0 6px 16px rgba(4,71,140,.08);}
+      .phone{position:absolute;background:#1d1d23;border-radius:86px;box-shadow:0 50px 90px rgba(4,71,140,.22);}
+      .screen{position:absolute;left:22px;top:22px;right:22px;bottom:22px;border-radius:66px;overflow:hidden;background:#ECE5DD;}
+      .bub{position:absolute;max-width:470px;padding:22px 28px;border-radius:28px;font-size:34px;line-height:1.3;color:#1b1b1b;background:#fff;box-shadow:0 2px 0 rgba(0,0,0,.06);}
+      .row{position:absolute;left:90px;right:90px;height:170px;display:block;}
+      .row .ic{position:absolute;left:24px;top:33px;width:104px;height:104px;border-radius:30px;display:flex;align-items:center;justify-content:center;}
+      .row .tx{position:absolute;left:156px;right:24px;top:0;height:170px;display:flex;align-items:center;font-size:46px;font-weight:600;color:#04478C;line-height:1.15;}
+      .pin{position:absolute;width:0;height:0;}
+      .pin .dot{position:absolute;left:-30px;top:-74px;width:60px;height:60px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#4DC600;box-shadow:0 10px 20px rgba(77,198,0,.35);}
+      .pin .dot:after{content:"";position:absolute;left:19px;top:19px;width:22px;height:22px;border-radius:50%;background:#fff;}
+      .pin .lb{position:absolute;white-space:nowrap;font-size:40px;font-weight:700;color:#04478C;}
+    </style>
+    <div data-k="bg" class="clip" data-start="0" data-duration="11" data-track-index="0"></div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="11" data-track-index="1">
+      <p class="h" style="top:150px;font-size:96px;">Así <span class="r">engañan</span></p>
+      <div class="phone" style="left:150px;top:360px;width:780px;height:1380px;"><div class="screen">
+        <div style="position:absolute;left:0;right:0;top:0;height:170px;background:#075E54;"></div>
+        <div style="position:absolute;left:40px;top:70px;width:76px;height:76px;border-radius:50%;background:#c9d3da;"></div>
+        <div style="position:absolute;left:136px;top:66px;color:#fff;font-size:34px;font-weight:700;">Asesor de Crédito</div>
+        <div style="position:absolute;left:136px;top:110px;color:#d7efe9;font-size:26px;">+593 9•• ••• •••</div>
+        <div class="bub" style="left:36px;top:230px;">Hola 👋 soy asesor de la Cooperativa San Miguel de los Bancos.</div>
+        <div class="bub" style="left:36px;top:450px;">Para revisar tu <b>buró de crédito</b> debes hacer un depósito hoy.</div>
+        <div class="bub" style="right:36px;top:690px;background:#DCF8C6;">¿Tengo que pagar?</div>
+        <div class="bub" style="left:36px;top:850px;">Sí, es para agilizar tu trámite. Envía el comprobante.</div>
+      </div></div>
+      <div style="position:absolute;left:230px;top:1360px;padding:20px 60px;border:10px solid #E5484D;border-radius:30px;color:#E5484D;font-size:110px;font-weight:800;letter-spacing:.06em;transform:rotate(-12deg);background:rgba(255,255,255,.85);">ESTAFA</div>
+    </div>
+    <script src="assets/vendor/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 11);
+      window.__timelines["02-asi-enganan"] = tl;
+    </script>
+  </div>
+</template>

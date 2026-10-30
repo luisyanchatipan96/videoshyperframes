@@ -35,6 +35,13 @@
         "smb-alerta-estafas"
       ],
       "updated_at": "2026-10-30T19:43:01.523Z"
+    },
+    "style_preset.faceless-explainer": {
+      "value": "blue-professional",
+      "confirmed_in": [
+        "smb-alerta-estafas"
+      ],
+      "updated_at": "2026-10-30T19:49:51.709Z"
     }
   },
   "sightings": {}
