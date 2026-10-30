@@ -1,25 +1,76 @@
 <template id="05-comunidad-template">
-  <div id="root" data-composition-id="05-comunidad" data-start="0" data-duration="3.5" data-width="1920" data-height="175">
+  <div id="root" data-composition-id="05-comunidad" data-start="0" data-duration="3.4" data-width="1920" data-height="175">
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1920px;height:175px;overflow:hidden;font-family:'Poppins',sans-serif;}
       [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(60% 170% at 50% 45%, #EDC28C 0%, #E2B176 55%, #D7A367 100%);}
       [data-k="layer"]{position:absolute;inset:0;}
-      .t{position:absolute;left:330px;width:1200px;margin:0;text-align:center;color:#141414;font-weight:600;letter-spacing:-0.01em;line-height:1.1;white-space:nowrap;}
-      .a{color:#FFFFFF;text-shadow:0 2px 3px rgba(0,0,0,.28),0 0 18px rgba(0,0,0,.12);}
+      [data-k="logo"]{position:absolute;left:120px;top:20px;height:135px;}
+      [data-k="divider"]{position:absolute;left:285px;top:38px;width:2px;height:99px;background:rgba(20,20,20,.25);}
+      [data-k="line"]{position:absolute;left:330px;top:56px;width:1200px;margin:0;text-align:center;color:#141414;font-weight:600;font-size:52px;letter-spacing:-0.01em;line-height:1.1;white-space:nowrap;}
+      [data-k="w1"],[data-k="w2"]{display:inline-block;}
+      [data-k="w2"]{color:#FFFFFF;text-shadow:0 2px 3px rgba(0,0,0,.28),0 0 18px rgba(0,0,0,.12);}
+      [data-k="btn-wrap"]{position:absolute;left:1540px;top:51px;width:260px;height:74px;}
+      [data-k="halo"]{position:absolute;inset:0;border-radius:16px;border:3px solid #14B798;box-shadow:0 0 18px rgba(20,183,152,.55);opacity:0;}
+      [data-k="btn"]{position:absolute;inset:0;border-radius:16px;overflow:hidden;background:#1877F2;color:#fff;font-weight:700;font-size:30px;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset,0 10px 26px rgba(11,31,58,.35);}
+      [data-k="badge"]{position:absolute;left:14px;top:13px;width:48px;height:48px;}
+      [data-k="label"]{position:absolute;left:74px;right:14px;top:0;line-height:74px;text-align:center;}
+      [data-k="shine"]{position:absolute;top:-20px;left:0;width:70px;height:114px;background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 50%,rgba(255,255,255,0) 100%);opacity:0;}
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="3.5" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="3.5" data-track-index="1">
-      <img src="assets/logo-lente-directo.png" style="position:absolute;left:120px;top:20px;height:135px;"><div style="position:absolute;left:285px;top:38px;width:2px;height:99px;background:rgba(20,20,20,.25);"></div>
-      <p class="t" style="top:56px;font-size:52px;">Forma parte de <span class="a">nuestra comunidad</span></p>
-      <div style="position:absolute;left:1540px;top:51px;width:260px;height:74px;border-radius:16px;background:#1877F2;color:#fff;font-weight:700;font-size:30px;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset,0 10px 26px rgba(11,31,58,.35);"><img src="assets/insignia-suscriptor.svg" style="position:absolute;left:14px;top:13px;width:48px;height:48px;"><span style="position:absolute;left:74px;right:14px;top:0;line-height:74px;text-align:center;">Suscribirte</span></div>
+    <div data-k="bg" class="clip" data-start="0" data-duration="3.4" data-track-index="0"></div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="3.4" data-track-index="1">
+      <img data-k="logo" src="assets/logo-lente-directo.png" alt="">
+      <div data-k="divider"></div>
+      <p data-k="line"><span data-k="w1">Forma parte de</span> <span data-k="w2">nuestra comunidad</span></p>
+      <div data-k="btn-wrap">
+        <div data-k="halo"></div>
+        <div data-k="btn">
+          <img data-k="badge" src="assets/insignia-suscriptor.svg" alt="">
+          <span data-k="label">Suscribirte</span>
+          <div data-k="shine"></div>
+        </div>
+      </div>
     </div>
     <script src="assets/vendor/gsap.min.js"></script>
     <script>
-      window.__timelines = window.__timelines || {};
-      var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 3.5);
-      window.__timelines["05-comunidad"] = tl;
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var root = document.querySelector('[data-composition-id="05-comunidad"]');
+        var q = function (k) { return root.querySelector('[data-k="' + k + '"]'); };
+        var tl = gsap.timeline({ paused: true });
+
+        // Scene 1 — the phrase: "Forma parte de", then "nuestra comunidad" at 0.35s
+        tl.fromTo(q("w1"),
+          { opacity: 0, y: 24, scale: 0.96, filter: "blur(12px)" },
+          { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out" }, 0.05);
+        tl.fromTo(q("w2"),
+          { opacity: 0, y: 24, scale: 0.96, filter: "blur(12px)" },
+          { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out" }, 0.35);
+
+        // Scene 2 — button arrives from the right, badge spins once, shimmer sweep at 1.2s
+        tl.fromTo(q("btn-wrap"),
+          { opacity: 0, x: 120, scale: 0.8, filter: "blur(12px)" },
+          { opacity: 1, x: 0, scale: 1, filter: "blur(0px)", duration: 0.9, ease: "expo.out" }, 0.5);
+        tl.fromTo(q("badge"),
+          { rotation: 0 },
+          { rotation: 360, duration: 0.7, ease: "power3.out" }, 0.75);
+        tl.fromTo(q("shine"),
+          { x: -110, opacity: 1, skewX: -20 },
+          { x: 300, opacity: 1, skewX: -20, duration: 0.6, ease: "power2.inOut" }, 1.2);
+        tl.set(q("shine"), { opacity: 0 }, 1.8);
+
+        // Scene 3 — two soft pulses (1 -> 1.05 -> 1) with an expanding turquoise halo, then still
+        [1.7, 2.4].forEach(function (t) {
+          tl.fromTo(q("btn"), { scale: 1 }, { scale: 1.05, duration: 0.28, ease: "sine.inOut" }, t);
+          tl.to(q("btn"), { scale: 1, duration: 0.34, ease: "sine.inOut" }, t + 0.28);
+          tl.fromTo(q("halo"),
+            { scale: 1, opacity: 0.8 },
+            { scale: 1.16, opacity: 0, duration: 0.6, ease: "power2.out" }, t + 0.05);
+        });
+
+        tl.set({}, {}, 3.4);
+        window.__timelines["05-comunidad"] = tl;
+      })();
     </script>
   </div>
 </template>
