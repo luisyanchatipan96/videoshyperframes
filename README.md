@@ -27,7 +27,8 @@ Proyectos de video creados con [HyperFrames](https://hyperframes.heygen.com).
 
 - `videos/smb-alerta-estafas/` — Reel educativo contra estafas que suplantan a la Cooperativa SMB por WhatsApp.
   Vertical 1080×1920, 60 s, voz Daniela + música y efectos (ElevenLabs).
-  - Video final: `renders/alerta-tramites-gratuitos-smb.mp4`
+  - Video final con voz y música: `renders/alerta-tramites-gratuitos-smb.mp4`
+  - Versión solo con efectos de sonido (cierre con pulgar arriba): `renders/alerta-tramites-gratuitos-smb-solo-efectos.mp4`
 
 ## Skills
 
