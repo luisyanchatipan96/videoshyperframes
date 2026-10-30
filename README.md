@@ -13,7 +13,8 @@ Proyectos de video creados con [HyperFrames](https://hyperframes.heygen.com).
 
 - `videos/smb-app-movil-promo/` — Promoción de la App Móvil de la Cooperativa San Miguel de los Bancos.
   Video vertical (1080×1920, 27,5 s) estilo Apple con tipografía Poppins.
-  - Video final (v3, sin locución): `renders/app-movil-san-miguel-de-los-bancos-v3.mp4`
+  - Video final (v4, sin locución, 12 funciones en la escena 5): `renders/app-movil-san-miguel-de-los-bancos-v4.mp4`
+  - Versión v3 (9 funciones): `renders/app-movil-san-miguel-de-los-bancos-v3.mp4`
   - Versión anterior con voz: `renders/app-movil-san-miguel-de-los-bancos-con-voz.mp4` (ElevenLabs, voz Daniela)
   - Versión sin audio: `renders/app-movil-san-miguel-de-los-bancos.mp4`
   - Plan: `BRIEF.md`, `STORYBOARD.md`; bocetos en `boards/storyboard.html`

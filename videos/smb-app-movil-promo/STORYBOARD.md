@@ -129,7 +129,7 @@ Scene 3 (2.2–4.0s): dentro de la tarjeta, un resalte verde suave (anillo #4DC6
 - type: feature_showcase
 - persuasion: Value stacking
 - beat: confidence
-- asset_candidates: capture/assets/tile-transferir.png — Transferir; capture/assets/tile-pagar-servicios.png — Pagar Servicios; capture/assets/tile-wipea.png — WIPEA; capture/assets/tile-wallet-joven.png — Wallet joven; capture/assets/tile-verificar.png — Verificar Transferencias; capture/assets/tile-rapidito.png — Rapidito; capture/assets/tile-estado-cuenta.png — Estado de cuenta; capture/assets/tile-certificado.png — Certificado Bancario; capture/assets/tile-cuentas-hijos.png — Crear cuentas hijos
+- asset_candidates: capture/assets/tile-transferir.png — Transferir; capture/assets/tile-pagar-servicios.png — Pagar Servicios; capture/assets/tile-wipea.png — WIPEA; capture/assets/tile-wallet-joven.png — Wallet joven; capture/assets/tile-verificar.png — Verificar Transferencias; capture/assets/tile-rapidito.png — Rapidito; capture/assets/tile-estado-cuenta.png — Estado de cuenta; capture/assets/tile-certificado.png — Certificado Bancario; capture/assets/tile-cuentas-hijos.png — Crear cuentas hijos; capture/assets/tile-pagar-tarjetas.png — Pagar tarjetas; capture/assets/tile-retiro-ventanilla.png — Retiro en ventanilla; capture/assets/tile-recargas-celular.png — Recargas celular (de Botones_APP.ai, en capture/assets/botones-app-ai.png)
 - on_screen: "Transfiere, paga y gestiona." / "Todo desde tu app."
 
 narrativeRole: Demuestra la amplitud de funciones de un vistazo.
