@@ -1,5 +1,5 @@
-<template id="05-cierre-template">
-  <div id="root" data-composition-id="05-cierre" data-start="0" data-duration="3" data-width="1920" data-height="175">
+<template id="04-precio-template">
+  <div id="root" data-composition-id="04-precio" data-start="0" data-duration="6" data-width="1920" data-height="175">
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1920px;height:175px;overflow:hidden;font-family:'Poppins',sans-serif;}
@@ -8,18 +8,19 @@
       .t{position:absolute;left:330px;width:1200px;margin:0;text-align:center;color:#141414;font-weight:600;letter-spacing:-0.01em;line-height:1.1;white-space:nowrap;}
       .a{color:#FFFFFF;text-shadow:0 2px 3px rgba(0,0,0,.28),0 0 18px rgba(0,0,0,.12);}
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="3" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="3" data-track-index="1">
+    <div data-k="bg" class="clip" data-start="0" data-duration="6" data-track-index="0"></div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="6" data-track-index="1">
       <img src="assets/logo-lente-directo.png" style="position:absolute;left:120px;top:20px;height:135px;"><div style="position:absolute;left:285px;top:38px;width:2px;height:99px;background:rgba(20,20,20,.25);"></div>
-      <p class="t" style="top:56px;font-size:54px;font-weight:700;">Haz clic en <span class="a">Suscribirte</span></p>
-      <img src="assets/facebook-logo.svg" style="position:absolute;left:1480px;top:51px;width:72px;height:72px;"><div style="position:absolute;left:1580px;top:52px;width:220px;height:72px;border-radius:14px;background:#1877F2;color:#fff;font-weight:700;font-size:30px;line-height:72px;text-align:center;box-shadow:0 0 0 1px rgba(255,255,255,.3) inset,0 10px 26px rgba(11,31,58,.35);">Suscribirte</div>
+      <p class="t" style="top:14px;font-size:46px;line-height:96px;">Suscríbete por <span style="font-size:76px;font-weight:800;color:#141414;text-shadow:0 0 26px rgba(255,255,255,.8);">US$2,99</span> <span class="a">al mes</span></p>
+      <p class="t a" style="top:112px;font-size:32px;font-weight:500;">Cancela cuando quieras</p>
+      <img src="assets/facebook-logo.svg" style="position:absolute;left:1650px;top:45px;width:84px;height:84px;">
     </div>
     <script src="assets/vendor/gsap.min.js"></script>
     <script>
       window.__timelines = window.__timelines || {};
       var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 3);
-      window.__timelines["05-cierre"] = tl;
+      tl.set({}, {}, 6);
+      window.__timelines["04-precio"] = tl;
     </script>
   </div>
 </template>

@@ -2,15 +2,15 @@
 workflow: product-launch-video
 flow: automation
 storyboard: yes
-message: "Suscríbete a la página de Facebook de Lente Directo por $2,99 al mes."
+message: "Suscríbete a Lente Directo en Facebook por US$2,99 al mes: contenido exclusivo, videos en vivo e insignia de suscriptor."
 destination: facebook-banner
 aspect: 1920x175
 language: es
 audience: "Seguidores de la página de Facebook Lente Directo"
-length: 20s
+length: 30s
 angle: cta-promo
 narration: yes
-vo_mode: verbatim
+vo_mode: restructured
 capture: none
 ---
 
@@ -34,6 +34,9 @@ desplazamientos y entradas con profundidad, sin saturar.
 - Efectos de sonido suaves en entradas de texto y en la aparición del botón (ElevenLabs SFX).
 
 ## Notes
+
+- Guion ampliado a 30 s con la información real de la página de suscripción (captura del usuario): US$2,99 al mes, cancela cuando quieras, contenido exclusivo, videos en vivo, insignia de suscriptor, «Queremos llevarte la mejor transmisión».
+- Botón «Suscribirte» con el icono de insignia turquesa (#14B798) de Facebook.
 
 - No inventar beneficios ni agregar textos pequeños ilegibles.
 - Textos, logo e iconos dentro de márgenes seguros.
