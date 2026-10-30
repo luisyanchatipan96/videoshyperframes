@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "preferences": {
+    "destination": {
+      "value": "reels",
+      "confirmed_in": [
+        "smb-alerta-estafas"
+      ],
+      "updated_at": "2026-10-30T19:43:01.272Z"
+    },
+    "aspect": {
+      "value": "1080x1920",
+      "confirmed_in": [
+        "smb-alerta-estafas"
+      ],
+      "updated_at": "2026-10-30T19:43:01.386Z"
+    },
+    "language": {
+      "value": "es",
+      "confirmed_in": [
+        "smb-alerta-estafas"
+      ],
+      "updated_at": "2026-10-30T19:43:01.436Z"
+    },
+    "flow": {
+      "value": "automation",
+      "confirmed_in": [
+        "smb-alerta-estafas"
+      ],
+      "updated_at": "2026-10-30T19:43:01.478Z"
+    },
+    "storyboard": {
+      "value": "yes",
+      "confirmed_in": [
+        "smb-alerta-estafas"
+      ],
+      "updated_at": "2026-10-30T19:43:01.523Z"
+    }
+  },
+  "sightings": {}
+}
