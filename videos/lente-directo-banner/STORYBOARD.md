@@ -14,13 +14,13 @@ music: host
 - voiceover: "Las historias que importan merecen llegar más lejos."
 - duration: 4s
 - transition_in: cut
-- status: outline
+- status: built
 - src: compositions/frames/01-apertura.html
 - type: hook
 - persuasion: Purpose framing
 - beat: aspiration
 - blueprint: titlecard-reveal
-- asset_candidates: logo de Lente Directo (pendiente)
+- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco
 - on_screen: "Las historias que importan merecen llegar más lejos."
 
 narrativeRole: Abre con el propósito del medio, sin vender todavía.
@@ -32,13 +32,13 @@ keyMessage: Lente Directo cuenta historias que importan.
 - voiceover: "En Lente Directo, tu apoyo impulsa información cercana y de calidad."
 - duration: 4s
 - transition_in: crossfade
-- status: outline
+- status: built
 - src: compositions/frames/02-apoya.html
 - type: product_intro
 - persuasion: Community appeal
 - beat: belonging
 - blueprint: kinetic-type-beats
-- asset_candidates: logo de Lente Directo; símbolo de Facebook (SVG)
+- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco; capture/assets/facebook-logo.svg — símbolo de Facebook
 - on_screen: "Apoya a Lente Directo"
 
 narrativeRole: Presenta la suscripción como apoyo al medio.
@@ -50,13 +50,13 @@ keyMessage: Tu apoyo impulsa a Lente Directo.
 - voiceover: "Suscríbete a nuestra página de Facebook por solo dos dólares con noventa y nueve al mes."
 - duration: 5s
 - transition_in: crossfade
-- status: outline
+- status: built
 - src: compositions/frames/03-precio.html
 - type: feature_showcase
 - persuasion: Price anchoring (low cost)
 - beat: ease
 - blueprint: dataviz-countup
-- asset_candidates: logo de Lente Directo; símbolo de Facebook (SVG)
+- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco; capture/assets/facebook-logo.svg — símbolo de Facebook
 - on_screen: "Suscríbete por $2,99 al mes"
 
 narrativeRole: Da el dato clave: el precio.
@@ -68,13 +68,13 @@ keyMessage: Cuesta $2,99 al mes.
 - voiceover: "Forma parte de nuestra comunidad de suscriptores."
 - duration: 4s
 - transition_in: crossfade
-- status: outline
+- status: built
 - src: compositions/frames/04-comunidad.html
 - type: benefit_highlight
 - persuasion: Belonging
 - beat: motivation
 - blueprint: kinetic-type-beats
-- asset_candidates: logo de Lente Directo; botón Suscribirte (diseñado)
+- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco
 - on_screen: "Forma parte de nuestra comunidad"
 
 narrativeRole: Invita a unirse a la comunidad.
@@ -86,13 +86,13 @@ keyMessage: Hay una comunidad de suscriptores.
 - voiceover: "Haz clic en Suscribirte y sé parte de Lente Directo."
 - duration: 3s
 - transition_in: crossfade
-- status: outline
+- status: built
 - src: compositions/frames/05-cierre.html
 - type: cta
 - persuasion: Call to act
 - beat: urgency-to-act
 - blueprint: titlecard-reveal
-- asset_candidates: logo de Lente Directo; símbolo de Facebook (SVG); botón Suscribirte
+- asset_candidates: capture/assets/logo-lente-directo-blanco.png — logo blanco; capture/assets/facebook-logo.svg — símbolo de Facebook
 - on_screen: "Haz clic en Suscribirte"
 
 narrativeRole: Llamado a la acción final legible.

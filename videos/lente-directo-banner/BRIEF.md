@@ -24,7 +24,8 @@ desplazamientos y entradas con profundidad, sin saturar.
 
 ## Assets
 
-- Logo de Lente Directo — PENDIENTE: lo enviará el usuario.
+- capture/assets/logo-lente-directo-blanco.png — logo blanco (principal sobre fondo oscuro).
+- capture/assets/logo-lente-directo-color.png — logo en insignia color (alternativo).
 
 ## Customizations
 

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "92d91325-286e-431e-9813-840162f72748",
-  "currentRevision": null,
+  "currentRevision": "36ae63b3-bf51-418f-ba9b-76ce4f866363",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -41,8 +41,8 @@
       "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/44/44d4e8dcefebce0a13f5afa82aa270b0b19a1d3f82e434f92616010cee775dc4"
     },
     "index.html": {
-      "hash": "6d180cc7a1e6d4b8cd7cf7af781702e357520a4f77ca4e69103e9d99d2d40c47",
-      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/6d/6d180cc7a1e6d4b8cd7cf7af781702e357520a4f77ca4e69103e9d99d2d40c47"
+      "hash": "e25e6358416df889b5aaaca207a1bce57df0517876484e32ec3de1ee57b63785",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/e2/e25e6358416df889b5aaaca207a1bce57df0517876484e32ec3de1ee57b63785"
     },
     "meta.json": {
       "hash": "e6546d3859bab3dac6720f7c138e50f327e959c6c62735ee9c0acbf79009c1d6",
@@ -51,18 +51,337 @@
     "package.json": {
       "hash": "85432fd4d222330720aa88185f16a5c3a877f4dc3aa4d3ef8a0ca02906854d3b",
       "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/85/85432fd4d222330720aa88185f16a5c3a877f4dc3aa4d3ef8a0ca02906854d3b"
+    },
+    "assets/facebook-logo.svg": {
+      "hash": "3171196af4d271ae0bfa745dfeb8d74f71ac3296a38b5f751b926fadb15f172a",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/3171196af4d271ae0bfa745dfeb8d74f71ac3296a38b5f751b926fadb15f172a"
+    },
+    "assets/logo-lente-directo-blanco.png": {
+      "hash": "93cff7bc4fe158176cb488cc2df229f6b948e59beac4f0b499d7bead155d5b4e",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/93/93cff7bc4fe158176cb488cc2df229f6b948e59beac4f0b499d7bead155d5b4e"
+    },
+    "BRIEF.md": {
+      "hash": "111d87d5b70e76e80b2b811da9200401b481d2a9fc87174862c551d23ce77c7b",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/11/111d87d5b70e76e80b2b811da9200401b481d2a9fc87174862c551d23ce77c7b"
+    },
+    "capture/assets/facebook-logo.svg": {
+      "hash": "3171196af4d271ae0bfa745dfeb8d74f71ac3296a38b5f751b926fadb15f172a",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/3171196af4d271ae0bfa745dfeb8d74f71ac3296a38b5f751b926fadb15f172a"
+    },
+    "capture/assets/logo-lente-directo-blanco.png": {
+      "hash": "93cff7bc4fe158176cb488cc2df229f6b948e59beac4f0b499d7bead155d5b4e",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/93/93cff7bc4fe158176cb488cc2df229f6b948e59beac4f0b499d7bead155d5b4e"
+    },
+    "capture/assets/logo-lente-directo-color.png": {
+      "hash": "9a69a3394ae9f5eaf9146ef54760aea74c089815d2e4e10f08cc4f37475056c2",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/9a/9a69a3394ae9f5eaf9146ef54760aea74c089815d2e4e10f08cc4f37475056c2"
+    },
+    "capture/extracted/asset-descriptions.md": {
+      "hash": "295917d61d4f45606bcacd95fc40274f60e7155d2fbb483e9470903b17eda7bc",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/29/295917d61d4f45606bcacd95fc40274f60e7155d2fbb483e9470903b17eda7bc"
+    },
+    "capture/extracted/tokens.json": {
+      "hash": "c0b57e16d917efde2bb9f31611d92e06aacba47c1c9c41c6be281789c0b1d035",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/c0/c0b57e16d917efde2bb9f31611d92e06aacba47c1c9c41c6be281789c0b1d035"
+    },
+    "capture/extracted/visible-text.txt": {
+      "hash": "315b6f649a40eb55b7ae817d0ea3e4917b00cb4f70ab7b96bb83cfc05be45cf3",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/315b6f649a40eb55b7ae817d0ea3e4917b00cb4f70ab7b96bb83cfc05be45cf3"
+    },
+    "compositions/frames/01-apertura.html": {
+      "hash": "4d36f03ac8bcef538c93cc0e002aede7aee51863fb5a891e7f4adf1d5143501f",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/4d/4d36f03ac8bcef538c93cc0e002aede7aee51863fb5a891e7f4adf1d5143501f"
+    },
+    "compositions/frames/02-apoya.html": {
+      "hash": "d7e3a137ba38ce842bfe9be8b7d0be411bdda619a18138da31f25bc80cfaf334",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/d7/d7e3a137ba38ce842bfe9be8b7d0be411bdda619a18138da31f25bc80cfaf334"
+    },
+    "compositions/frames/03-precio.html": {
+      "hash": "8fa1007f6d8efd3f635aa3b6445e3b184cb5007c0d2f931ca7d829622944715e",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/8f/8fa1007f6d8efd3f635aa3b6445e3b184cb5007c0d2f931ca7d829622944715e"
+    },
+    "compositions/frames/04-comunidad.html": {
+      "hash": "c5945c09b931176344fd8ffa018a0f5a71d9b5bfcc47de2af8bce8f134b74fb5",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/c5/c5945c09b931176344fd8ffa018a0f5a71d9b5bfcc47de2af8bce8f134b74fb5"
+    },
+    "compositions/frames/05-cierre.html": {
+      "hash": "f601409f9c90141771ff49b7b997cf0eae2224926c7418f3275a63f4363acdbf",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/f6/f601409f9c90141771ff49b7b997cf0eae2224926c7418f3275a63f4363acdbf"
+    },
+    "frame.md": {
+      "hash": "99c19bdb39e32ff6bc0540049ff2e8b958b0334505aec649f775b1119776ffc5",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/99/99c19bdb39e32ff6bc0540049ff2e8b958b0334505aec649f775b1119776ffc5"
+    },
+    "STORYBOARD.md": {
+      "hash": "ea102fbefb067afa52463de51642c9466258f3755fc8ad05ff6c2e75b855d8bd",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/ea/ea102fbefb067afa52463de51642c9466258f3755fc8ad05ff6c2e75b855d8bd"
+    },
+    "user_script.txt": {
+      "hash": "315b6f649a40eb55b7ae817d0ea3e4917b00cb4f70ab7b96bb83cfc05be45cf3",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/315b6f649a40eb55b7ae817d0ea3e4917b00cb4f70ab7b96bb83cfc05be45cf3"
+    },
+    "boards/stills/frame-00-at-3s.png": {
+      "hash": "0368bd499d68a6fa78f0231bb5a12267d603f746f7a95268b5b87c5f20dd9475",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/03/0368bd499d68a6fa78f0231bb5a12267d603f746f7a95268b5b87c5f20dd9475"
+    },
+    "boards/stills/frame-01-at-7s.png": {
+      "hash": "0f4f15f30e5efd705ccb1031cc6ccabc9ddc16f2a4c0ebc24cc98e32d2822f03",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/0f/0f4f15f30e5efd705ccb1031cc6ccabc9ddc16f2a4c0ebc24cc98e32d2822f03"
+    },
+    "boards/stills/frame-02-at-11s.png": {
+      "hash": "664b40c520c0d2a81f26c0e29d95d11b6c7c5ea395173563bd8204dc6cac7cc4",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/66/664b40c520c0d2a81f26c0e29d95d11b6c7c5ea395173563bd8204dc6cac7cc4"
+    },
+    "boards/stills/frame-03-at-15.5s.png": {
+      "hash": "dac4a01f6b9a36aae3061dcf1705c9ab786ca70c9041aec3d5c2865d076d6734",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/da/dac4a01f6b9a36aae3061dcf1705c9ab786ca70c9041aec3d5c2865d076d6734"
+    },
+    "boards/stills/frame-04-at-19s.png": {
+      "hash": "6a63a6b4b53f60cd4a1e03d9427742d0f79a4b80fb0dacd73d19cb61723c04d9",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/6a/6a63a6b4b53f60cd4a1e03d9427742d0f79a4b80fb0dacd73d19cb61723c04d9"
+    },
+    "boards/stills/contact-sheet.jpg": {
+      "hash": "da0edb130f7370213a3df757c3ffd3b033f7c4eaa86444259f2d4330d3d09016",
+      "content": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/da/da0edb130f7370213a3df757c3ffd3b033f7c4eaa86444259f2d4330d3d09016"
     }
   },
-  "revisions": {},
+  "revisions": {
+    "2be50940-5e7f-4cbf-b39a-3e51cc322a64": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793332179600,
+      "endedAt": 1793332179651,
+      "files": {
+        "assets/facebook-logo.svg": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/3171196af4d271ae0bfa745dfeb8d74f71ac3296a38b5f751b926fadb15f172a"
+        },
+        "assets/logo-lente-directo-blanco.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/93/93cff7bc4fe158176cb488cc2df229f6b948e59beac4f0b499d7bead155d5b4e"
+        },
+        "BRIEF.md": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/11/111d87d5b70e76e80b2b811da9200401b481d2a9fc87174862c551d23ce77c7b"
+        },
+        "capture/assets/facebook-logo.svg": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/3171196af4d271ae0bfa745dfeb8d74f71ac3296a38b5f751b926fadb15f172a"
+        },
+        "capture/assets/logo-lente-directo-blanco.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/93/93cff7bc4fe158176cb488cc2df229f6b948e59beac4f0b499d7bead155d5b4e"
+        },
+        "capture/assets/logo-lente-directo-color.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/9a/9a69a3394ae9f5eaf9146ef54760aea74c089815d2e4e10f08cc4f37475056c2"
+        },
+        "capture/extracted/asset-descriptions.md": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/29/295917d61d4f45606bcacd95fc40274f60e7155d2fbb483e9470903b17eda7bc"
+        },
+        "capture/extracted/tokens.json": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/c0/c0b57e16d917efde2bb9f31611d92e06aacba47c1c9c41c6be281789c0b1d035"
+        },
+        "capture/extracted/visible-text.txt": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/315b6f649a40eb55b7ae817d0ea3e4917b00cb4f70ab7b96bb83cfc05be45cf3"
+        },
+        "compositions/frames/01-apertura.html": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/4d/4d36f03ac8bcef538c93cc0e002aede7aee51863fb5a891e7f4adf1d5143501f"
+        },
+        "compositions/frames/02-apoya.html": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/d7/d7e3a137ba38ce842bfe9be8b7d0be411bdda619a18138da31f25bc80cfaf334"
+        },
+        "compositions/frames/03-precio.html": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/8f/8fa1007f6d8efd3f635aa3b6445e3b184cb5007c0d2f931ca7d829622944715e"
+        },
+        "compositions/frames/04-comunidad.html": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/c5/c5945c09b931176344fd8ffa018a0f5a71d9b5bfcc47de2af8bce8f134b74fb5"
+        },
+        "compositions/frames/05-cierre.html": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/f6/f601409f9c90141771ff49b7b997cf0eae2224926c7418f3275a63f4363acdbf"
+        },
+        "frame.md": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/99/99c19bdb39e32ff6bc0540049ff2e8b958b0334505aec649f775b1119776ffc5"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/6d/6d180cc7a1e6d4b8cd7cf7af781702e357520a4f77ca4e69103e9d99d2d40c47",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/4f/4fc72f5ed2fcb4c0331d60c3a14b5f1cb4caca8814c4a191d38823807ce74e0c"
+        },
+        "STORYBOARD.md": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/ea/ea102fbefb067afa52463de51642c9466258f3755fc8ad05ff6c2e75b855d8bd"
+        },
+        "user_script.txt": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/31/315b6f649a40eb55b7ae817d0ea3e4917b00cb4f70ab7b96bb83cfc05be45cf3"
+        }
+      }
+    },
+    "36ae63b3-bf51-418f-ba9b-76ce4f866363": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793332206225,
+      "endedAt": 1793332206248,
+      "files": {
+        "boards/stills/contact-sheet.jpg": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/da/da0edb130f7370213a3df757c3ffd3b033f7c4eaa86444259f2d4330d3d09016"
+        },
+        "boards/stills/frame-00-at-3s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/03/0368bd499d68a6fa78f0231bb5a12267d603f746f7a95268b5b87c5f20dd9475"
+        },
+        "boards/stills/frame-01-at-7s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/0f/0f4f15f30e5efd705ccb1031cc6ccabc9ddc16f2a4c0ebc24cc98e32d2822f03"
+        },
+        "boards/stills/frame-02-at-11s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/66/664b40c520c0d2a81f26c0e29d95d11b6c7c5ea395173563bd8204dc6cac7cc4"
+        },
+        "boards/stills/frame-03-at-15.5s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/da/dac4a01f6b9a36aae3061dcf1705c9ab786ca70c9041aec3d5c2865d076d6734"
+        },
+        "boards/stills/frame-04-at-19s.png": {
+          "before": null,
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/6a/6a63a6b4b53f60cd4a1e03d9427742d0f79a4b80fb0dacd73d19cb61723c04d9"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/4f/4fc72f5ed2fcb4c0331d60c3a14b5f1cb4caca8814c4a191d38823807ce74e0c",
+          "after": "/root/.cache/hyperframes/history/92d91325-286e-431e-9813-840162f72748/blobs/e2/e25e6358416df889b5aaaca207a1bce57df0517876484e32ec3de1ee57b63785"
+        }
+      }
+    }
+  },
   "checks": {
     "latest": null,
     "revisions": {},
     "unversioned": []
   },
   "snapshots": {
-    "latest": null,
+    "latest": {
+      "revision": null,
+      "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-4"
+    },
     "revisions": {},
-    "unversioned": []
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-0",
+        "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-00-at-3s.png",
+        "time": 3,
+        "metadata": {
+          "width": 1920,
+          "height": 175,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793332208412,
+        "contentHash": "c00d26b9e8ad87ca034b75b4acd29222398818f8f0deae491ac95e4b91342ef0",
+        "revision": null,
+        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-1",
+        "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-01-at-7s.png",
+        "time": 7,
+        "metadata": {
+          "width": 1920,
+          "height": 175,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793332208412,
+        "contentHash": "d7c5ad9bcfc427054c82f1d51faec2b2ee0572f60a605770477acc21b85c3e1b",
+        "revision": null,
+        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-2",
+        "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-02-at-11s.png",
+        "time": 11,
+        "metadata": {
+          "width": 1920,
+          "height": 175,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793332208412,
+        "contentHash": "6910ef8722821b8e5d9c576f91dfbc73051fed6b70d5bdce5f1c5f6c95ae31e1",
+        "revision": null,
+        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-3",
+        "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-03-at-15.5s.png",
+        "time": 15.5,
+        "metadata": {
+          "width": 1920,
+          "height": 175,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793332208412,
+        "contentHash": "bb45e3d0698118253794f9c4ae8922e1721d02ab8b5243dd14862d8d663d1355",
+        "revision": null,
+        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      },
+      {
+        "scope": "full",
+        "id": "518246c5-9301-4d65-9ffc-8e66a6f44db6-4",
+        "image": "/home/user/videoshyperframes/videos/lente-directo-banner/boards/stills/frame-04-at-19s.png",
+        "time": 19,
+        "metadata": {
+          "width": 1920,
+          "height": 175,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1793332208412,
+        "contentHash": "1625226cbf6c5ade637b4480aba0967fd8a9ad1293a2e408f00b135157276f1f",
+        "revision": null,
+        "inputFingerprint": "1476305ac3301c4f8498644f4b06aed2b14c0d18781fd89d118a0c40f5e1a9a6",
+        "inputScope": "local-project-files",
+        "attribution": "inputs-changed"
+      }
+    ]
   },
   "renders": {
     "latest": {

@@ -1,0 +1,25 @@
+<template id="04-comunidad-template">
+  <div id="root" data-composition-id="04-comunidad" data-start="0" data-duration="4" data-width="1920" data-height="175">
+    <style>
+      @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
+      #root{position:relative;width:1920px;height:175px;overflow:hidden;font-family:'Poppins',sans-serif;}
+      [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(60% 160% at 50% 50%, #12305A 0%, #0B1F3A 55%, #071427 100%);}
+      [data-k="layer"]{position:absolute;inset:0;}
+      .t{position:absolute;left:330px;width:1200px;margin:0;text-align:center;color:#fff;font-weight:600;letter-spacing:-0.01em;line-height:1.1;white-space:nowrap;}
+      .a{color:#4C9BFF;}
+    </style>
+    <div data-k="bg" class="clip" data-start="0" data-duration="4" data-track-index="0"></div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="4" data-track-index="1">
+      <img src="assets/logo-lente-directo-blanco.png" style="position:absolute;left:120px;top:20px;height:135px;"><div style="position:absolute;left:285px;top:38px;width:2px;height:99px;background:rgba(255,255,255,.18);"></div>
+      <p class="t" style="top:56px;font-size:52px;">Forma parte de <span class="a">nuestra comunidad</span></p>
+      <div style="position:absolute;left:1580px;top:52px;width:220px;height:72px;border-radius:14px;background:#1877F2;color:#fff;font-weight:700;font-size:30px;line-height:72px;text-align:center;box-shadow:0 0 0 1px rgba(255,255,255,.25) inset,0 10px 30px rgba(24,119,242,.45);">Suscribirte</div>
+    </div>
+    <script src="assets/vendor/gsap.min.js"></script>
+    <script>
+      window.__timelines = window.__timelines || {};
+      var tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 4);
+      window.__timelines["04-comunidad"] = tl;
+    </script>
+  </div>
+</template>
