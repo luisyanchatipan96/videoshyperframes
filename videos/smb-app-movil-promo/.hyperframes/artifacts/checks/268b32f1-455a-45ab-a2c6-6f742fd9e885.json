@@ -1022,157 +1022,9 @@
   "runtime": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 7,
+    "warningCount": 0,
     "infoCount": 0,
-    "findings": [
-      {
-        "code": "clip_media_fit",
-        "severity": "warning",
-        "message": "Audio \"el-01-apertura-voice\" is 2.75s but its slot (data-duration) is 3.00s — the slot is shortened to the media length when rendered. Set data-duration to ~2.75s if that isn't intended.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {
-          "data-composition-id": "main",
-          "data-start": "0",
-          "data-duration": "27.5",
-          "data-width": "1080",
-          "data-height": "1920"
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 1080,
-          "height": 1920
-        },
-        "time": 0
-      },
-      {
-        "code": "clip_media_fit",
-        "severity": "warning",
-        "message": "Audio \"el-02-la-nueva-app-voice\" is 3.43s but its slot (data-duration) is 4.00s — the slot is shortened to the media length when rendered. Set data-duration to ~3.43s if that isn't intended.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {
-          "data-composition-id": "main",
-          "data-start": "0",
-          "data-duration": "27.5",
-          "data-width": "1080",
-          "data-height": "1920"
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 1080,
-          "height": 1920
-        },
-        "time": 0
-      },
-      {
-        "code": "clip_media_fit",
-        "severity": "warning",
-        "message": "Audio \"el-03-acceso-voice\" is 2.54s but its slot (data-duration) is 4.00s — the slot is shortened to the media length when rendered. Set data-duration to ~2.54s if that isn't intended.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {
-          "data-composition-id": "main",
-          "data-start": "0",
-          "data-duration": "27.5",
-          "data-width": "1080",
-          "data-height": "1920"
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 1080,
-          "height": 1920
-        },
-        "time": 0
-      },
-      {
-        "code": "clip_media_fit",
-        "severity": "warning",
-        "message": "Audio \"el-04-mis-productos-voice\" is 3.49s but its slot (data-duration) is 4.00s — the slot is shortened to the media length when rendered. Set data-duration to ~3.49s if that isn't intended.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {
-          "data-composition-id": "main",
-          "data-start": "0",
-          "data-duration": "27.5",
-          "data-width": "1080",
-          "data-height": "1920"
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 1080,
-          "height": 1920
-        },
-        "time": 0
-      },
-      {
-        "code": "clip_media_fit",
-        "severity": "warning",
-        "message": "Audio \"el-05-funciones-voice\" is 3.37s but its slot (data-duration) is 5.00s — the slot is shortened to the media length when rendered. Set data-duration to ~3.37s if that isn't intended.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {
-          "data-composition-id": "main",
-          "data-start": "0",
-          "data-duration": "27.5",
-          "data-width": "1080",
-          "data-height": "1920"
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 1080,
-          "height": 1920
-        },
-        "time": 0
-      },
-      {
-        "code": "clip_media_fit",
-        "severity": "warning",
-        "message": "Audio \"el-06-transferencias-voice\" is 2.48s but its slot (data-duration) is 4.00s — the slot is shortened to the media length when rendered. Set data-duration to ~2.48s if that isn't intended.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {
-          "data-composition-id": "main",
-          "data-start": "0",
-          "data-duration": "27.5",
-          "data-width": "1080",
-          "data-height": "1920"
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 1080,
-          "height": 1920
-        },
-        "time": 0
-      },
-      {
-        "code": "clip_media_fit",
-        "severity": "warning",
-        "message": "Audio \"el-07-descargala-voice\" is 2.12s but its slot (data-duration) is 3.50s — the slot is shortened to the media length when rendered. Set data-duration to ~2.12s if that isn't intended.",
-        "selector": "[data-composition-id]",
-        "dataAttributes": {
-          "data-composition-id": "main",
-          "data-start": "0",
-          "data-duration": "27.5",
-          "data-width": "1080",
-          "data-height": "1920"
-        },
-        "sourceFile": "index.html",
-        "bbox": {
-          "x": 0,
-          "y": 0,
-          "width": 1080,
-          "height": 1920
-        },
-        "time": 0
-      }
-    ]
+    "findings": []
   },
   "layout": {
     "ok": true,
@@ -1211,7 +1063,7 @@
           "bottom": 3
         },
         "dataAttributes": {
-          "data-hf-render-id": "hf-media-4",
+          "data-hf-render-id": "hf-media-2",
           "data-hf-authored-opacity": ""
         },
         "sourceFile": "compositions/frames/03-acceso.html",
@@ -1296,7 +1148,7 @@
           "bottom": 2.99
         },
         "dataAttributes": {
-          "data-hf-render-id": "hf-media-5",
+          "data-hf-render-id": "hf-media-3",
           "data-hf-authored-opacity": ""
         },
         "sourceFile": "compositions/frames/03-acceso.html",
@@ -1346,7 +1198,7 @@
           "bottom": 2.99
         },
         "dataAttributes": {
-          "data-hf-render-id": "hf-media-6",
+          "data-hf-render-id": "hf-media-4",
           "data-hf-authored-opacity": ""
         },
         "sourceFile": "compositions/frames/03-acceso.html",
@@ -1396,7 +1248,7 @@
           "bottom": 2.96
         },
         "dataAttributes": {
-          "data-hf-render-id": "hf-media-7",
+          "data-hf-render-id": "hf-media-5",
           "data-hf-authored-opacity": ""
         },
         "sourceFile": "compositions/frames/03-acceso.html",
@@ -1553,9 +1405,95 @@
   "contrast": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 0,
+    "warningCount": 3,
     "infoCount": 0,
-    "findings": [],
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.18:1; WCAG AA requires 3:1.",
+        "text": "créditos, inversiones",
+        "fg": "rgb(77,198,0)",
+        "bg": "rgb(252,252,253)",
+        "ratio": 2.18,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(65,168,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(4) > div > div:nth-of-type(2) > p:nth-of-type(2) > span:nth-of-type(1)",
+        "dataAttributes": {
+          "data-hf-id": "hf-36xt",
+          "data-k": "ln",
+          "data-line": "2"
+        },
+        "sourceFile": "compositions/frames/04-mis-productos.html",
+        "bbox": {
+          "x": 214.78125,
+          "y": 390,
+          "width": 650.4375,
+          "height": 75.890625
+        },
+        "time": 13.75,
+        "times": [
+          13.75
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.22:1; WCAG AA requires 3:1.",
+        "text": "y más.",
+        "fg": "rgb(77,198,0)",
+        "bg": "rgb(254,254,254)",
+        "ratio": 2.22,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(66,169,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(4) > div > div:nth-of-type(2) > p:nth-of-type(2) > span:nth-of-type(2)",
+        "dataAttributes": {
+          "data-hf-id": "hf-3dgg",
+          "data-k": "ln",
+          "data-line": "3"
+        },
+        "sourceFile": "compositions/frames/04-mis-productos.html",
+        "bbox": {
+          "x": 434.59375,
+          "y": 465.890625,
+          "width": 210.8125,
+          "height": 75.890625
+        },
+        "time": 13.75,
+        "times": [
+          13.75
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.18:1; WCAG AA requires 3:1.",
+        "text": "Todo desde tu app.",
+        "fg": "rgb(77,198,0)",
+        "bg": "rgb(252,252,252)",
+        "ratio": 2.18,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(65,167,0)",
+        "large": true,
+        "selector": "#\\30 5-funciones-sub",
+        "dataAttributes": {
+          "data-hf-id": "hf-ky9a"
+        },
+        "sourceFile": "compositions/frames/05-funciones.html",
+        "bbox": {
+          "x": 80,
+          "y": 480,
+          "width": 920,
+          "height": 58.796875
+        },
+        "time": 19.861,
+        "times": [
+          19.861
+        ]
+      }
+    ],
     "enabled": true,
     "samples": [
       1.528,
@@ -1565,18 +1503,33 @@
       25.972
     ],
     "checked": 13,
-    "passed": 13
+    "passed": 10
   },
   "craft": {
     "ok": true,
     "errorCount": 0,
-    "warningCount": 1,
+    "warningCount": 2,
     "infoCount": 0,
     "findings": [
       {
         "code": "first_frame_empty",
         "severity": "warning",
         "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 28 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
         "selector": "[data-composition-id]",
         "dataAttributes": {},
         "sourceFile": "index.html",
@@ -1597,8 +1550,24 @@
     "ok": true,
     "errorCount": 0,
     "warningCount": 0,
-    "infoCount": 0,
-    "findings": []
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
   },
   "hdr": {
     "autoPromotion": null,

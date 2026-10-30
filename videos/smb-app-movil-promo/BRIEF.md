@@ -9,7 +9,7 @@ language: es
 audience: "Socios y potenciales socios de la Cooperativa San Miguel de los Bancos"
 length: 27.5s
 angle: feature-reveal
-narration: yes
+narration: no
 capture: none
 ---
 
@@ -31,12 +31,14 @@ Usar los colores de la marca (azul #04478C / #005089 y verde #4DC600) y su lema 
 
 ## Customizations
 
-- Voz en off con ElevenLabs (voz Daniela, eleven_multilingual_v2), una frase por escena; sin música.
+- Sin locución ni música (pedido del usuario). La locución de ElevenLabs quedó archivada en assets/voice/.
 - Tipografía Poppins (pedido del usuario).
 - 7 escenas, 27,5 s (el usuario eliminó la escena de firma y el logo de las escenas 2 y 7).
 - Insignias oficiales de las tiendas en el cierre (archivos del usuario).
 
 ## Notes
+
+- Verde de los textos cambiado a #4DC600 (pedido del usuario).
 
 - Revisión: en la escena 3 el marco verde solo recorre Usuario y contraseña → Huella dactilar; en la escena 6 se quitó WIPEA (solo Transferir + animación de envío con cronómetro).
 

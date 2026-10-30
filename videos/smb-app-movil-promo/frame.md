@@ -15,7 +15,7 @@ colors:
   primary: "#4DC600"
   text: "#04478C"
   text-muted: "#5B6B7F"
-  green-ink: "#2F8A00"
+  green-ink: "#4DC600"
   text-light: "#9A9A9A"
   accent-light: "rgba(77, 198, 0, 0.08)"
   accent-medium: "rgba(77, 198, 0, 0.15)"
