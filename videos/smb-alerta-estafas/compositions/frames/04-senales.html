@@ -1,39 +1,48 @@
 <template id="04-senales-template">
-  <div id="root" data-composition-id="04-senales" data-start="0" data-duration="14" data-width="1080" data-height="1920">
+  <div id="root" data-composition-id="04-senales" data-start="0" data-duration="9" data-width="1080" data-height="1920">
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;}
-      [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%, #FFFFFF 0%, #F5F5F7 60%, #ECEDF1 100%);}
-      [data-k="layer"]{position:absolute;inset:0;}
-      .h{position:absolute;left:70px;right:70px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.03em;line-height:1.08;}
-      .g{color:#4DC600;} .r{color:#E5484D;}
-      .sub{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#5B6B7F;font-weight:500;}
-      .card{position:absolute;background:#fff;border-radius:36px;box-shadow:0 30px 70px rgba(4,71,140,.14),0 6px 16px rgba(4,71,140,.08);}
-      .phone{position:absolute;background:#1d1d23;border-radius:86px;box-shadow:0 50px 90px rgba(4,71,140,.22);}
-      .screen{position:absolute;left:22px;top:22px;right:22px;bottom:22px;border-radius:66px;overflow:hidden;background:#ECE5DD;}
-      .bub{position:absolute;max-width:470px;padding:22px 28px;border-radius:28px;font-size:34px;line-height:1.3;color:#1b1b1b;background:#fff;box-shadow:0 2px 0 rgba(0,0,0,.06);}
-      .row{position:absolute;left:90px;right:90px;height:170px;display:block;}
-      .row .ic{position:absolute;left:24px;top:33px;width:104px;height:104px;border-radius:30px;display:flex;align-items:center;justify-content:center;}
-      .row .tx{position:absolute;left:156px;right:24px;top:0;height:170px;display:flex;align-items:center;font-size:46px;font-weight:600;color:#04478C;line-height:1.15;}
-      .pin{position:absolute;width:0;height:0;}
-      .pin .dot{position:absolute;left:-30px;top:-74px;width:60px;height:60px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#4DC600;box-shadow:0 10px 20px rgba(77,198,0,.35);}
-      .pin .dot:after{content:"";position:absolute;left:19px;top:19px;width:22px;height:22px;border-radius:50%;background:#fff;}
-      .pin .lb{position:absolute;white-space:nowrap;font-size:40px;font-weight:700;color:#04478C;}
+      [data-k="04-senales-bg"]{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%, #FFFFFF 0%, #F5F5F7 60%, #ECEDF1 100%);}
+      [data-k="04-senales-layer"]{position:absolute;inset:0;}
+      .\30 4-senales-h{position:absolute;left:70px;right:70px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.03em;line-height:1.08;}
+      .\30 4-senales-r{color:#E5484D;}
+      .\30 4-senales-card{position:absolute;background:#fff;border-radius:36px;box-shadow:0 30px 70px rgba(4,71,140,.14),0 6px 16px rgba(4,71,140,.08);}
+      .\30 4-senales-row{position:absolute;left:90px;right:90px;height:170px;display:block;}
+      .\30 4-senales-row .\30 4-senales-ic{position:absolute;left:24px;top:33px;width:104px;height:104px;border-radius:30px;display:flex;align-items:center;justify-content:center;}
+      .\30 4-senales-row .\30 4-senales-tx{position:absolute;left:156px;right:24px;top:0;height:170px;display:flex;align-items:center;font-size:46px;font-weight:600;color:#04478C;line-height:1.15;}
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="14" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="14" data-track-index="1">
-      <p class="h" style="top:290px;font-size:92px;">Señales de <span class="r">alerta</span></p>
-      <div class="row card" style="top:540px;"><div class="ic" style="background:rgba(229,72,77,.10);"><svg width="68" height="68" viewBox="0 0 48 48" fill="none" stroke="#E5484D" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="color:#E5484D"><rect x="6" y="14" width="36" height="22" rx="4"/><circle cx="24" cy="25" r="5"/><path d="M11 19v12M37 19v12"/></svg></div><div class="tx">Te piden depósitos o pagos</div></div>
-      <div class="row card" style="top:760px;"><div class="ic" style="background:rgba(229,72,77,.10);"><svg width="68" height="68" viewBox="0 0 48 48" fill="none" stroke="#E5484D" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="color:#E5484D"><rect x="14" y="5" width="20" height="38" rx="4"/><path d="M21 17c0-2 1.5-3.5 3.5-3.5S28 15 28 17c0 3-3.5 3-3.5 6"/><circle cx="24.5" cy="28" r="1.4" fill="currentColor"/><path d="M21 38h7"/></svg></div><div class="tx">Te escriben desde números desconocidos</div></div>
-      <div class="row card" style="top:980px;"><div class="ic" style="background:rgba(229,72,77,.10);"><svg width="68" height="68" viewBox="0 0 48 48" fill="none" stroke="#E5484D" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="color:#E5484D"><circle cx="24" cy="26" r="16"/><path d="M24 17v10"/><circle cx="24" cy="32" r="1.6" fill="currentColor"/><path d="M19 5h10"/></svg></div><div class="tx">Te presionan con urgencia</div></div>
-      <div class="row card" style="top:1200px;"><div class="ic" style="background:rgba(229,72,77,.10);"><svg width="68" height="68" viewBox="0 0 48 48" fill="none" stroke="#E5484D" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="color:#E5484D"><rect x="9" y="21" width="30" height="21" rx="5"/><path d="M15 21v-5a9 9 0 0 1 18 0v5"/><path d="M17 31h2M23 31h2M29 31h2"/></svg></div><div class="tx">Te piden claves o códigos</div></div>
+    <div data-k="04-senales-bg" class="clip" data-start="0" data-duration="9" data-track-index="0"></div>
+    <div data-k="04-senales-layer" class="clip" data-start="0" data-duration="9" data-track-index="1">
+      <p class="04-senales-h" id="04-senales-title" style="top:290px;font-size:92px;">Señales de <span class="04-senales-r">alerta</span></p>
+      <div class="04-senales-row 04-senales-card" id="04-senales-card1" style="top:540px;"><div class="04-senales-ic" id="04-senales-ic1" style="background:rgba(229,72,77,.10);"><svg width="68" height="68" viewBox="0 0 48 48" fill="none" stroke="#E5484D" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="color:#E5484D"><rect x="6" y="14" width="36" height="22" rx="4"/><circle cx="24" cy="25" r="5"/><path d="M11 19v12M37 19v12"/></svg></div><div class="04-senales-tx">Te piden depósitos o pagos</div></div>
+      <div class="04-senales-row 04-senales-card" id="04-senales-card2" style="top:760px;"><div class="04-senales-ic" id="04-senales-ic2" style="background:rgba(229,72,77,.10);"><svg width="68" height="68" viewBox="0 0 48 48" fill="none" stroke="#E5484D" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="color:#E5484D"><rect x="14" y="5" width="20" height="38" rx="4"/><path d="M21 17c0-2 1.5-3.5 3.5-3.5S28 15 28 17c0 3-3.5 3-3.5 6"/><circle cx="24.5" cy="28" r="1.4" fill="currentColor"/><path d="M21 38h7"/></svg></div><div class="04-senales-tx">Te escriben desde números desconocidos</div></div>
+      <div class="04-senales-row 04-senales-card" id="04-senales-card3" style="top:980px;"><div class="04-senales-ic" id="04-senales-ic3" style="background:rgba(229,72,77,.10);"><svg width="68" height="68" viewBox="0 0 48 48" fill="none" stroke="#E5484D" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="color:#E5484D"><circle cx="24" cy="26" r="16"/><path d="M24 17v10"/><circle cx="24" cy="32" r="1.6" fill="currentColor"/><path d="M19 5h10"/></svg></div><div class="04-senales-tx">Te presionan con urgencia</div></div>
+      <div class="04-senales-row 04-senales-card" id="04-senales-card4" style="top:1200px;"><div class="04-senales-ic" id="04-senales-ic4" style="background:rgba(229,72,77,.10);"><svg width="68" height="68" viewBox="0 0 48 48" fill="none" stroke="#E5484D" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" style="color:#E5484D"><rect x="9" y="21" width="30" height="21" rx="5"/><path d="M15 21v-5a9 9 0 0 1 18 0v5"/><path d="M17 31h2M23 31h2M29 31h2"/></svg></div><div class="04-senales-tx">Te piden claves o códigos</div></div>
     </div>
     <script src="assets/vendor/gsap.min.js"></script>
     <script>
       window.__timelines = window.__timelines || {};
-      var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 14);
-      window.__timelines["04-senales"] = tl;
+      (function(){
+        var $ = function(id){ return document.getElementById(id); };
+        var tl = gsap.timeline({ paused: true });
+        // Scene 1 (0.0-0.8s): title enters
+        tl.fromTo($("04-senales-title"), { opacity: 0, y: 36, filter: "blur(12px)" },
+          { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.8, ease: "power3.out" }, 0);
+        // Scene 2: each card on its voice cue, from the left; icon pulses once
+        var cues = [1.05, 2.05, 3.95, 5.45];
+        cues.forEach(function(t, i){
+          var card = $("04-senales-card" + (i + 1));
+          var ic = $("04-senales-ic" + (i + 1));
+          tl.fromTo(card, { opacity: 0, x: -60, filter: "blur(14px)" },
+            { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.7, ease: "expo.out" }, t);
+          tl.fromTo(ic, { scale: 1 }, { scale: 1.12, duration: 0.18, ease: "power2.out" }, t + 0.3);
+          tl.to(ic, { scale: 1, duration: 0.32, ease: "power2.inOut" }, t + 0.48);
+        });
+        // Scene 3: hold to the end
+        tl.set({}, {}, 9);
+        window.__timelines["04-senales"] = tl;
+      })();
     </script>
   </div>
 </template>

@@ -1,41 +1,69 @@
 <template id="06-oficinas-template">
-  <div id="root" data-composition-id="06-oficinas" data-start="0" data-duration="9" data-width="1080" data-height="1920">
+  <div id="root" data-composition-id="06-oficinas" data-start="0" data-duration="9.5" data-width="1080" data-height="1920">
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;}
-      [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%, #FFFFFF 0%, #F5F5F7 60%, #ECEDF1 100%);}
-      [data-k="layer"]{position:absolute;inset:0;}
-      .h{position:absolute;left:70px;right:70px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.03em;line-height:1.08;}
-      .g{color:#4DC600;} .r{color:#E5484D;}
-      .sub{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#5B6B7F;font-weight:500;}
-      .card{position:absolute;background:#fff;border-radius:36px;box-shadow:0 30px 70px rgba(4,71,140,.14),0 6px 16px rgba(4,71,140,.08);}
-      .phone{position:absolute;background:#1d1d23;border-radius:86px;box-shadow:0 50px 90px rgba(4,71,140,.22);}
-      .screen{position:absolute;left:22px;top:22px;right:22px;bottom:22px;border-radius:66px;overflow:hidden;background:#ECE5DD;}
-      .bub{position:absolute;max-width:470px;padding:22px 28px;border-radius:28px;font-size:34px;line-height:1.3;color:#1b1b1b;background:#fff;box-shadow:0 2px 0 rgba(0,0,0,.06);}
-      .row{position:absolute;left:90px;right:90px;height:170px;display:block;}
-      .row .ic{position:absolute;left:24px;top:33px;width:104px;height:104px;border-radius:30px;display:flex;align-items:center;justify-content:center;}
-      .row .tx{position:absolute;left:156px;right:24px;top:0;height:170px;display:flex;align-items:center;font-size:46px;font-weight:600;color:#04478C;line-height:1.15;}
-      .pin{position:absolute;width:0;height:0;}
-      .pin .dot{position:absolute;left:-30px;top:-74px;width:60px;height:60px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#4DC600;box-shadow:0 10px 20px rgba(77,198,0,.35);}
-      .pin .dot:after{content:"";position:absolute;left:19px;top:19px;width:22px;height:22px;border-radius:50%;background:#fff;}
-      .pin .lb{position:absolute;white-space:nowrap;font-size:40px;font-weight:700;color:#04478C;}
+      #root [data-k="f06-bg"]{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%, #FFFFFF 0%, #F5F5F7 60%, #ECEDF1 100%);}
+      #root [data-k="f06-layer"]{position:absolute;inset:0;}
+      #root .f06-h{position:absolute;left:70px;right:70px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.03em;line-height:1.08;}
+      #root .f06-line{display:block;}
+      #root .f06-g{color:#4DC600;}
+      #root .f06-route{position:absolute;left:0;top:0;}
+      #root .f06-pin{position:absolute;width:0;height:0;}
+      #root .f06-drop{position:absolute;left:0;top:0;width:0;height:0;}
+      #root .f06-dot{position:absolute;left:-30px;top:-74px;width:60px;height:60px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#4DC600;box-shadow:0 10px 20px rgba(77,198,0,.35);}
+      #root .f06-dot:after{content:"";position:absolute;left:19px;top:19px;width:22px;height:22px;border-radius:50%;background:#fff;}
+      #root .f06-ripple{position:absolute;left:-60px;top:-18px;width:120px;height:36px;border-radius:50%;border:5px solid #4DC600;box-sizing:border-box;opacity:0;}
+      #root .f06-lb{position:absolute;white-space:nowrap;font-size:40px;font-weight:700;color:#04478C;}
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="9" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="9" data-track-index="1">
-      <p class="h" style="top:190px;font-size:84px;">Visítanos en<br><span class="g">nuestras oficinas</span></p>
-      <svg style="position:absolute;left:0;top:0;" width="1080" height="1920" viewBox="0 0 1080 1920"><path d="M120 1020 C 260 860, 380 1180, 540 980 S 820 760, 960 900" fill="none" stroke="#C9D6E6" stroke-width="22" stroke-linecap="round"/><path d="M120 1020 C 260 860, 380 1180, 540 980 S 820 760, 960 900" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="18 22" stroke-linecap="round"/></svg>
-      <div class="pin" style="left:170px;top:960px;"><div class="dot"></div><div class="lb" style="left:-90px;top:20px;">Puerto Quito</div></div>
-      <div class="pin" style="left:400px;top:1060px;"><div class="dot"></div><div class="lb" style="left:-150px;top:20px;text-align:center;line-height:1.05;">Pedro Vicente<br>Maldonado</div></div>
-      <div class="pin" style="left:640px;top:880px;"><div class="dot"></div><div class="lb" style="left:-160px;top:-200px;text-align:center;line-height:1.05;">San Miguel<br>de los Bancos</div></div>
-      <div class="pin" style="left:900px;top:870px;"><div class="dot"></div><div class="lb" style="left:-60px;top:20px;">Mindo</div></div>
-      <p class="h" style="top:1360px;font-size:64px;font-weight:600;line-height:1.2;">Realiza tus trámites<br>de forma <span class="g">presencial y gratuita</span></p>
+    <div data-k="f06-bg" class="clip" data-start="0" data-duration="9.5" data-track-index="0"></div>
+    <div data-k="f06-layer" class="clip" data-start="0" data-duration="9.5" data-track-index="1">
+      <p class="f06-h" style="top:190px;font-size:84px;"><span class="f06-line" data-o="t1">Visítanos en</span><span class="f06-line f06-g" data-o="t2">nuestras oficinas</span></p>
+      <svg class="f06-route" width="1080" height="1920" viewBox="0 0 1080 1920">
+        <defs>
+          <mask id="f06-route-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="1080" height="1920">
+            <path data-o="mask" d="M120 1020 C 260 860, 380 1180, 540 980 S 820 760, 960 900" fill="none" stroke="#fff" stroke-width="60" stroke-linecap="round" stroke-dasharray="1400 1400" stroke-dashoffset="1400"/>
+          </mask>
+        </defs>
+        <g mask="url(#f06-route-mask)">
+          <path d="M120 1020 C 260 860, 380 1180, 540 980 S 820 760, 960 900" fill="none" stroke="#C9D6E6" stroke-width="22" stroke-linecap="round"/>
+          <path d="M120 1020 C 260 860, 380 1180, 540 980 S 820 760, 960 900" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="18 22" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <div class="f06-pin" style="left:170px;top:960px;"><div class="f06-ripple" data-o="r3"></div><div class="f06-drop" data-o="p3"><div class="f06-dot"></div></div><div class="f06-lb" data-o="l3" style="left:-90px;top:20px;">Puerto Quito</div></div>
+      <div class="f06-pin" style="left:400px;top:1060px;"><div class="f06-ripple" data-o="r2"></div><div class="f06-drop" data-o="p2"><div class="f06-dot"></div></div><div class="f06-lb" data-o="l2" style="left:-150px;top:20px;text-align:center;line-height:1.05;">Pedro Vicente<br>Maldonado</div></div>
+      <div class="f06-pin" style="left:640px;top:880px;"><div class="f06-ripple" data-o="r1"></div><div class="f06-drop" data-o="p1"><div class="f06-dot"></div></div><div class="f06-lb" data-o="l1" style="left:-160px;top:-200px;text-align:center;line-height:1.05;">San Miguel<br>de los Bancos</div></div>
+      <div class="f06-pin" style="left:900px;top:870px;"><div class="f06-ripple" data-o="r4"></div><div class="f06-drop" data-o="p4"><div class="f06-dot"></div></div><div class="f06-lb" data-o="l4" style="left:-60px;top:20px;">Mindo</div></div>
+      <p class="f06-h" data-o="final" style="top:1360px;font-size:64px;font-weight:600;line-height:1.2;">Realiza tus trámites<br>de forma <span class="f06-g">presencial y gratuita</span></p>
     </div>
     <script src="assets/vendor/gsap.min.js"></script>
     <script>
-      window.__timelines = window.__timelines || {};
-      var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 9);
-      window.__timelines["06-oficinas"] = tl;
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var scope = document.querySelector('[data-composition-id="06-oficinas"]') || document;
+        function q(k) { return scope.querySelector('[data-o="' + k + '"]'); }
+        var tl = gsap.timeline({ paused: true });
+
+        // Scene 1 — titular + ruta que se dibuja de izquierda a derecha
+        tl.fromTo(q("t1"), { opacity: 0, y: 40, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.8, ease: "power3.out" }, 0);
+        tl.fromTo(q("t2"), { opacity: 0, y: 40, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.8, ease: "power3.out" }, 0.12);
+        tl.fromTo(q("mask"), { attr: { "stroke-dashoffset": 1400 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.0, ease: "power2.inOut" }, 0.3);
+
+        // Scene 2 — pines caen en el orden en que la voz los nombra
+        var cues = [["1", 2.55], ["2", 3.9], ["3", 5.05], ["4", 5.65]];
+        cues.forEach(function (c) {
+          var id = c[0], t = c[1];
+          tl.fromTo(q("p" + id), { y: -80, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55, ease: "expo.out" }, t);
+          tl.fromTo(q("r" + id), { scale: 0.3, opacity: 0.7 }, { scale: 1.6, opacity: 0, duration: 0.8, ease: "power2.out" }, t + 0.18);
+          tl.fromTo(q("l" + id), { opacity: 0, y: 18, filter: "blur(10px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.6, ease: "power3.out" }, t + 0.15);
+        });
+
+        // Scene 3 — frase final sube; hold
+        tl.fromTo(q("final"), { opacity: 0, y: 60, filter: "blur(14px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.9, ease: "power3.out" }, 6.6);
+
+        tl.set({}, {}, 9.5);
+        window.__timelines["06-oficinas"] = tl;
+      })();
     </script>
   </div>
 </template>

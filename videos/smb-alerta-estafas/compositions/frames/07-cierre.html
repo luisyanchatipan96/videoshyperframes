@@ -1,12 +1,12 @@
 <template id="07-cierre-template">
-  <div id="root" data-composition-id="07-cierre" data-start="0" data-duration="4" data-width="1080" data-height="1920">
+  <div id="root" data-composition-id="07-cierre" data-start="0" data-duration="5.5" data-width="1080" data-height="1920">
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;}
       [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(120% 70% at 50% 30%, #FFFFFF 0%, #F5F5F7 60%, #ECEDF1 100%);}
       [data-k="layer"]{position:absolute;inset:0;}
       .h{position:absolute;left:70px;right:70px;margin:0;text-align:center;color:#04478C;font-weight:700;letter-spacing:-0.03em;line-height:1.08;}
-      .g{color:#4DC600;} .r{color:#E5484D;}
+      .g{color:#4DC600;} [id="07-cierre-gratis"]{display:inline-block;color:transparent;background:linear-gradient(100deg,#4DC600 0%,#4DC600 40%,#C9F7A8 50%,#4DC600 60%,#4DC600 100%);background-size:300% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;padding-bottom:0.12em;margin-bottom:-0.12em;} .r{color:#E5484D;}
       .sub{position:absolute;left:80px;right:80px;margin:0;text-align:center;color:#5B6B7F;font-weight:500;}
       .card{position:absolute;background:#fff;border-radius:36px;box-shadow:0 30px 70px rgba(4,71,140,.14),0 6px 16px rgba(4,71,140,.08);}
       .phone{position:absolute;background:#1d1d23;border-radius:86px;box-shadow:0 50px 90px rgba(4,71,140,.22);}
@@ -20,9 +20,9 @@
       .pin .dot:after{content:"";position:absolute;left:19px;top:19px;width:22px;height:22px;border-radius:50%;background:#fff;}
       .pin .lb{position:absolute;white-space:nowrap;font-size:40px;font-weight:700;color:#04478C;}
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="4" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="4" data-track-index="1">
-      <svg style="position:absolute;left:190px;top:230px;" width="700" height="1060" viewBox="0 0 700 1060">
+    <div data-k="bg" class="clip" data-start="0" data-duration="5.5" data-track-index="0"></div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="5.5" data-track-index="1">
+      <svg id="07-cierre-advisor" style="position:absolute;left:190px;top:230px;overflow:visible;" width="700" height="1060" viewBox="0 0 700 1060">
         <ellipse cx="350" cy="1035" rx="250" ry="22" fill="rgba(4,71,140,.10)"/>
         <path d="M110 1040 C110 820 200 700 350 700 C500 700 590 820 590 1040 Z" fill="#04478C"/>
         <path d="M290 700 L350 860 L410 700 Z" fill="#FFFFFF"/>
@@ -34,6 +34,7 @@
         <circle cx="300" cy="480" r="12" fill="#2B2A33"/><circle cx="400" cy="480" r="12" fill="#2B2A33"/>
         <path d="M300 545 Q350 590 400 545" fill="none" stroke="#2B2A33" stroke-width="10" stroke-linecap="round"/>
         <circle cx="262" cy="530" r="18" fill="#F3A99A" opacity=".55"/><circle cx="438" cy="530" r="18" fill="#F3A99A" opacity=".55"/>
+        <g id="07-cierre-badge">
         <path d="M300 705 L350 905 L400 705" fill="none" stroke="#4DC600" stroke-width="12" stroke-linejoin="round"/>
         <g transform="translate(250,880)">
           <rect x="0" y="0" width="200" height="150" rx="18" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="3"/>
@@ -41,17 +42,36 @@
           <rect x="86" y="-14" width="28" height="26" rx="6" fill="#B9C6D6"/>
           <rect x="16" y="54" width="56" height="70" rx="10" fill="#E8EEF5"/><circle cx="44" cy="80" r="14" fill="#B9C6D6"/><path d="M24 118 C26 100 62 100 64 118 Z" fill="#B9C6D6"/>
           <rect x="84" y="60" width="98" height="12" rx="6" fill="#04478C"/><rect x="84" y="84" width="76" height="10" rx="5" fill="#B9C6D6"/><rect x="84" y="104" width="88" height="10" rx="5" fill="#B9C6D6"/>
-          <circle cx="178" cy="132" r="22" fill="#4DC600"/><path d="M168 132 L176 140 L190 124" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle id="07-cierre-glow" cx="178" cy="132" r="22" fill="none" stroke="#4DC600" stroke-width="6" opacity="0"/><circle cx="178" cy="132" r="22" fill="#4DC600"/><path d="M168 132 L176 140 L190 124" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
         </g>
       </svg>
-      <div style="position:absolute;left:520px;top:400px;padding:14px 26px;border-radius:22px;background:#fff;box-shadow:0 14px 30px rgba(4,71,140,.16);color:#04478C;font-size:30px;font-weight:700;line-height:1.2;">Asesor de Crédito<br><span style="color:#4DC600;font-weight:600;font-size:26px;">Coop. San Miguel de los Bancos</span></div>
-      <p class="h" style="top:1350px;font-size:104px;">Tus trámites son<br><span class="g">gratuitos</span></p>
+      <div id="07-cierre-tag" style="position:absolute;left:520px;top:400px;padding:14px 26px;border-radius:22px;background:#fff;box-shadow:0 14px 30px rgba(4,71,140,.16);color:#04478C;font-size:30px;font-weight:700;line-height:1.2;">Asesor de Crédito<br><span style="color:#4DC600;font-weight:600;font-size:26px;">Coop. San Miguel de los Bancos</span></div>
+      <p id="07-cierre-head" class="h" style="top:1350px;font-size:104px;">Tus trámites son<br><span id="07-cierre-gratis" class="g">gratuitos</span></p>
     </div>
     <script src="assets/vendor/gsap.min.js"></script>
     <script>
       window.__timelines = window.__timelines || {};
       var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 4);
+      var q = function (id) { return document.getElementById(id); };
+      // Scene 1 — advisor rises, blur clears; badge swings once and settles on the lanyard
+      tl.fromTo(q("07-cierre-advisor"), { y: 80, opacity: 0, filter: "blur(14px)" },
+        { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.9, ease: "power3.out" }, 0);
+      tl.fromTo(q("07-cierre-badge"), { rotation: 6, svgOrigin: "350 705" },
+        { rotation: 0, svgOrigin: "350 705", duration: 1.0, ease: "power3.out" }, 0.1);
+      // Headline enters at 0.3s
+      tl.fromTo(q("07-cierre-head"), { y: 50, opacity: 0, filter: "blur(12px)" },
+        { y: 0, opacity: 1, filter: "blur(0px)", duration: 0.8, ease: "power3.out" }, 0.3);
+      // Scene 2 — tag scales in; the credential check glows
+      tl.fromTo(q("07-cierre-tag"), { scale: 0.9, opacity: 0, filter: "blur(8px)", transformOrigin: "20% 100%" },
+        { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "expo.out" }, 0.6);
+      tl.fromTo(q("07-cierre-glow"), { scale: 1, opacity: 0.9, transformOrigin: "50% 50%" },
+        { scale: 2.2, opacity: 0, transformOrigin: "50% 50%", duration: 0.8, ease: "power2.out" }, 1.0);
+      // Scene 3 — shine sweep across "gratuitos" at 1.2s, ending on solid green
+      tl.fromTo(q("07-cierre-gratis"), { backgroundPosition: "100% 0" },
+        { backgroundPosition: "0% 0", duration: 1.0, ease: "power2.inOut" }, 1.2);
+      // Final hold — everything complete, no fade
+      tl.set({}, {}, 5.5);
       window.__timelines["07-cierre"] = tl;
     </script>
   </div>

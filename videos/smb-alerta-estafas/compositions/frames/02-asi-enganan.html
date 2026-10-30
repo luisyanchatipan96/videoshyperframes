@@ -1,5 +1,5 @@
 <template id="02-asi-enganan-template">
-  <div id="root" data-composition-id="02-asi-enganan" data-start="0" data-duration="11" data-width="1080" data-height="1920">
+  <div id="root" data-composition-id="02-asi-enganan" data-start="0" data-duration="10" data-width="1080" data-height="1920">
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:'Poppins',sans-serif;}
@@ -19,28 +19,71 @@
       .pin .dot{position:absolute;left:-30px;top:-74px;width:60px;height:60px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:#4DC600;box-shadow:0 10px 20px rgba(77,198,0,.35);}
       .pin .dot:after{content:"";position:absolute;left:19px;top:19px;width:22px;height:22px;border-radius:50%;background:#fff;}
       .pin .lb{position:absolute;white-space:nowrap;font-size:40px;font-weight:700;color:#04478C;}
+      #02-asi-enganan-chat,.f02-chat{position:absolute;inset:0;}
+      .f02-typing{position:absolute;padding:26px 30px;border-radius:28px;background:#fff;box-shadow:0 2px 0 rgba(0,0,0,.06);display:flex;gap:12px;align-items:center;height:36px;opacity:0;}
+      .f02-typing.f02-me{background:#DCF8C6;}
+      .f02-typing i{display:block;width:16px;height:16px;border-radius:50%;background:#8a9399;}
+      .f02-hl{background-image:linear-gradient(rgba(255,214,10,.42),rgba(255,214,10,.42));background-repeat:no-repeat;background-position:0 60%;background-size:0% 100%;-webkit-box-decoration-break:clone;box-decoration-break:clone;border-radius:6px;padding:0 4px;margin:0 -4px;}
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="11" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="11" data-track-index="1">
-      <p class="h" style="top:150px;font-size:96px;">Así <span class="r">engañan</span></p>
-      <div class="phone" style="left:150px;top:360px;width:780px;height:1380px;"><div class="screen">
+    <div data-k="bg" class="clip" data-start="0" data-duration="10" data-track-index="0"></div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="10" data-track-index="1">
+      <p class="h" id="f02-title" style="top:150px;font-size:96px;">Así <span class="r">engañan</span></p>
+      <div class="phone" id="f02-phone" style="left:150px;top:360px;width:780px;height:1380px;"><div class="screen"><div class="f02-chat" id="f02-chat">
         <div style="position:absolute;left:0;right:0;top:0;height:170px;background:#075E54;"></div>
         <div style="position:absolute;left:40px;top:70px;width:76px;height:76px;border-radius:50%;background:#c9d3da;"></div>
         <div style="position:absolute;left:136px;top:66px;color:#fff;font-size:34px;font-weight:700;">Asesor de Crédito</div>
         <div style="position:absolute;left:136px;top:110px;color:#d7efe9;font-size:26px;">+593 9•• ••• •••</div>
-        <div class="bub" style="left:36px;top:230px;">Hola 👋 soy asesor de la Cooperativa San Miguel de los Bancos.</div>
-        <div class="bub" style="left:36px;top:450px;">Para revisar tu <b>buró de crédito</b> debes hacer un depósito hoy.</div>
-        <div class="bub" style="right:36px;top:690px;background:#DCF8C6;">¿Tengo que pagar?</div>
-        <div class="bub" style="left:36px;top:850px;">Sí, es para agilizar tu trámite. Envía el comprobante.</div>
-      </div></div>
-      <div style="position:absolute;left:230px;top:1360px;padding:20px 60px;border:10px solid #E5484D;border-radius:30px;color:#E5484D;font-size:110px;font-weight:800;letter-spacing:.06em;transform:rotate(-12deg);background:rgba(255,255,255,.85);">ESTAFA</div>
+        <div class="f02-typing" id="f02-t1" style="left:36px;top:230px;"><i></i><i></i><i></i></div>
+        <div class="bub" id="f02-m1" style="left:36px;top:230px;">Hola 👋 soy asesor de la Cooperativa San Miguel de los Bancos.</div>
+        <div class="f02-typing" id="f02-t2" style="left:36px;top:450px;"><i></i><i></i><i></i></div>
+        <div class="bub" id="f02-m2" style="left:36px;top:450px;">Para revisar tu <b class="f02-hl" id="f02-hl">buró de crédito</b> debes hacer un depósito hoy.</div>
+        <div class="f02-typing f02-me" id="f02-t3" style="right:36px;top:690px;"><i></i><i></i><i></i></div>
+        <div class="bub" id="f02-m3" style="right:36px;top:690px;background:#DCF8C6;">¿Tengo que pagar?</div>
+        <div class="f02-typing" id="f02-t4" style="left:36px;top:850px;"><i></i><i></i><i></i></div>
+        <div class="bub" id="f02-m4" style="left:36px;top:850px;">Sí, es para agilizar tu trámite. Envía el comprobante.</div>
+      </div></div></div>
+      <div id="f02-stamp" style="position:absolute;left:230px;top:1360px;padding:20px 60px;border:10px solid #E5484D;border-radius:30px;color:#E5484D;font-size:110px;font-weight:800;letter-spacing:.06em;background:rgba(255,255,255,.85);">ESTAFA</div>
     </div>
     <script src="assets/vendor/gsap.min.js"></script>
     <script>
       window.__timelines = window.__timelines || {};
-      var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 11);
-      window.__timelines["02-asi-enganan"] = tl;
+      (function(){
+        var R = "[data-composition-id='02-asi-enganan'] ";
+        function q(id){ return document.querySelector(R + "#" + id); }
+        var tl = gsap.timeline({ paused: true });
+        // Scene 1 — title + phone rise
+        tl.fromTo(q("f02-title"), {opacity:0, y:40, filter:"blur(12px)"}, {opacity:1, y:0, filter:"blur(0px)", duration:0.6, ease:"power3.out"}, 0);
+        tl.fromTo(q("f02-phone"), {opacity:0, y:140, filter:"blur(10px)"}, {opacity:1, y:0, filter:"blur(0px)", duration:0.8, ease:"expo.out"}, 0.1);
+        // Scene 2 — typing indicator (0.5s) then message
+        function msg(n, t, originX){
+          var ty = q("f02-t" + n), m = q("f02-m" + n), dots = ty.querySelectorAll("i");
+          tl.fromTo(ty, {opacity:0, scale:0.85, transformOrigin:originX + " bottom"}, {opacity:1, scale:1, duration:0.15, ease:"power3.out"}, t - 0.5);
+          for (var d = 0; d < 3; d++) {
+            var s0 = t - 0.45 + d * 0.08;
+            tl.fromTo(dots[d], {y:0}, {y:-9, duration:0.12, ease:"sine.out"}, s0);
+            tl.to(dots[d], {y:0, duration:0.12, ease:"sine.in"}, s0 + 0.12);
+          }
+          tl.to(ty, {opacity:0, duration:0.1, ease:"none"}, t);
+          tl.fromTo(m, {opacity:0, y:24, scale:0.96, filter:"blur(8px)", transformOrigin:originX + " bottom"}, {opacity:1, y:0, scale:1, filter:"blur(0px)", duration:0.5, ease:"power3.out"}, t);
+        }
+        msg(1, 1.0, "left");
+        msg(2, 2.6, "left");
+        tl.fromTo(q("f02-hl"), {backgroundSize:"0% 100%"}, {backgroundSize:"100% 100%", duration:0.6, ease:"power3.out"}, 2.95);
+        msg(3, 4.0, "right");
+        msg(4, 5.0, "left");
+        // Scene 3 — ESTAFA stamp lands at 6.1s, chat dims to 70%
+        var st = q("f02-stamp");
+        tl.fromTo(st, {opacity:0, scale:1.6, rotation:-12, transformOrigin:"50% 50%"}, {opacity:1, scale:1, rotation:-12, duration:0.22, ease:"power4.in"}, 6.1);
+        tl.fromTo(q("f02-chat"), {opacity:1}, {opacity:0.7, duration:0.4, ease:"power2.out"}, 6.25);
+        var sh = [q("f02-phone"), st];
+        tl.to(sh, {x:10, duration:0.035, ease:"none"}, 6.32);
+        tl.to(sh, {x:-8, duration:0.04, ease:"none"}, 6.355);
+        tl.to(sh, {x:5, duration:0.04, ease:"none"}, 6.395);
+        tl.to(sh, {x:0, duration:0.035, ease:"none"}, 6.435);
+        // hold
+        tl.set({}, {}, 10);
+        window.__timelines["02-asi-enganan"] = tl;
+      })();
     </script>
   </div>
 </template>
