@@ -1,26 +1,66 @@
 <template id="01-apertura-template">
-  <div id="root" data-composition-id="01-apertura" data-start="0" data-duration="4" data-width="1920" data-height="175">
+  <div id="root" data-composition-id="01-apertura" data-start="0" data-duration="3.7" data-width="1920" data-height="175">
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1920px;height:175px;overflow:hidden;font-family:'Poppins',sans-serif;}
       [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(60% 170% at 50% 45%, #EDC28C 0%, #E2B176 55%, #D7A367 100%);}
+      #a01-apertura-dim{position:absolute;inset:0;background:radial-gradient(60% 170% at 50% 45%, rgba(90,55,20,.22) 0%, rgba(90,55,20,.34) 60%, rgba(70,40,12,.42) 100%);}
       [data-k="layer"]{position:absolute;inset:0;}
-      .t{position:absolute;left:330px;width:1200px;margin:0;text-align:center;color:#141414;font-weight:600;letter-spacing:-0.01em;line-height:1.1;white-space:nowrap;}
-      .a{color:#FFFFFF;text-shadow:0 2px 3px rgba(0,0,0,.28),0 0 18px rgba(0,0,0,.12);}
+      #a01-apertura-logo{position:absolute;left:120px;top:20px;height:135px;transform-origin:50% 50%;}
+      #a01-apertura-div{position:absolute;left:285px;top:38px;width:2px;height:99px;background:rgba(20,20,20,.25);transform-origin:50% 50%;}
+      #a01-apertura-line{position:absolute;left:300px;right:0;top:86px;height:2px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.85) 40%,rgba(255,255,255,0));}
+      #a01-apertura-head{position:absolute;left:300px;top:79px;width:220px;height:16px;border-radius:8px;background:radial-gradient(50% 50% at 50% 50%, rgba(255,255,255,.95) 0%, rgba(255,255,255,.35) 45%, rgba(255,255,255,0) 100%);}
+      .a01-apertura-t{position:absolute;left:330px;width:1200px;margin:0;text-align:center;color:#141414;font-weight:600;letter-spacing:-0.01em;line-height:1.1;white-space:nowrap;transform-origin:50% 50%;}
+      .a01-apertura-a{color:#FFFFFF;text-shadow:0 2px 3px rgba(0,0,0,.28),0 0 18px rgba(0,0,0,.12);}
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="4" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="4" data-track-index="1">
-      <img src="assets/logo-lente-directo.png" style="position:absolute;left:120px;top:20px;height:135px;"><div style="position:absolute;left:285px;top:38px;width:2px;height:99px;background:rgba(20,20,20,.25);"></div>
-      <div style="position:absolute;left:300px;right:0;top:86px;height:2px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.85) 40%,rgba(255,255,255,0));"></div>
-      <p class="t" style="top:30px;font-size:44px;">Las historias que importan</p>
-      <p class="t a" style="top:90px;font-size:44px;">merecen llegar más lejos.</p>
+    <div data-k="bg" class="clip" data-start="0" data-duration="3.7" data-track-index="0">
+      <div id="a01-apertura-dim"></div>
+    </div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="3.7" data-track-index="1">
+      <img id="a01-apertura-logo" src="assets/logo-lente-directo.png" alt="">
+      <div id="a01-apertura-div"></div>
+      <div id="a01-apertura-line"></div>
+      <div id="a01-apertura-head"></div>
+      <p id="a01-apertura-l1" class="a01-apertura-t" style="top:30px;font-size:44px;">Las historias que importan</p>
+      <p id="a01-apertura-l2" class="a01-apertura-t a01-apertura-a" style="top:90px;font-size:44px;">merecen llegar más lejos.</p>
     </div>
     <script src="assets/vendor/gsap.min.js"></script>
     <script>
       window.__timelines = window.__timelines || {};
-      var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 4);
-      window.__timelines["01-apertura"] = tl;
+      (function () {
+        var tl = gsap.timeline({ paused: true });
+
+        // Scene 1 — background brightens; white light line sweeps left→right (0.2–1.2s)
+        tl.fromTo("#a01-apertura-dim", { opacity: 1 }, { opacity: 0, duration: 0.9, ease: "power2.out" }, 0);
+        tl.fromTo("#a01-apertura-line",
+          { clipPath: "inset(0 100% 0 0)" },
+          { clipPath: "inset(0 0% 0 0)", duration: 1.0, ease: "power2.inOut" }, 0.2);
+        tl.fromTo("#a01-apertura-head",
+          { x: -110, opacity: 0 },
+          { x: 1510, duration: 1.0, ease: "power2.inOut" }, 0.2);
+        tl.fromTo("#a01-apertura-head", { opacity: 0 }, { opacity: 1, duration: 0.2, ease: "none" }, 0.2);
+        tl.to("#a01-apertura-head", { opacity: 0, duration: 0.25, ease: "power1.in" }, 0.95);
+
+        // Scene 2 — logo enters (scale 0.9→1 + blur→0); divider grows 0→99
+        tl.fromTo("#a01-apertura-logo",
+          { opacity: 0, scale: 0.9, x: -40, filter: "blur(12px)" },
+          { opacity: 1, scale: 1, x: 0, filter: "blur(0px)", duration: 0.7, ease: "power3.out" }, 0.3);
+        tl.fromTo("#a01-apertura-div",
+          { scaleY: 0 },
+          { scaleY: 1, duration: 0.7, ease: "expo.out" }, 0.3);
+
+        // Scene 3 — two lines arrive with depth (blur + rise + scale)
+        tl.fromTo("#a01-apertura-l1",
+          { opacity: 0, y: 24, scale: 0.96, filter: "blur(12px)" },
+          { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.9, ease: "power3.out" }, 0.4);
+        tl.fromTo("#a01-apertura-l2",
+          { opacity: 0, y: 24, scale: 0.96, filter: "blur(12px)" },
+          { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", duration: 0.6, ease: "power3.out" }, 1.6);
+
+        // Scene 4 — quiet hold to 3.7s
+        tl.set({}, {}, 3.7);
+        window.__timelines["01-apertura"] = tl;
+      })();
     </script>
   </div>
 </template>

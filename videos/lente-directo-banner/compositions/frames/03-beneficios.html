@@ -1,24 +1,54 @@
 <template id="03-beneficios-template">
-  <div id="root" data-composition-id="03-beneficios" data-start="0" data-duration="7" data-width="1920" data-height="175">
+  <div id="root" data-composition-id="03-beneficios" data-start="0" data-duration="6.5" data-width="1920" data-height="175">
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1920px;height:175px;overflow:hidden;font-family:'Poppins',sans-serif;}
       [data-k="bg"]{position:absolute;inset:0;background:radial-gradient(60% 170% at 50% 45%, #EDC28C 0%, #E2B176 55%, #D7A367 100%);}
       [data-k="layer"]{position:absolute;inset:0;}
-      .t{position:absolute;left:330px;width:1200px;margin:0;text-align:center;color:#141414;font-weight:600;letter-spacing:-0.01em;line-height:1.1;white-space:nowrap;}
-      .a{color:#FFFFFF;text-shadow:0 2px 3px rgba(0,0,0,.28),0 0 18px rgba(0,0,0,.12);}
+      [data-k="03-beneficios-item"]{position:absolute;top:52px;height:72px;}
+      [data-k="03-beneficios-circle"]{position:absolute;left:0;top:0;width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.55);overflow:hidden;}
+      [data-k="03-beneficios-shine"]{position:absolute;left:0;top:-20px;width:22px;height:112px;background:linear-gradient(90deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.95) 50%,rgba(255,255,255,0) 100%);opacity:0;rotate:22deg;}
+      [data-k="03-beneficios-icon"]{position:absolute;left:12px;top:12px;width:48px;height:48px;}
+      [data-k="03-beneficios-label"]{position:absolute;left:88px;top:0;line-height:72px;white-space:nowrap;font-size:34px;font-weight:600;color:#141414;}
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="7" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="7" data-track-index="1">
+    <div data-k="bg" class="clip" data-start="0" data-duration="6.5" data-track-index="0"></div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="6.5" data-track-index="1">
       <img src="assets/logo-lente-directo.png" style="position:absolute;left:120px;top:20px;height:135px;"><div style="position:absolute;left:285px;top:38px;width:2px;height:99px;background:rgba(20,20,20,.25);"></div>
-<div style="position:absolute;left:340px;top:52px;height:72px;"><div style="position:absolute;left:0;top:0;width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.55);"></div><img src="assets/icono-candado.svg" style="position:absolute;left:12px;top:12px;width:48px;height:48px;"><span style="position:absolute;left:88px;top:0;line-height:72px;white-space:nowrap;font-size:34px;font-weight:600;color:#141414;">Contenido exclusivo</span></div><div style="position:absolute;left:850px;top:52px;height:72px;"><div style="position:absolute;left:0;top:0;width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.55);"></div><img src="assets/icono-video-vivo.svg" style="position:absolute;left:12px;top:12px;width:48px;height:48px;"><span style="position:absolute;left:88px;top:0;line-height:72px;white-space:nowrap;font-size:34px;font-weight:600;color:#141414;">Videos en vivo</span></div><div style="position:absolute;left:1250px;top:52px;height:72px;"><div style="position:absolute;left:0;top:0;width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.55);"></div><img src="assets/insignia-suscriptor.svg" style="position:absolute;left:12px;top:12px;width:48px;height:48px;"><span style="position:absolute;left:88px;top:0;line-height:72px;white-space:nowrap;font-size:34px;font-weight:600;color:#141414;">Insignia de suscriptor</span></div>
+      <div data-k="03-beneficios-item" data-i="0" style="left:340px;"><div data-k="03-beneficios-circle"><div data-k="03-beneficios-shine"></div></div><img data-k="03-beneficios-icon" src="assets/icono-candado.svg"><span data-k="03-beneficios-label">Contenido exclusivo</span></div>
+      <div data-k="03-beneficios-item" data-i="1" style="left:850px;"><div data-k="03-beneficios-circle"><div data-k="03-beneficios-shine"></div></div><svg data-k="03-beneficios-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="#141414" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="13" width="27" height="22" rx="5"/><path d="M33 21l9-5v16l-9-5z"/><circle data-k="03-beneficios-dot" cx="19.5" cy="24" r="4" fill="#E53935" stroke="none"/></svg><span data-k="03-beneficios-label">Videos en vivo</span></div>
+      <div data-k="03-beneficios-item" data-i="2" style="left:1250px;"><div data-k="03-beneficios-circle"><div data-k="03-beneficios-shine"></div></div><img data-k="03-beneficios-icon" src="assets/insignia-suscriptor.svg"><span data-k="03-beneficios-label">Insignia de suscriptor</span></div>
     </div>
     <script src="assets/vendor/gsap.min.js"></script>
     <script>
-      window.__timelines = window.__timelines || {};
-      var tl = gsap.timeline({ paused: true });
-      tl.set({}, {}, 7);
-      window.__timelines["03-beneficios"] = tl;
+      (function () {
+        window.__timelines = window.__timelines || {};
+        var root = document.querySelector('[data-composition-id="03-beneficios"]');
+        var tl = gsap.timeline({ paused: true });
+        // Voice cues: «Contenido exclusivo» 2.1s, «Videos en vivo» 3.75s, «Insignia de suscriptor» 4.8s
+        var cues = [2.1, 3.75, 4.8];
+        var items = root.querySelectorAll('[data-k="03-beneficios-item"]');
+        items.forEach(function (item, i) {
+          var t = cues[i];
+          var circle = item.querySelector('[data-k="03-beneficios-circle"]');
+          var shine = item.querySelector('[data-k="03-beneficios-shine"]');
+          var icon = item.querySelector('[data-k="03-beneficios-icon"]');
+          var label = item.querySelector('[data-k="03-beneficios-label"]');
+          tl.fromTo(circle, { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "expo.out" }, t);
+          tl.fromTo(icon, { rotation: -16, scale: 0.85, opacity: 0 }, { rotation: 0, scale: 1, opacity: 1, duration: 0.7, ease: "power3.out" }, t + 0.05);
+          tl.fromTo(label, { x: 30, opacity: 0, filter: "blur(12px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out" }, t + 0.1);
+          // one-pass white shimmer across the circle
+          tl.fromTo(shine, { x: -30, opacity: 0 }, { x: 84, opacity: 1, duration: 0.5, ease: "power2.inOut" }, t + 0.25);
+          tl.to(shine, { opacity: 0, duration: 0.12, ease: "none" }, t + 0.63);
+        });
+        // Scene 3: live red dot blinks softly twice (1 -> 0.4 -> 1)
+        var dot = root.querySelector('[data-k="03-beneficios-dot"]');
+        tl.fromTo(dot, { opacity: 1 }, { opacity: 0.4, duration: 0.25, ease: "sine.inOut" }, 5.2);
+        tl.to(dot, { opacity: 1, duration: 0.25, ease: "sine.inOut" }, 5.45);
+        tl.to(dot, { opacity: 0.4, duration: 0.25, ease: "sine.inOut" }, 5.7);
+        tl.to(dot, { opacity: 1, duration: 0.25, ease: "sine.inOut" }, 5.95);
+        tl.set({}, {}, 6.5);
+        window.__timelines["03-beneficios"] = tl;
+      })();
     </script>
   </div>
 </template>
