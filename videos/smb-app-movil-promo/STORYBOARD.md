@@ -130,7 +130,7 @@ Scene 3 (2.2–4.0s): dentro de la tarjeta, un resalte verde suave (anillo #4DC6
 - persuasion: Value stacking
 - beat: confidence
 - asset_candidates: capture/assets/tile-transferir.png — Transferir; capture/assets/tile-pagar-servicios.png — Pagar Servicios; capture/assets/tile-wipea.png — WIPEA; capture/assets/tile-wallet-joven.png — Wallet joven; capture/assets/tile-verificar.png — Verificar Transferencias; capture/assets/tile-rapidito.png — Rapidito; capture/assets/tile-estado-cuenta.png — Estado de cuenta; capture/assets/tile-certificado.png — Certificado Bancario; capture/assets/tile-cuentas-hijos.png — Crear cuentas hijos
-- on_screen: "Transfiere. Paga. Gestiona." / "Todo desde tu app."
+- on_screen: "Transfiere, paga y gestiona." / "Todo desde tu app."
 
 narrativeRole: Demuestra la amplitud de funciones de un vistazo.
 keyMessage: Todo lo que haces en la agencia, ahora en la app.
