@@ -38,5 +38,7 @@ Usar los colores de la marca (azul #04478C / #005089 y verde #4DC600) y su lema 
 
 ## Notes
 
+- Revisión: en la escena 3 el marco verde solo recorre Usuario y contraseña → Huella dactilar; en la escena 6 se quitó WIPEA (solo Transferir + animación de envío con cronómetro).
+
 - Origen: mockup MockUp_Nuevo_App_Movil_SMB_2026.ai entregado por el usuario.
 - No inventar funciones, cifras ni promociones que no estén en el mockup.

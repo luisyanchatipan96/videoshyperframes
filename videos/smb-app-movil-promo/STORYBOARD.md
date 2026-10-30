@@ -145,7 +145,7 @@ Scene 3 (2.6–5.0s): «Todo desde tu app.» entra en 2.6s; hold quieto.
 
 ## Frame 6 — Transferencias al instante
 
-- scene: «Transferencias al instante.» en grande; la tarjeta WIPEA («Transfiere en un Wip», Nuevo) llega al centro y junto a ella Transferir; una flecha verde cruza rápida entre ambas.
+- scene: «Transferencias al instante.» en grande; solo la tarjeta Transferir al centro; debajo, una moneda viaja de la billetera al destino bajo un cronómetro que da una vuelta rápida y termina en un check verde.
 - voiceover: "Con WIPEA, tus transferencias llegan al instante."
 - duration: 4s
 - transition_in: crossfade
@@ -154,7 +154,7 @@ Scene 3 (2.6–5.0s): «Todo desde tu app.» entra en 2.6s; hold quieto.
 - type: benefit_highlight
 - persuasion: Speed promise (Friction reduction)
 - beat: excitement
-- asset_candidates: capture/assets/tile-wipea.png — WIPEA; capture/assets/tile-transferir.png — Transferir
+- asset_candidates: capture/assets/tile-transferir.png — Transferir
 - on_screen: "Transferencias" / "al instante."
 
 narrativeRole: Destaca la rapidez de las transferencias con WIPEA.
