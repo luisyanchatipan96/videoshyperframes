@@ -1,0 +1,887 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 13,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "gsap_repeated_fromto_without_baseline",
+        "severity": "warning",
+        "message": "2 tl.fromTo() calls target \"#a01-apertura-head\" with no stable baseline. The last-authored fromTo \"from\" values become the element's resting state for any seek before the first tween actually runs, because GSAP applies fromTo from-values at authoring time (immediateRender), not at tween position.",
+        "selector": "#a01-apertura-head",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 0.2s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/02-crecemos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/02-crecemos.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/03-beneficios.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/03-beneficios.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/04-precio.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/04-precio.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/05-comunidad.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/05-comunidad.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"0\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/06-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      },
+      {
+        "code": "studio_missing_editable_id",
+        "severity": "warning",
+        "message": "<div data-start=\"0\" data-track-index=\"1\"> has no id, so Studio cannot use a stable edit target for its timeline and canvas controls.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/videoshyperframes/videos/lente-directo-banner/compositions/frames/06-cierre.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add a stable, human-readable id such as id=\"hero-title\" or id=\"scene-1-card\" to every timeline-visible element you want agents or Studio to edit."
+      }
+    ],
+    "filesScanned": 7
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-01-apertura-voice\" is 2.89s but its slot (data-duration) is 3.70s — the slot is shortened to the media length when rendered. Set data-duration to ~2.89s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "30",
+          "data-width": "1920",
+          "data-height": "175"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 175
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-02-crecemos-voice\" is 5.09s but its slot (data-duration) is 5.30s — the slot is shortened to the media length when rendered. Set data-duration to ~5.09s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "30",
+          "data-width": "1920",
+          "data-height": "175"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 175
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-03-beneficios-voice\" is 5.93s but its slot (data-duration) is 6.50s — the slot is shortened to the media length when rendered. Set data-duration to ~5.93s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "30",
+          "data-width": "1920",
+          "data-height": "175"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 175
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-04-precio-voice\" is 4.92s but its slot (data-duration) is 5.60s — the slot is shortened to the media length when rendered. Set data-duration to ~4.92s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "30",
+          "data-width": "1920",
+          "data-height": "175"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 175
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-05-comunidad-voice\" is 2.82s but its slot (data-duration) is 3.40s — the slot is shortened to the media length when rendered. Set data-duration to ~2.82s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "30",
+          "data-width": "1920",
+          "data-height": "175"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 175
+        },
+        "time": 0
+      },
+      {
+        "code": "clip_media_fit",
+        "severity": "warning",
+        "message": "Audio \"el-06-cierre-voice\" is 3.87s but its slot (data-duration) is 5.50s — the slot is shortened to the media length when rendered. Set data-duration to ~3.87s if that isn't intended.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "30",
+          "data-width": "1920",
+          "data-height": "175"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 175
+        },
+        "time": 0
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 7,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5,
+        "selector": "#w02c-shine",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 688.34,
+          "top": 32,
+          "right": 778.34,
+          "bottom": 137.19,
+          "width": 90,
+          "height": 105.19
+        },
+        "containerSelector": "#w02c-shine-mask",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 533.34,
+          "top": 52,
+          "right": 887.77,
+          "bottom": 117.19,
+          "width": 354.42,
+          "height": 65.19
+        },
+        "overflow": {
+          "top": 20,
+          "bottom": 20
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-crecemos.html",
+        "bbox": {
+          "x": 688.34,
+          "y": 32,
+          "width": 90,
+          "height": 105.19
+        },
+        "firstSeen": 5,
+        "lastSeen": 5,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 11.667,
+        "selector": "#el-03-beneficios > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 381.34,
+          "top": 31.96,
+          "right": 443.7,
+          "bottom": 144.04,
+          "width": 62.35,
+          "height": 112.09
+        },
+        "containerSelector": "#el-03-beneficios > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 340,
+          "top": 52,
+          "right": 412,
+          "bottom": 124,
+          "width": 72,
+          "height": 72
+        },
+        "overflow": {
+          "right": 31.7,
+          "top": 20.04,
+          "bottom": 20.04
+        },
+        "dataAttributes": {
+          "data-k": "03-beneficios-shine"
+        },
+        "sourceFile": "compositions/frames/03-beneficios.html",
+        "bbox": {
+          "x": 381.34,
+          "y": 31.96,
+          "width": 62.35,
+          "height": 112.09
+        },
+        "firstSeen": 11.667,
+        "lastSeen": 11.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          11.667
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 15.754,
+        "selector": "div[data-start=\"0\"] > div:nth-of-type(2) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 428,
+          "top": 64,
+          "right": 778.98,
+          "bottom": 112,
+          "width": 350.98,
+          "height": 48
+        },
+        "containerSelector": "#p04-lead",
+        "text": "Contenido exclusivo",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-k": "03-beneficios-label"
+        },
+        "sourceFile": "compositions/frames/03-beneficios.html",
+        "bbox": {
+          "x": 428,
+          "y": 64,
+          "width": 350.98,
+          "height": 48
+        },
+        "firstSeen": 15.754,
+        "lastSeen": 15.754,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          15.754
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 21.667,
+        "selector": "div[data-start=\"0\"] > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 1512.69,
+          "top": 37.85,
+          "right": 1610.78,
+          "bottom": 138.15,
+          "width": 98.09,
+          "height": 100.3
+        },
+        "containerSelector": "div[data-start=\"0\"] > div:nth-of-type(2) > div:nth-of-type(2)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 1627.72,
+          "top": 55.45,
+          "right": 1856.47,
+          "bottom": 120.55,
+          "width": 228.75,
+          "height": 65.11
+        },
+        "overflow": {
+          "left": 115.03,
+          "top": 17.6,
+          "bottom": 17.6
+        },
+        "dataAttributes": {
+          "data-k": "shine"
+        },
+        "sourceFile": "compositions/frames/05-comunidad.html",
+        "bbox": {
+          "x": 1512.69,
+          "y": 37.85,
+          "width": 98.09,
+          "height": 100.3
+        },
+        "firstSeen": 21.667,
+        "lastSeen": 21.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          21.667
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 24.804,
+        "selector": "#el-05-comunidad > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-of-type(1) > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 465.47,
+          "top": 48,
+          "right": 865.56,
+          "bottom": 121,
+          "width": 400.09,
+          "height": 73
+        },
+        "containerSelector": "#el-06-cierre > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-of-type(1) > span:nth-of-type(1)",
+        "text": "Forma parte de",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-k": "w1"
+        },
+        "sourceFile": "compositions/frames/05-comunidad.html",
+        "bbox": {
+          "x": 465.47,
+          "y": 48,
+          "width": 400.09,
+          "height": 73
+        },
+        "firstSeen": 24.804,
+        "lastSeen": 24.804,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          24.804
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 24.804,
+        "selector": "#el-05-comunidad > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-of-type(1) > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 877.42,
+          "top": 48,
+          "right": 1394.52,
+          "bottom": 121,
+          "width": 517.1,
+          "height": 73
+        },
+        "containerSelector": "#el-06-cierre > div:nth-of-type(1) > div:nth-of-type(2) > p:nth-of-type(1) > span:nth-of-type(3)",
+        "text": "nuestra comunidad",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {
+          "data-k": "w2"
+        },
+        "sourceFile": "compositions/frames/05-comunidad.html",
+        "bbox": {
+          "x": 877.42,
+          "y": 48,
+          "width": 517.1,
+          "height": 73
+        },
+        "firstSeen": 24.804,
+        "lastSeen": 24.804,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          24.804
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 25,
+        "selector": "#c06-shine",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 1431.67,
+          "top": 24.87,
+          "right": 1532.6,
+          "bottom": 151.13,
+          "width": 100.93,
+          "height": 126.27
+        },
+        "containerSelector": "#c06-btn",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 1544.76,
+          "top": 52.35,
+          "right": 1795.24,
+          "bottom": 123.65,
+          "width": 250.48,
+          "height": 71.29
+        },
+        "overflow": {
+          "left": 113.09,
+          "top": 27.48,
+          "bottom": 27.48
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-cierre.html",
+        "bbox": {
+          "x": 1431.67,
+          "y": 24.87,
+          "width": 100.93,
+          "height": 126.27
+        },
+        "firstSeen": 25,
+        "lastSeen": 28.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          25,
+          28.333
+        ]
+      }
+    ],
+    "duration": 30,
+    "samples": [
+      1.667,
+      5,
+      8.333,
+      11.667,
+      15,
+      18.333,
+      21.667,
+      25,
+      28.333
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 7,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 5,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.87:1; WCAG AA requires 3:1.",
+        "text": "merecen llegar más lejos.",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(228,181,125)",
+        "ratio": 1.87,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(103,103,103)",
+        "large": true,
+        "selector": "#a01-apertura-l2",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/01-apertura.html",
+        "bbox": {
+          "x": 345,
+          "y": 105.58798217773438,
+          "width": 1170,
+          "height": 47.18086242675781
+        },
+        "time": 1.667,
+        "times": [
+          1.667
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.94:1; WCAG AA requires 3:1.",
+        "text": "Lente Directo",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(222,179,124)",
+        "ratio": 1.94,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(101,101,101)",
+        "large": true,
+        "selector": "#w02c-accent",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/02-crecemos.html",
+        "bbox": {
+          "x": 539.34375,
+          "y": 56,
+          "width": 342.421875,
+          "height": 57.1875
+        },
+        "time": 8.333,
+        "times": [
+          8.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.91:1; WCAG AA requires 3:1.",
+        "text": "nuestra comunidad",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(223,180,126)",
+        "ratio": 1.91,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(101,101,101)",
+        "large": true,
+        "selector": "div > div:nth-of-type(5) > div > div:nth-of-type(2) > p > span:nth-of-type(2)",
+        "dataAttributes": {
+          "data-k": "w2"
+        },
+        "sourceFile": "compositions/frames/05-comunidad.html",
+        "bbox": {
+          "x": 879.774658203125,
+          "y": 61.71530532836914,
+          "width": 512.38818359375,
+          "height": 56.66709518432617
+        },
+        "time": 21.667,
+        "times": [
+          21.667
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.95:1; WCAG AA requires 3:1.",
+        "text": "Suscribirte",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(143,151,163)",
+        "ratio": 2.95,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(74,74,74)",
+        "large": true,
+        "selector": "div > div:nth-of-type(5) > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > span",
+        "dataAttributes": {
+          "data-k": "label"
+        },
+        "sourceFile": "compositions/frames/05-comunidad.html",
+        "bbox": {
+          "x": 1692.8250732421875,
+          "y": 55.4473991394043,
+          "width": 151.3255615234375,
+          "height": 65.10519409179688
+        },
+        "time": 21.667,
+        "times": [
+          21.667
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 1.86:1; WCAG AA requires 3:1.",
+        "text": "Suscribirte",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(225,183,129)",
+        "ratio": 1.86,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(103,103,103)",
+        "large": true,
+        "selector": "#c06-hero",
+        "dataAttributes": {},
+        "sourceFile": "compositions/frames/06-cierre.html",
+        "bbox": {
+          "x": 930.65625,
+          "y": 56,
+          "width": 296.40625,
+          "height": 59.390625
+        },
+        "time": 28.333,
+        "times": [
+          28.333
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.667,
+      8.333,
+      15,
+      21.667,
+      28.333
+    ],
+    "checked": 16,
+    "passed": 11
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.50 s (5.50–9.00 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 5.5,
+        "seconds": 3.5,
+        "floorSeconds": 3,
+        "until": 9
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 240
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

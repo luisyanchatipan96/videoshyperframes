@@ -1,5 +1,5 @@
 <template id="03-beneficios-template">
-  <div id="root" data-composition-id="03-beneficios" data-start="0" data-duration="6.5" data-width="1920" data-height="175">
+  <div id="root" data-composition-id="03-beneficios" data-start="0" data-duration="7" data-width="1920" data-height="175">
     <style>
       @font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_400.woff2') format('woff2');font-weight:400;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_500.woff2') format('woff2');font-weight:500;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_600.woff2') format('woff2');font-weight:600;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_700.woff2') format('woff2');font-weight:700;}@font-face{font-family:'Poppins';src:url('assets/fonts/Poppins_800.woff2') format('woff2');font-weight:800;}
       #root{position:relative;width:1920px;height:175px;overflow:hidden;font-family:'Poppins',sans-serif;}
@@ -11,8 +11,8 @@
       [data-k="03-beneficios-icon"]{position:absolute;left:12px;top:12px;width:48px;height:48px;}
       [data-k="03-beneficios-label"]{position:absolute;left:88px;top:0;line-height:72px;white-space:nowrap;font-size:34px;font-weight:600;color:#141414;}
     </style>
-    <div data-k="bg" class="clip" data-start="0" data-duration="6.5" data-track-index="0"></div>
-    <div data-k="layer" class="clip" data-start="0" data-duration="6.5" data-track-index="1">
+    <div data-k="bg" class="clip" data-start="0" data-duration="7" data-track-index="0"></div>
+    <div data-k="layer" class="clip" data-start="0" data-duration="7" data-track-index="1">
       <img src="assets/logo-lente-directo.png" style="position:absolute;left:120px;top:20px;height:135px;"><div style="position:absolute;left:285px;top:38px;width:2px;height:99px;background:rgba(20,20,20,.25);"></div>
       <div data-k="03-beneficios-item" data-i="0" style="left:340px;"><div data-k="03-beneficios-circle"><div data-k="03-beneficios-shine"></div></div><img data-k="03-beneficios-icon" src="assets/icono-candado.svg"><span data-k="03-beneficios-label">Contenido exclusivo</span></div>
       <div data-k="03-beneficios-item" data-i="1" style="left:850px;"><div data-k="03-beneficios-circle"><div data-k="03-beneficios-shine"></div></div><svg data-k="03-beneficios-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" stroke="#141414" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="13" width="27" height="22" rx="5"/><path d="M33 21l9-5v16l-9-5z"/><circle data-k="03-beneficios-dot" cx="19.5" cy="24" r="4" fill="#E53935" stroke="none"/></svg><span data-k="03-beneficios-label">Videos en vivo</span></div>
@@ -33,8 +33,10 @@
           var shine = item.querySelector('[data-k="03-beneficios-shine"]');
           var icon = item.querySelector('[data-k="03-beneficios-icon"]');
           var label = item.querySelector('[data-k="03-beneficios-label"]');
-          tl.fromTo(circle, { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "expo.out" }, t);
-          tl.fromTo(icon, { rotation: -16, scale: 0.85, opacity: 0 }, { rotation: 0, scale: 1, opacity: 1, duration: 0.7, ease: "power3.out" }, t + 0.05);
+          // icons land early (staggered) so the strip is never empty; each label waits for its voice cue
+          var c = 0.3 + i * 0.15;
+          tl.fromTo(circle, { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.6, ease: "expo.out" }, c);
+          tl.fromTo(icon, { rotation: -16, scale: 0.85, opacity: 0 }, { rotation: 0, scale: 1, opacity: 1, duration: 0.7, ease: "power3.out" }, c + 0.05);
           tl.fromTo(label, { x: 30, opacity: 0, filter: "blur(12px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.7, ease: "power3.out" }, t + 0.1);
           // one-pass white shimmer across the circle
           tl.fromTo(shine, { x: -30, opacity: 0 }, { x: 84, opacity: 1, duration: 0.5, ease: "power2.inOut" }, t + 0.25);

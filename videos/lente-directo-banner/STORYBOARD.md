@@ -24,7 +24,7 @@ music: none
 - voiceover: "Las historias que importan merecen llegar más lejos."
 - duration: 3.7s
 - transition_in: cut
-- status: built
+- status: animated
 - src: compositions/frames/01-apertura.html
 - type: hook
 - persuasion: Purpose framing
@@ -50,7 +50,7 @@ Scene 4 (2.2–3.7s): hold quieto.
 - voiceover: "En Lente Directo crecemos junto a ti, y queremos llevarte la mejor transmisión."
 - duration: 5.3s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/02-crecemos.html
 - type: product_intro
 - persuasion: Community appeal
@@ -75,7 +75,7 @@ Scene 3 (1.6–5.3s): hold quieto.
 - voiceover: "Al suscribirte, disfrutas de contenido exclusivo, videos en vivo y tu insignia de suscriptor."
 - duration: 6.5s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/03-beneficios.html
 - type: feature_showcase
 - persuasion: Value stacking
@@ -100,7 +100,7 @@ Scene 3 (5.0–6.5s): los tres quedan visibles y quietos; el punto rojo de «en 
 - voiceover: "Todo por solo dos dólares con noventa y nueve al mes, y puedes cancelar cuando quieras."
 - duration: 5.6s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/04-precio.html
 - type: feature_showcase
 - persuasion: Price anchoring + risk reversal
@@ -126,7 +126,7 @@ Scene 4 (0.9s): el símbolo de Facebook aparece con fundido + escala 0.8→1 a l
 - voiceover: "Forma parte de nuestra comunidad de suscriptores."
 - duration: 3.4s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/05-comunidad.html
 - type: benefit_highlight
 - persuasion: Belonging
@@ -151,7 +151,7 @@ Scene 3 (1.6–3.4s): dos pulsos suaves del botón (1→1.05→1) con un halo tu
 - voiceover: "Haz clic en Suscribirte y sé parte de Lente Directo."
 - duration: 5.5s
 - transition_in: crossfade
-- status: built
+- status: animated
 - src: compositions/frames/06-cierre.html
 - type: cta
 - persuasion: Call to act

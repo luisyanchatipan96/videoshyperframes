@@ -17,6 +17,13 @@ Proyectos de video creados con [HyperFrames](https://hyperframes.heygen.com).
   - Versión sin audio: `renders/app-movil-san-miguel-de-los-bancos.mp4`
   - Plan: `BRIEF.md`, `STORYBOARD.md`; bocetos en `boards/storyboard.html`
 
+- `videos/lente-directo-banner/` — Banner animado para la suscripción de Facebook de Lente Directo (overlay de OBS).
+  1920×175 px exactos, 30 s, voz Pedro Alejandro + música y efectos (ElevenLabs).
+  - `renders/lente-directo-banner-1920x175.mp4` — con audio (H.264 4:4:4)
+  - `renders/lente-directo-banner-1920x175-sin-audio.mp4` — sin audio, para bucle en el live
+  - `renders/lente-directo-banner-1920x175.webm` — VP9 con audio
+  - `renders/lente-directo-banner-1920x176-compatible.mp4` — 1920×176 para reproductores que exigen altura par
+
 ## Skills
 
 Las skills de HyperFrames están en `.agents/skills/` (enlazadas desde `.claude/skills/`),
